@@ -11,6 +11,7 @@
     - [Personas](#personas)
       - [Modern Gamer](#modern-gamer)
     - [Use cases](#use-cases)
+  - [Functional requirements](#functional-requirements)
   - [Game features](#game-features)
   - [Non-Functional Requirements](#non-functional-requirements)
   - [Risks and Assumptions](#risks-and-assumptions)
@@ -26,12 +27,14 @@
 
 ### Project Purpose
 
-This project is an opportunity for us to dive deeper into game design while discovering the importance of serious game in the industry. Our main goal is to create an exciting game that can be enjoyed by as many players as possible, which will be mainly an educational game that teaches the importance of the {climate change}.
+This project is an opportunity for us to dive deeper into game design while discovering the importance of serious game in the industry. Our main goal is to create an exciting game that can be enjoyed by as many players as possible, which will be mainly an educational game that teaches the importance of the taking care of our planet.
 
 ### Out of Scope
 
 - <u>Sellable game</u>
   The project is aimed at teaching the fundamentals of game design using a user-friendly technology, the game is not supposed to be really huge and sellable at the final deadline.
+- <u>Complex game</u>
+  To complete the project, we need to create a game that meets our requirements. Overcomplicating gameplay and game development can be overkill.
 
 ### Personas
 
@@ -39,7 +42,7 @@ The primary users of [Game name] include:
 
 #### Modern Gamer
 
-**Gaming Habits:** Plays fast-paced competitive games (e.g., Rocket League, Apex Legends) with friends and indie games with innovative mechanics alone.
+**Gaming Habits:** Plays fast-paced competitive games with friends and indie games with innovative mechanics alone.
 
 **Goals:**
 
@@ -64,6 +67,13 @@ The primary users of [Game name] include:
 2. The gamer starts playing, testing the game’s responsiveness and the visual feedbacks.
 3. The gamer enjoys the gameplay while appreciating the structure of the game itself, and continues playing to see how far they can progress.
 
+## Functional requirements
+
+- **Climate change based Serious game**
+    The game should be designed for a primary purpose about climate change warning.
+- **Specific technology**
+    The game should be developed using the Godot 4.3 engine and GDScript programming language.
+
 ## Game features
 
 All the game features will be documented using the [Nuclino](https://www.nuclino.com) tool. You can check out how I've organized the features following this [link](https://app.nuclino.com/Serious-Game-Team-6/Game-Design-Document).
@@ -72,14 +82,18 @@ For ease of reading and understanding, I've made a whole dedicated [Game Design 
 
 ## Non-Functional Requirements
 
-This section outlines the non-functional requirements for this game project, focusing on [].
+This section outlines the non-functional requirements for this game project.
+
+- **Climate change based Serious game**
+    The game should be designed for a primary purpose other than pure entertainment.
+- **Specific technology**
+    The game should not be developed using another game engine than Godot and another programming language than GDScript.
 
 ## Risks and Assumptions
 
 | **Risk** | **Impact** | **Mitigation** |
 | ------------------------ | ---------- | ------------------------------------------------------ |
-| **** | High |  |
-| **** | Medium |  |
+| **Too complex gameplay** | High | Developing the game step by step to make it maintainable, then remove some if needed. |
 
 ## Glossary
 
