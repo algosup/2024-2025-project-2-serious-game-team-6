@@ -10,7 +10,7 @@ This document contains the main management artifacts:
     - [1. Management Tools](#2-management-tools)
     - [3. Statement Of Work](#3-statement-of-work)
 
-You can also take a look at [cumulative weekly reports](weekly_reports/cumulative.md) file.
+You can also take a look at [cumulative weekly reports](WeeklyReports/cumulative.md) file.
 
 # Project Charter
 
