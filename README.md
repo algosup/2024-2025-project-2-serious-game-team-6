@@ -40,7 +40,7 @@ If you want to contribute please take a look to [CONTRIBUTING.md](CONTRIBUTING.m
 ## 🗃️ Versions
 - **Latest :** 0.0.0
 - **Current :** 0.0.0
-- Versions List : [Cliquer pour afficher](https://github.com/algosup/2024-2025-project-2-serious-game-team-6/tags)
+- Versions List : [Click to view](https://github.com/algosup/2024-2025-project-2-serious-game-team-6/tags)
 
 ## ⚖️ License
 
