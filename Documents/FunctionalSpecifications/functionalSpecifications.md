@@ -80,6 +80,8 @@ All the game features will be documented using the [Nuclino](https://www.nuclino
 
 For ease of reading and understanding, I've made a whole dedicated [Game Design Document](./gameDesign.md).
 
+In game development, the key is not to get too attached to things. This game design document may say X, but ultimately it's up to us to decide whether X is right for the game when we try it out. So this design document will be a starting point, not an ending point; **it must evolve as development progresses**.
+
 ## Non-Functional Requirements
 
 This section outlines the non-functional requirements for this game project.
