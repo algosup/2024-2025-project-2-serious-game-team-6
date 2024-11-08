@@ -99,11 +99,3 @@ _The project as to be completed to fill this section_
 ### 1. Human Resources
 
 To efficiently manage the team I created a dedicated internal spreadsheets you can take a look [HERE](https://docs.google.com/spreadsheets/d/1LvZSeZWjt57uBkZy4MYbe3MrBnBp1FmbGj2K5gsyJ2M/edit?usp=sharing).
-
-### 3. Statement Of Work
-
-A statement of work (SOW) is a document which is the narrative description of a project's work requirement. It defines project-specific activities, deliverables and timelines for a vendor providing services to the client. The SOW typically also includes detailed requirements and pricing, with standard regulatory and governance terms and conditions.
-
-<!-- TODO -->
-
-You can take a look on this document [HERE (SOON)]()
