@@ -26,18 +26,18 @@ The RACI matrix is as follows:
 
 <!-- TODO: add tech writer to raci -->
 
-| Name                      | Project Manager | Program Manager | Technical Leader | Software Engineer | Quality Assurance  | Client | Stakeholders |
-| ------------------------- | --------------- | --------------- | ---------------- | ----------------- | ----------------- | ------ | ------------ |
-| Project brief             | I               | I               | I                | I                 | I                 | R / A  | C            |
-| Project charter           | R / A           | C / I           | C / I            | C / I             | C / I             | C      | C / I        |
-| Schedule / Gantt chart    | R / A           | C / I           | C / I            | C / I             | C / I             | -      | I            |
-| Functional specifications | C               | R / A           | C                | -                 | C / I             | C      | I            |
-| Technical specifications  | C               | C               | R / A            | C                 | C / I             | C      | I            |
-| Code                      | -               | -               | R                | R / A             | I                 | -      | -            |
-| Code review               | I               | -               | R / A            | R                 | R                 | -      | -            |
-| Code documentation        | -               | I               | C                | R / A             | C / I             | I      | -            |
-| Usage instructions        | -               | I               | C                | R / A             | C / I             | I      | -            |
-| Testing plan              | I               | C               | C                | C                 | R / A             | I      | -            |
+| Name                      | Project Manager | Program Manager | Technical Leader | Software Engineer | Quality Assurance | Technical Writer | Client | Stakeholders |
+| ------------------------- | --------------- | --------------- | ---------------- | ----------------- | ----------------- | ----- | ------ | ------------ |
+| Project brief             | I               | I               | I                | I                 | I                 | I | R / A  | C            |
+| Project charter           | R / A           | C / I           | C / I            | C / I             | C / I             | C / I | C      | C / I        |
+| Schedule / Gantt chart    | R / A           | C / I           | C / I            | C / I             | C / I             | C / I | -      | I            |
+| Functional specifications | C               | R / A           | C                | -                 | C / I             | C | C      | I            |
+| Technical specifications  | C               | C               | R / A            | C                 | C / I             | I | C      | I            |
+| Code                      | -               | -               | R                | R / A             | I                 | I | -      | -            |
+| Code review               | I               | -               | R / A            | R                 | R                 | - | -      | -            |
+| Code documentation        | -               | I               | C                | R / A             | C / I             | - | I      | -            |
+| Usage instructions        | -               | I               | C                | C            | C / I             | R / A | I      | -            |
+| Testing plan              | I               | C               | C                | C                 | R / A             | I | I      | -            |
 
 Key:
 | Letter | Name        | Description                                                                                                                                       |
