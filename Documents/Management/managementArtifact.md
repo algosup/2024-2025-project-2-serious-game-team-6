@@ -24,8 +24,6 @@ The breakdown of the tasks, their assignment, and schedule of those tasks can be
 
 The RACI matrix is as follows:
 
-<!-- TODO: add tech writer to raci -->
-
 | Name                      | Project Manager | Program Manager | Technical Leader | Software Engineer | Quality Assurance | Technical Writer | Client | Stakeholders |
 | ------------------------- | --------------- | --------------- | ---------------- | ----------------- | ----------------- | ----- | ------ | ------------ |
 | Project brief             | I               | I               | I                | I                 | I                 | I | R / A  | C            |
@@ -48,8 +46,7 @@ Key:
 | I      | Informed    | Those who are kept up-to-date on progress, often only on completion of the task or deliverable, and with whom there is just one-way communication |
 |        | -           | Not involved                                                                                                                                      |
 
-<!-- TODO: add the link to colored RACI -->
-A readable and colored RACI spreadsheet can be found [HERE (SOON)]().
+A readable and colored RACI spreadsheet can be found [HERE](https://docs.google.com/spreadsheets/d/14vWoQFrZC8Us6AOSEfDSxPQSEwZspKcm0uXNRzfMDN8/edit?usp=sharing).
 
 # Risks and Assumptions
 
