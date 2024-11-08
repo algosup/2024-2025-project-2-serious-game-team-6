@@ -73,7 +73,7 @@ A readable and colored RACI spreadsheet can be found [HERE](https://docs.google.
 
 # Key Performance Indicators
 
-The spreadsheet for the KPI's data and graphs can be found [HERE (SOON)]().
+The spreadsheet for the KPI's data and graphs can be found [HERE](https://docs.google.com/spreadsheets/d/1awAlRA54MZcKfSjEV2K4GYGpWuCz8qhk70xsol9LIm4/edit?usp=sharing).
 
 # Post Mortem
 
