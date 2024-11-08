@@ -101,7 +101,7 @@ _The project as to be completed to fill this section_
 
 ### 1. Human Resources
 
-To efficiently manage the team I created a dedicated internal spreadsheets you can take a look [HERE](https://docs.google.com/spreadsheets/d/1jLRtSmWg94Tbuk7_OjGEhZ1jr0yF2lB5bi-84bGERh0/edit).
+To efficiently manage the team I created a dedicated internal spreadsheets you can take a look [HERE](https://docs.google.com/spreadsheets/d/1LvZSeZWjt57uBkZy4MYbe3MrBnBp1FmbGj2K5gsyJ2M/edit?usp=sharing).
 
 ### 3. Statement Of Work
 
