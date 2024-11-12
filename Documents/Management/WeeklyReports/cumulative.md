@@ -7,7 +7,8 @@ Quick Access:
     - [Overview](#overview)
     - [Accomplishments](#accomplishments)
     - [Challenges](#challenges)
-    - [Plan for Next Week](#plan-for-next-week)
+  - [Plan for Next Week](#plan-for-next-week)
+    - [Team Mood](#team-mood)
     - [Conclusion](#conclusion)
   - [Weekly Report - Week 2](#weekly-report---week-2)
   - [Weekly Report - Week 3](#weekly-report---week-3)
@@ -31,6 +32,8 @@ This week marked the beginning of our project with a strong focus on the kick-of
    - We outlined the project's steps and created a comprehensive Gantt Chart to guide our timeline and milestones.
 3. **Conduct Risk Evaluation**
    - Identify potential risks and develop mitigation strategies to maintain transparency and manage expectations with the client.
+4. **Good Brainstorming**
+   - The first day the team conducted a meeting to brainstorm about each member ideas, after listing different game styles and lore ideas the team started to make differents proposals to submit to the client. You can find this meeting summary [HERE](../MeetingSummaries/MinutesOfMeeting04-11-2024.pdf).
 
 ### Challenges
 
@@ -39,9 +42,9 @@ This week marked the beginning of our project with a strong focus on the kick-of
 2. **Learning Godot**
    - The entire team never used Godot before and had to be trained to it before diving in the project.
 3. **Mixing learning and Entertaining**
-   - Most of us already played game but none of us knew how to make serious game, we had to train ourself into game design especially focus on serious game to   
+   - Most of us already played game but none of us knew how to make serious game, we had to train ourself into game design especially focus on serious game.  
 
-### Plan for Next Week
+## Plan for Next Week
 
 1. **Write the project charter**
    - Because we expected having few results throught our market study and a feedback from the client we will be able to start to write the project charter if not finalize it.
@@ -49,6 +52,12 @@ This week marked the beginning of our project with a strong focus on the kick-of
    - Begin the functional specifications, based on the project charter.
 3. **Begin KPI's setup and tasks assignement**
    - With a defined project and validated by the client we should be able to setup our KPI's and continue the tasks assignement.
+
+### Team Mood
+
+Rate: 7.17/10
+
+The team was a bit disappointed to not have any project hours this week forcing everyone to make overtime to keep on tracks, except that the team was happy about the advancement made this week.
 
 
 ### Conclusion
