@@ -67,11 +67,15 @@ A readable and colored RACI spreadsheet can be found [HERE](https://docs.google.
 
 # MoSCoW
 
-<!-- TODO -->
+| Must Have                                                    | Should Have                                    | Could Have                                             | Won't Have                     |
+| ------------------------------------------------------------ | ---------------------------------------------- | ------------------------------------------------------ | ------------------------------ |
+| Core gameplay mechanics (puzzle-solving, ecological actions) | Adaptive AI that reacts to player choices      | Random map generation for replayability                | In-game combat mechanics       |
+| Educational content integrated into gameplay                 | A variety of ecological puzzles and challenges | Multiple visual themes for different zones             | Multiplayer mode               |
+| Non-combat interactions with flora/fauna                     | Interactive hub (ship) to track progress       | Side quests to explore and learn more about the planet | Customizable character outfits |
+| Restoring the ecosystem as the core objective                | Multiple endings based on player actions       | Procedural events that change the environment          | In-depth crafting system       |
+| A clear narrative with a scientist guiding the player        |                                                | Achievements and collectibles for players to discover  |                                |
+| 2D artwork for both exterior and interior zones              |                                                |                                                        |                                |
 
-| Must Have | Should Have | Could Have | Won't Have |
-| --------- | ----------- | ---------- | ---------- |
-|           |             |            |            |
 
 # Key Performance Indicators
 
