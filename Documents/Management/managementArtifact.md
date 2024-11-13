@@ -13,7 +13,9 @@ You can also take a look at [cumulative weekly reports](WeeklyReports/cumulative
 
 # Project Charter
 
-<!-- TODO -->
+The purpose of the Forsaken Planet is to create an educational and immersive game that raises awareness about environmental conservation. Players will explore a damaged ecosystem on an alien planet, learning about ecological restoration and the impact of human-like activities on natural environments. By engaging players in ecological challenges and teaching sustainable practices, the project aims to promote real-world awareness and inspire players to make more environmentally conscious decisions.
+
+You can also find a detailed verison [HERE](projectCharter.md)
 
 # Tasks & schedules
 
