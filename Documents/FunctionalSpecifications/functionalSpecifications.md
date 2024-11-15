@@ -14,6 +14,7 @@
   - [Functional requirements](#functional-requirements)
   - [Game features](#game-features)
   - [Non-Functional Requirements](#non-functional-requirements)
+  - [Future improvements](#future-improvements)
   - [Risks and Assumptions](#risks-and-assumptions)
   - [Glossary](#glossary)
 
@@ -76,11 +77,12 @@ The primary users of [Game name] include:
 
 ## Game features
 
-All the game features will be documented using the [Nuclino](https://www.nuclino.com) tool. You can check out how I've organized the features following this [link](https://app.nuclino.com/Serious-Game-Team-6/Game-Design-Document).
+All the game features will be documented using the [Nuclino](https://www.nuclino.com) tool. You can check out how I've organized the features following this [link](https://game-design-document.nuclino.site).
 
 For ease of reading and understanding, I've made a whole dedicated [Game Design Document](./gameDesign.md).
 
-In game development, the key is not to get too attached to things. This game design document may say X, but ultimately it's up to us to decide whether X is right for the game when we try it out. So this design document will be a starting point, not an ending point; **it must evolve as development progresses**.
+All the final specifications of the game won't be documented in this GDD. This game design document may say X, but ultimately it's up to us to decide whether X is right for the game when we try it out.
+So this design document will be a starting point, not an ending point; **it must evolve as development progresses**.
 
 ## Non-Functional Requirements
 
@@ -91,11 +93,23 @@ This section outlines the non-functional requirements for this game project.
 - **Specific technology**
     The game should not be developed using another game engine than Godot and another programming language than GDScript.
 
+## Future improvements
+
+This section sets the features we plan to implement for a V2.
+
+- **Lighting and Visual Effects**
+    Natural lighting effects are prioritized, with dynamic changes based on time of day or weather, adding realism and mood to the outdoor settings. Indoor environments use more controlled lighting, creating shadows and highlights to emphasize the confined nature of indoor settings.
+- **Controller handling**
+    To enhance user experience, a controller would be a nice touch, either for casual gamer or experienced ones.
+- **Key binding**
+    To enhance the user experience, it would be interesting to implement a key binding system to create a personalized handling aspect.
+
 ## Risks and Assumptions
 
 | **Risk** | **Impact** | **Mitigation** |
 | ------------------------ | ---------- | ------------------------------------------------------ |
 | **Too complex gameplay** | High | Developing the game step by step to make it maintainable, then remove some if needed. |
+| **Too tricky puzzles** | High | Adding elements to guide the player effectively, such as directives or hints. |
 
 ## Glossary
 
