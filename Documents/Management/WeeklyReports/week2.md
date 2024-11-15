@@ -9,7 +9,7 @@ The first half of the week presented challenges in fully understanding the custo
 1. **Project Charter**
    - Our team conducted a focused meeting to define the game’s style, main storyline, and mechanics. As a result, we drafted the project charter and shared it with the customer for feedback.
    - Resources:
-     - [Meeting Summary](../MeetingSummaries/MinutesOfMeeting12-11-2024.pdf)
+     - [Meeting Summary](../MeetingSummaries/minutesOfMeeting12-11-2024.pdf)
      - [Project Charter](../projectCharter.pdf)
 
 2. **Functional Specifications**

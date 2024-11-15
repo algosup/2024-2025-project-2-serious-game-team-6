@@ -39,7 +39,7 @@ This week marked the beginning of our project with a strong focus on the kick-of
 3. **Conduct Risk Evaluation**
    - Identify potential risks and develop mitigation strategies to maintain transparency and manage expectations with the client.
 4. **Good Brainstorming**
-   - The first day the team conducted a meeting to brainstorm about each member ideas, after listing different game styles and lore ideas the team started to make differents proposals to submit to the client. You can find this meeting summary [HERE](../MeetingSummaries/MinutesOfMeeting04-11-2024.pdf).
+   - The first day the team conducted a meeting to brainstorm about each member ideas, after listing different game styles and lore ideas the team started to make differents proposals to submit to the client. You can find this meeting summary [HERE](../MeetingSummaries/minutesOfMeeting04-11-2024.pdf).
 
 ### Challenges
 
@@ -82,7 +82,7 @@ The first half of the week presented challenges in fully understanding the custo
 1. **Project Charter**
    - Our team conducted a focused meeting to define the game’s style, main storyline, and mechanics. As a result, we drafted the project charter and shared it with the customer for feedback.
    - Resources:
-     - [Meeting Summary](../MeetingSummaries/MinutesOfMeeting12-11-2024.pdf)
+     - [Meeting Summary](../MeetingSummaries/minutesOfMeeting12-11-2024.pdf)
      - [Project Charter](../projectCharter.pdf)
 
 2. **Functional Specifications**

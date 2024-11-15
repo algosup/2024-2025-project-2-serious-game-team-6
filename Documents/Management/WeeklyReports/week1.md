@@ -13,7 +13,7 @@ This week marked the beginning of our project with a strong focus on the kick-of
 3. **Conduct Risk Evaluation**
    - Identify potential risks and develop mitigation strategies to maintain transparency and manage expectations with the client.
 4. **Good Brainstorming**
-   - The first day the team conducted a meeting to brainstorm about each member ideas, after listing different game styles and lore ideas the team started to make differents proposals to submit to the client. You can find this meeting summary [HERE](../MeetingSummaries/MinutesOfMeeting04-11-2024.pdf).
+   - The first day the team conducted a meeting to brainstorm about each member ideas, after listing different game styles and lore ideas the team started to make differents proposals to submit to the client. You can find this meeting summary [HERE](../MeetingSummaries/minutesOfMeeting04-11-2024.pdf).
 
 ## Challenges
 
