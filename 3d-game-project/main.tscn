@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://btsnua661cpjb"]
+
+[ext_resource type="PackedScene" uid="uid://c0nkr85yf3ncc" path="res://maps/spawn-ship.tscn" id="2_3jcqq"]
+[ext_resource type="PackedScene" uid="uid://cjv0df8txk3mi" path="res://player/player.tscn" id="3_yrhed"]
+
+[node name="Main" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.560639, -0.727023, -0.396386, 0, -0.478692, 0.877983, -0.82806, -0.492231, -0.268373, -3, 5, -3)
+
+[node name="Spawn-ship" parent="." instance=ExtResource("2_3jcqq")]
+
+[node name="Player" parent="." instance=ExtResource("3_yrhed")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3, 1)

@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5hvvb4xvut8x"]
+
+[ext_resource type="PackedScene" uid="uid://djynt1pgc0r87" path="res://cubes/reversecorner.glb" id="1_geldb"]
+[ext_resource type="Texture2D" uid="uid://b2oyi2gy6r4hb" path="res://texture/grass.png" id="2_2kqyx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f7hhf"]
+albedo_texture = ExtResource("2_2kqyx")
+uv1_triplanar = true
+
+[node name="reversecorner" instance=ExtResource("1_geldb")]
+
+[node name="Plane" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_f7hhf")
