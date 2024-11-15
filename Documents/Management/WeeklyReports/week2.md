@@ -13,9 +13,7 @@ The first half of the week presented challenges in fully understanding the custo
      - [Project Charter](../projectCharter.pdf)
 
 2. **Functional Specifications**
-   - We built upon the skeleton and basic structure created last week. This will be finalized after incorporating feedback from the Program Manager (PGM).  
-   <!-- TODO: Complete this section with Program manager feedbacks -->
-   *(Pending updates from feedback.)*
+   - Building on last week's foundational structure, we made progress in refining the functional specifications. However, delays emerged due to communication challenges, requiring client validation before advancing with detailed definitions. This slowed the process but ensured alignment with the client’s expectations. The specifications are now more cohesive, incorporating feedback and reflecting a clearer vision of the game's purpose, mechanics, and educational objectives.
 
 3. **KPI Setup and Task Assignment**
    - Key Performance Indicators (KPIs) have been established, except for technical ones related to coding steps. These will be finalized early next week.  
