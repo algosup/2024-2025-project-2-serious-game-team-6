@@ -119,9 +119,9 @@ The first half of the week presented challenges in fully understanding the custo
 
 ### Team Mood
 
-**Rating:** X/10  
-<!-- TODO: Fill this seciton after receiving the team mood feedbacks -->
-*(Please update with team feedback.)*
+**Rating:** 5.33/10  
+
+The team's motivation significantly decreased due to communication challenges with the customer and an overwhelming amount of theoretical classes with little to no project work. This lack of practical application contributed to a decline in engagement and focus.
 
 ### Conclusion
 
