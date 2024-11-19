@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://djynt1pgc0r87"
-path="res://.godot/imported/reversecorner.glb-483384fea9dec37aa37bb75d41c8e527.scn"
+path="res://.godot/imported/reversecorner.glb-ae49d9de2f179e6ce7fec7f2a55c8e2d.scn"
 
 [deps]
 
-source_file="res://cubes/reversecorner.glb"
-dest_files=["res://.godot/imported/reversecorner.glb-483384fea9dec37aa37bb75d41c8e527.scn"]
+source_file="res://cubes/models/reversecorner.glb"
+dest_files=["res://.godot/imported/reversecorner.glb-ae49d9de2f179e6ce7fec7f2a55c8e2d.scn"]
 
 [params]
 

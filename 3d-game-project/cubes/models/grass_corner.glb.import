@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cxe8jmanbwhkv"
-path="res://.godot/imported/grass_corner.glb-25ca123e1a4bea24f074d6c4fb3126a6.scn"
+path="res://.godot/imported/grass_corner.glb-638980ceff47e03080945352c3318a94.scn"
 
 [deps]
 
-source_file="res://cubes/grass_corner.glb"
-dest_files=["res://.godot/imported/grass_corner.glb-25ca123e1a4bea24f074d6c4fb3126a6.scn"]
+source_file="res://cubes/models/grass_corner.glb"
+dest_files=["res://.godot/imported/grass_corner.glb-638980ceff47e03080945352c3318a94.scn"]
 
 [params]
 

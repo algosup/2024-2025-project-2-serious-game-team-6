@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dbuw4vp0a88fg"]
 
 [ext_resource type="Script" path="res://maps/map_root.gd" id="1_fyhg0"]
-[ext_resource type="PackedScene" uid="uid://c1wkgvdl6ccx4" path="res://cubes/grass_cube1.tscn" id="2_2sd8d"]
+[ext_resource type="PackedScene" uid="uid://c1wkgvdl6ccx4" path="res://cubes/models/grass_cube1.tscn" id="2_2sd8d"]
 
 [node name="Map-root" type="Node3D"]
 script = ExtResource("1_fyhg0")

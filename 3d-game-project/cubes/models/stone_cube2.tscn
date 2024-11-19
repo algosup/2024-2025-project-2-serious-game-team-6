@@ -1,11 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://c1wkgvdl6ccx4"]
+[gd_scene load_steps=5 format=3 uid="uid://71goa6d1idkp"]
 
-[ext_resource type="Texture2D" uid="uid://b2oyi2gy6r4hb" path="res://texture/grass.png" id="1_yq3o2"]
+[ext_resource type="Texture2D" uid="uid://bm5uxftylc3tk" path="res://cubes/texture/stone2.png" id="1_cmuga"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_vtrf1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xv12l"]
-albedo_texture = ExtResource("1_yq3o2")
+albedo_texture = ExtResource("1_cmuga")
 uv1_triplanar = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dgr38"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b8eyafs0tcia6"]
 
-[ext_resource type="Texture2D" uid="uid://3uss1v8m4myx" path="res://texture/stone3.png" id="1_yyf6p"]
+[ext_resource type="Texture2D" uid="uid://3uss1v8m4myx" path="res://cubes/texture/stone3.png" id="1_yyf6p"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_vtrf1"]
 
