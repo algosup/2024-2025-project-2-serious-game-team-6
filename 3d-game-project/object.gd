@@ -19,6 +19,12 @@ func hold(player_ref: CharacterBody3D) -> void:
 		is_holded = true
 		set_process(true)
 
+func release() -> void:
+	is_holded = false
+	player = null
+	set_process(false)  # Stop updating the position
+
+
 func _ready():
 	# Lock the X and Z axes for linear movement
 	axis_lock_linear_x = true
@@ -41,7 +47,7 @@ func _on_interactable_interacted(interactor: Interactor) -> void:
 	if not is_holded:
 		remove_highlight()
 		hold(interactor.player)
-	elif is_holded:
+	else:
 		place_on_ground()
 
 func _on_interactable_unfocused(interactor: Interactor) -> void:
@@ -49,6 +55,11 @@ func _on_interactable_unfocused(interactor: Interactor) -> void:
 
 func place_on_ground() -> void:
 	if is_instance_valid(player):
-		global_transform.origin = player.global_transform.origin
-		is_holded = false  # Release the object from being held
-		set_process(false)  # Disable _process since the object is no longer following the player
+		# Place object directly beneath the player
+		var ground_pos = player.global_transform.origin
+		ground_pos.y -= 1.0  # Adjust to position on the floor
+		global_transform.origin = ground_pos
+
+	is_holded = false  # Mark as not held
+	player = null  # Clear player reference
+	set_process(false)  # Stop following the player
