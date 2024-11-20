@@ -33,7 +33,12 @@ albedo_color = Color(1, 0, 0, 1)
 [node name="Main" type="Node3D"]
 
 [node name="Light" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.560639, -0.581425, 0.589601, 6.22473e-08, 0.712026, 0.702153, -0.82806, -0.393654, 0.39919, 5, 15, 5)
+transform = Transform3D(0.504745, -0.833377, 0.225198, -0.0447889, 0.235235, 0.970906, -0.862106, -0.500147, 0.0814078, 33.1571, 15, 5)
+light_energy = 7.009
+light_indirect_energy = 6.502
+light_volumetric_fog_energy = 5.489
+light_bake_mode = 1
+sky_mode = 1
 
 [node name="Map" parent="." instance=ExtResource("1_ed3yq")]
 

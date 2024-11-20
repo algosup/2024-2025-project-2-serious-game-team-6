@@ -12,6 +12,7 @@ func _ready():
 	sprite = $Sprite
 	sprite.animation = last_direction
 	sprite.play()
+	DebugMenu.style = DebugMenu.Style.VISIBLE_DETAILED
 
 func _physics_process(delta): # control
 	var input_dir = Vector3.ZERO

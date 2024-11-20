@@ -9,6 +9,9 @@
 [sub_resource type="BoxMesh" id="BoxMesh_851ya"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ppyx"]
+shading_mode = 0
+disable_ambient_light = true
+disable_fog = true
 albedo_texture = ExtResource("1_6eyv7")
 uv1_triplanar = true
 
