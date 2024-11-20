@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://0h00bcoor43l" path="res://sprites/Idle/BackIdle/PlayerBackIdle.png" id="2_w0l4m"]
 [ext_resource type="Texture2D" uid="uid://idaxq63pg3r5" path="res://sprites/Idle/FrontIdle/PlayerFrontIdle.png" id="3_8i48u"]
 [ext_resource type="Texture2D" uid="uid://4hu6qohc83u3" path="res://sprites/Idle/LeftIdle/Left-Idle.png" id="4_h566r"]
-[ext_resource type="PackedScene" uid="uid://dtjl5d6ip77if" path="res://interaction/player_interactor.tscn" id="5_qi7q6"]
+[ext_resource type="PackedScene" uid="uid://dtjl5d6ip77if" path="res://interaction/Player_interactor.tscn" id="5_qi7q6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cjslx"]
 atlas = ExtResource("2_w0l4m")
@@ -278,10 +278,10 @@ animations = [{
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1p8qn"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_lxolj"]
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_oamqn"]
 
 [node name="Player" type="CharacterBody3D"]
-collision_mask = 2
+collision_mask = 3
 slide_on_ceiling = false
 script = ExtResource("1_homsk")
 
@@ -306,13 +306,10 @@ metadata/_aseprite_wizard_interface_config_ = {
 }
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1.2, 0, 0, 0, 1, 0, 0, 0, 1.2, 0, 0, 0)
-visible = false
 shape = SubResource("CapsuleShape3D_1p8qn")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 1, 2)
-visible = false
 current = true
 fov = 100.0
 
@@ -320,7 +317,7 @@ fov = 100.0
 player = NodePath("..")
 
 [node name="CollisionShape3D" parent="PlayerInteractor" index="0"]
-transform = Transform3D(2.5, 0, 0, 0, 2, 0, 0, 0, 2.5, 0, 0.05, 0)
-shape = SubResource("BoxShape3D_lxolj")
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 1.5, 0, 0, 0)
+shape = SubResource("CylinderShape3D_oamqn")
 
 [editable path="PlayerInteractor"]

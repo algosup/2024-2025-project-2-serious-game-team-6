@@ -29,6 +29,9 @@ func _ready():
 	axis_lock_angular_y = true
 	axis_lock_angular_z = true
 
+	floor
+
+
 func _process(delta: float) -> void:
 	if is_holded && is_instance_valid(player):
 		global_transform.origin = player.global_transform.origin + offset
