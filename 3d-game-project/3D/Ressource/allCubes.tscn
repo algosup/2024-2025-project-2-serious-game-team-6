@@ -1,0 +1,232 @@
+[gd_scene load_steps=34 format=4 uid="uid://bmujn6dn1kviv"]
+
+[ext_resource type="Texture2D" uid="uid://b2oyi2gy6r4hb" path="res://Sprite/Cube/grass.png" id="1_6eyv7"]
+[ext_resource type="Texture2D" uid="uid://mtltk757xjbk" path="res://Sprite/Cube/grass2.png" id="2_qw6br"]
+[ext_resource type="Texture2D" uid="uid://cbwuyqnxsn18f" path="res://Sprite/Cube/stone.png" id="3_k6cgh"]
+[ext_resource type="Texture2D" uid="uid://bm5uxftylc3tk" path="res://Sprite/Cube/stone2.png" id="4_7fr3x"]
+[ext_resource type="Texture2D" uid="uid://3uss1v8m4myx" path="res://Sprite/Cube/stone3.png" id="5_nrqat"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_851ya"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ppyx"]
+albedo_texture = ExtResource("1_6eyv7")
+uv1_triplanar = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fvmsb"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2opsf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_on3x6"]
+albedo_texture = ExtResource("2_qw6br")
+uv1_triplanar = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u5nn3"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_b2sfd"]
+left_to_right = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b8nvj"]
+albedo_texture = ExtResource("1_6eyv7")
+uv1_triplanar = true
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_poonk"]
+points = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_skwkv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rwd0l"]
+albedo_texture = ExtResource("3_k6cgh")
+uv1_triplanar = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r1gpv"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_c5wt6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yfw34"]
+albedo_texture = ExtResource("4_7fr3x")
+uv1_triplanar = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_svbb5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_rb1s1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ohtm1"]
+albedo_texture = ExtResource("5_nrqat")
+uv1_triplanar = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_02vir"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1cx12"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_csefs"]
+_surfaces = [{
+"aabb": AABB(0, 0, -1, 1, 1, 1),
+"format": 34359742465,
+"index_count": 30,
+"index_data": PackedByteArray("AAADAAIAAAABAAMAAQAEAAUAAQAAAAQAAAAGAAQAAAACAAYAAQAFAAMAAgADAAYABQAEAAMABgADAAQA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 7,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAACAAACAPwAAAAAAAACAAAAAAAAAAAAAAIC/AACAPwAAAAAAAIC/AAAAAAAAgD8AAACAAACAPwAAgD8AAACAAAAAAAAAgD8AAIC/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_w5b5g"]
+resource_name = "reverseCorner_Plane"
+_surfaces = [{
+"aabb": AABB(0, 0, -1, 1, 1, 1),
+"attribute_data": PackedByteArray("AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"),
+"format": 34359742487,
+"index_count": 30,
+"index_data": PackedByteArray("AQAJAAcAAQADAAkABAAPABIABAACAA8AAAAVAA4AAAAGABUABQAUAA0ACAAKABYAEwAQAAsAFwAMABEA"),
+"material": SubResource("StandardMaterial3D_1cx12"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AACAPwAAAAAAAIC/AACAPwAAAAAAAIC/AACAPwAAAAAAAIC/AACAPwAAAAAAAIC/AACAPwAAAAAAAIC/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAACAPwAAgD8AAACAAACAPwAAgD8AAACAAACAPwAAgD8AAACAAAAAAAAAgD8AAIC/AAAAAAAAgD8AAIC/AAAAAAAAgD8AAIC/AAD/f////7//fwAA////P/9//3////8//38AAP///z//f/9/////P////3////+/AAD/f////7//fwAA////P/////////+//38AAP///z//////////v/+///////+//7//v/+//5////9/////vwAA/3////+//3//f////z//v///////v/+//7//v/+f/3//f////z//v///////v////3////+/AAD/f////7//////////v/+//7//v/+f")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_csefs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f7hhf"]
+albedo_texture = ExtResource("1_6eyv7")
+uv1_triplanar = true
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_gmwr8"]
+data = PackedVector3Array(0, 0, 0, 1, 0, -1, 0, 0, -1, 0, 0, 0, 1, 0, 0, 1, 0, -1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, -1, 0, 1, 0, 0, 0, 0, 0, 0, -1, 0, 1, -1, 1, 0, 0, 1, 1, 0, 1, 0, -1, 0, 0, -1, 1, 0, -1, 0, 1, -1, 1, 1, 0, 0, 1, 0, 1, 0, -1, 0, 1, -1, 1, 0, -1, 0, 1, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dt2hc"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ieslg"]
+_surfaces = [{
+"aabb": AABB(-1, 0, 0, 1, 1, 1),
+"format": 34359742465,
+"index_count": 18,
+"index_data": PackedByteArray("AAADAAIAAAABAAMAAgADAAQAAgAEAAAAAQAAAAQAAwABAAQA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 5,
+"vertex_data": PackedByteArray("AACAvwAAAAAAAIA/AAAAAAAAAAAAAIA/AACAvwAAAAAAAACAAAAAAAAAAAAAAACAAACAvwAAgD8AAACA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_m6oxn"]
+resource_name = "grassCorner_Plane"
+_surfaces = [{
+"aabb": AABB(-1, 0, 0, 1, 1, 1),
+"attribute_data": PackedByteArray("AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8="),
+"format": 34359742487,
+"index_count": 18,
+"index_data": PackedByteArray("AQAJAAcAAQADAAkACAAKAA0ABgAMAAAABAACAA4ACwAFAA8A"),
+"material": SubResource("StandardMaterial3D_dt2hc"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("AACAvwAAAAAAAIA/AACAvwAAAAAAAIA/AACAvwAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAAAAAACAAACAvwAAgD8AAACAAACAvwAAgD8AAACAAACAvwAAgD8AAACAAACAvwAAgD8AAACAAAD/f////7//fwAA////P/9//7////8//38AAP///z//f/+/////P/+//7+qqqmqAAD/f////7//fwAA////P/////////+//38AAP///z//////////v/+//7+qqqmqAAD/f////7//////////v/9//7////8//7//v6qqqao=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ieslg")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xbql1"]
+albedo_texture = ExtResource("1_6eyv7")
+uv1_triplanar = true
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_1gvog"]
+data = PackedVector3Array(-1, 0, 1, 0, 0, 0, 0, 0, 1, -1, 0, 1, -1, 0, 0, 0, 0, 0, -1, 0, 0, -1, 1, 0, 0, 0, 0, -1, 0, 0, -1, 0, 1, -1, 1, 0, 0, 0, 1, -1, 1, 0, -1, 0, 1, 0, 0, 0, -1, 1, 0, 0, 0, 1)
+
+[node name="AllCubes" type="Node3D"]
+
+[node name="GrassCube1" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_851ya")
+surface_material_override/0 = SubResource("StandardMaterial3D_3ppyx")
+
+[node name="GrassCube1" type="StaticBody3D" parent="GrassCube1"]
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassCube1/GrassCube1"]
+shape = SubResource("BoxShape3D_fvmsb")
+
+[node name="GrassCube2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = SubResource("BoxMesh_2opsf")
+surface_material_override/0 = SubResource("StandardMaterial3D_on3x6")
+
+[node name="GrassCube2" type="StaticBody3D" parent="GrassCube2"]
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassCube2/GrassCube2"]
+shape = SubResource("BoxShape3D_u5nn3")
+
+[node name="GrassTriangle" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+lod_bias = 0.001
+mesh = SubResource("PrismMesh_b2sfd")
+skeleton = NodePath("GrassTriangle")
+surface_material_override/0 = SubResource("StandardMaterial3D_b8nvj")
+
+[node name="GrassTriangle" type="StaticBody3D" parent="GrassTriangle"]
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassTriangle/GrassTriangle"]
+shape = SubResource("ConvexPolygonShape3D_poonk")
+
+[node name="StoneCube1" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+mesh = SubResource("BoxMesh_skwkv")
+surface_material_override/0 = SubResource("StandardMaterial3D_rwd0l")
+
+[node name="StoneCube1" type="StaticBody3D" parent="StoneCube1"]
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneCube1/StoneCube1"]
+shape = SubResource("BoxShape3D_r1gpv")
+
+[node name="StoneCube2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+mesh = SubResource("BoxMesh_c5wt6")
+surface_material_override/0 = SubResource("StandardMaterial3D_yfw34")
+
+[node name="StoneCube2" type="StaticBody3D" parent="StoneCube2"]
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneCube2/StoneCube2"]
+shape = SubResource("BoxShape3D_svbb5")
+
+[node name="StoneCube3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+mesh = SubResource("BoxMesh_rb1s1")
+surface_material_override/0 = SubResource("StandardMaterial3D_ohtm1")
+
+[node name="StoneCube3" type="StaticBody3D" parent="StoneCube3"]
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneCube3/StoneCube3"]
+shape = SubResource("BoxShape3D_02vir")
+
+[node name="GrassReverserCorner" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.5, 2.5)
+mesh = SubResource("ArrayMesh_w5b5g")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_f7hhf")
+
+[node name="GrassReverserCorner" type="StaticBody3D" parent="GrassReverserCorner"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassReverserCorner/GrassReverserCorner"]
+shape = SubResource("ConcavePolygonShape3D_gmwr8")
+
+[node name="GrassTriangleCorner" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -0.5, 1.5)
+mesh = SubResource("ArrayMesh_m6oxn")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbql1")
+
+[node name="GrassTriangleCorner" type="StaticBody3D" parent="GrassTriangleCorner"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassTriangleCorner/GrassTriangleCorner"]
+shape = SubResource("ConcavePolygonShape3D_1gvog")
