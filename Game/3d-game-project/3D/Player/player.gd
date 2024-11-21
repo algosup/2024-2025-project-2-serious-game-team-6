@@ -25,18 +25,18 @@ func _physics_process(delta): # control
 	if Input.is_action_pressed("move_right"):
 		input_dir.x += 1
 
-	input_dir = input_dir.normalized() # not going faster diagonally
+	input_dir = input_dir.normalized() # Not going faster diagonally
 	velocity.x = input_dir.x * MOVE_SPEED
 	velocity.z = input_dir.z * MOVE_SPEED
-	velocity.y = -10 # how fast to snap on floor
+	velocity.y = -10 # How fast to snap on floor
 
-	# to correctly mount any slope
+	# To correctly mount any slope
 	if  is_on_floor(): 
 		velocity.y = 0.1
 
 	move_and_slide()
 
-	# playing directional sprite depending on the last direction input
+	# Playing directional sprite depending on the last direction input
 	if input_dir != Vector3.ZERO:
 		handle_animation(input_dir)
 	else:
@@ -46,8 +46,8 @@ func _physics_process(delta): # control
 
 # Sprite depending on direction
 func handle_animation(input_dir: Vector3):
-	if input_dir.z < 0: # detect direction
-		sprite.animation = "BackIdle" #play a specific animation
+	if input_dir.z < 0: # Detect direction
+		sprite.animation = "BackIdle" #Play a specific animation
 		last_direction = "BackIdle" 
 	elif input_dir.z > 0:
 		sprite.animation = "FrontIdle"
@@ -59,6 +59,6 @@ func handle_animation(input_dir: Vector3):
 		sprite.animation = "LeftIdle"
 		last_direction = "LeftIdle"
 
-	sprite.flip_h = input_dir.x > 0 # flip the "LeftIdle" sprite to work on right direction
+	sprite.flip_h = input_dir.x > 0 # Flip the "LeftIdle" sprite to work on right direction
 	if !sprite.is_playing():
 		sprite.play()
