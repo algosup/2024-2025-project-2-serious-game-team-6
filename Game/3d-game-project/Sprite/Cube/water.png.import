@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byhg2lq1bolbr"
-path.s3tc="res://.godot/imported/stone2.png-a657348e2cecbefb613f8c345accd88f.s3tc.ctex"
+uid="uid://tb3ojqorbbvy"
+path.s3tc="res://.godot/imported/water.png-de9ca8d3d696ffc39b4156e09cd6f93c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Sprite/Cube/stone2.png"
-dest_files=["res://.godot/imported/stone2.png-a657348e2cecbefb613f8c345accd88f.s3tc.ctex"]
+source_file="res://Sprite/Cube/water.png"
+dest_files=["res://.godot/imported/water.png-de9ca8d3d696ffc39b4156e09cd6f93c.s3tc.ctex"]
 
 [params]
 

@@ -1,5 +1,6 @@
 [gd_scene load_steps=35 format=3 uid="uid://bmujn6dn1kviv"]
 
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://b2oyi2gy6r4hb" path="res://Sprite/Cube/grass.png" id="1_6eyv7"]
 [ext_resource type="Texture2D" uid="uid://mtltk757xjbk" path="res://Sprite/Cube/grass2.png" id="2_qw6br"]
 [ext_resource type="Texture2D" uid="uid://cbwuyqnxsn18f" path="res://Sprite/Cube/stone.png" id="3_k6cgh"]
@@ -7,6 +8,15 @@
 [ext_resource type="Texture2D" uid="uid://3uss1v8m4myx" path="res://Sprite/Cube/stone3.png" id="5_nrqat"]
 [ext_resource type="Texture2D" path="res://Sprite/Cube/grassPath.png" id="6_j8nyd"]
 [ext_resource type="Texture2D" path="res://Sprite/Cube/water.png" id="7_iknsw"]
+=======
+[ext_resource type="Texture2D" uid="uid://bkjka3qmnjbjn" path="res://Sprite/Cube/grass.png" id="1_6eyv7"]
+[ext_resource type="Texture2D" uid="uid://ej2t8xww6nco" path="res://Sprite/Cube/grass2.png" id="2_qw6br"]
+[ext_resource type="Texture2D" uid="uid://xed417diq860" path="res://Sprite/Cube/stone.png" id="3_k6cgh"]
+[ext_resource type="Texture2D" uid="uid://byhg2lq1bolbr" path="res://Sprite/Cube/stone2.png" id="4_7fr3x"]
+[ext_resource type="Texture2D" uid="uid://hetatldh2j50" path="res://Sprite/Cube/stone3.png" id="5_nrqat"]
+[ext_resource type="Texture2D" uid="uid://q2a8365wuabc" path="res://Sprite/Cube/grassPath.png" id="6_j8nyd"]
+[ext_resource type="Texture2D" uid="uid://tb3ojqorbbvy" path="res://Sprite/Cube/water.png" id="7_iknsw"]
+>>>>>>> Stashed changes
 
 [sub_resource type="BoxMesh" id="BoxMesh_851ya"]
 

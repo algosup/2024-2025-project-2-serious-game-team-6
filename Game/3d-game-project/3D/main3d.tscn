@@ -1,6 +1,10 @@
 [gd_scene load_steps=13 format=3 uid="uid://btsnua661cpjb"]
 
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" path="res://3D/Map/map1.tscn" id="1_egyof"]
+=======
+[ext_resource type="PackedScene" uid="uid://bqvc5t8eb2jk4" path="res://3D/Map/map1.tscn" id="1_egyof"]
+>>>>>>> Stashed changes
 [ext_resource type="PackedScene" uid="uid://cjv0df8txk3mi" path="res://3D/Player/player.tscn" id="2_f353c"]
 [ext_resource type="PackedScene" uid="uid://554oaub4mgf2" path="res://3D/Object/object.tscn" id="3_77y3i"]
 

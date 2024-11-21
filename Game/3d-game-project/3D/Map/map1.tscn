@@ -1,6 +1,12 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=2 format=3 uid="uid://d2touj7sh6lww"]
 
 [ext_resource type="MeshLibrary" uid="uid://cum524wbx52vl" path="res://3D/Ressource/AllCubes.tres" id="1_ext1x"]
+=======
+[gd_scene load_steps=2 format=3 uid="uid://bqvc5t8eb2jk4"]
+
+[ext_resource type="MeshLibrary" uid="uid://c0cwcqylcq3yq" path="res://3D/Ressource/AllCubes.tres" id="1_ext1x"]
+>>>>>>> Stashed changes
 
 [node name="Map1" type="Node3D"]
 
