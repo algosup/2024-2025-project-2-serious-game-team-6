@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://btsnua661cpjb"]
 
-[ext_resource type="PackedScene" uid="uid://c0nkr85yf3ncc" path="res://3D/Map/spawnShip.tscn" id="1_ed3yq"]
+[ext_resource type="PackedScene" path="res://3D/Map/map1.tscn" id="1_egyof"]
 [ext_resource type="PackedScene" uid="uid://cjv0df8txk3mi" path="res://3D/Player/player.tscn" id="2_f353c"]
 [ext_resource type="PackedScene" uid="uid://554oaub4mgf2" path="res://3D/Object/object.tscn" id="3_77y3i"]
 
@@ -32,21 +32,12 @@ albedo_color = Color(1, 0, 0, 1)
 
 [node name="Main" type="Node3D"]
 
+[node name="Map1" parent="." instance=ExtResource("1_egyof")]
+
 [node name="Light" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.504745, -0.833377, 0.225198, -0.0447889, 0.235235, 0.970906, -0.862106, -0.500147, 0.0814078, 33.1571, 15, 5)
-light_energy = 7.009
-light_indirect_energy = 6.502
-light_volumetric_fog_energy = 5.489
 light_bake_mode = 1
 sky_mode = 1
-
-[node name="Map" parent="." instance=ExtResource("1_ed3yq")]
-
-[node name="Grid-(futur-map)" type="GridMap" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, 0.5)
-cell_size = Vector3(1, 1, 1)
-collision_layer = 2
-collision_mask = 5
 
 [node name="WorldSettup" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_2njts")
