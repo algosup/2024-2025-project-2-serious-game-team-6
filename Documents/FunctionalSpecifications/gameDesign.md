@@ -43,8 +43,23 @@
         - [Concept Arts](#concept-arts-1)
   - [Zones](#zones)
     - [Zone 1: Forest](#zone-1-forest)
+      - [Objectives](#objectives-1)
+      - [Gameplay Elements](#gameplay-elements)
+      - [Visual and Conceptual Design](#visual-and-conceptual-design)
+      - [Audio Design](#audio-design)
+      - [Unique Features](#unique-features)
     - [Zone 2: Nuclear Power Plant](#zone-2-nuclear-power-plant)
+      - [Objectives](#objectives-2)
+      - [Gameplay Elements](#gameplay-elements-1)
+      - [Visual and Conceptual Design](#visual-and-conceptual-design-1)
+      - [Audio Design](#audio-design-1)
+      - [Unique Features](#unique-features-1)
     - [Zone 3: Desert](#zone-3-desert)
+      - [Objectives](#objectives-3)
+      - [Gameplay Elements](#gameplay-elements-2)
+      - [Visual and Conceptual Design](#visual-and-conceptual-design-2)
+      - [Audio Design](#audio-design-2)
+      - [Unique Features](#unique-features-2)
   - [Puzzles](#puzzles)
     - [Puzzle 1: Recycling](#puzzle-1-recycling)
     - [Puzzle 2: Energy](#puzzle-2-energy)
@@ -61,9 +76,9 @@
 
 **Genre**: Serious Knowledge-Vania and Puzzle game
 
-**Target audience**: Casual & Explorer gamer (aging from 12 - 35)
+**Target audience**: Casual & Explorer gamer (12+)
 
-**Platforms**: PC (Windows, macOS)
+**Platforms**: PC (Windows, macOS, Linux)
 
 **Release**: 12/13/2024
 
@@ -496,9 +511,134 @@ Idle
 
 ### Zone 1: Forest
 
+The **Forest** is the **introductory area** of the game, designed to ease players into the core mechanics while immersing them in the game's world. Players encounter beginner-friendly challenges here, providing ample opportunity to learn, explore, and understand the game’s narrative foundation.
+
+#### Objectives
+
+In the Forest, the player’s main objectives include:
+
+1. Uncovering Hints and Story Elements
+  The Forest is teeming with lore elements, from ancient carvings on tree trunks to abandoned journals. These details hint at the world’s backstory.
+
+2. Solving [Puzzle 1](#puzzle-1-recycling)
+
+- **Mechanic**: Players interact with environmental objects like bins and wastes scattered around. The goal is to sort items correctly (e.g., separating glass, paper, and plastic). Successful sorting earns rewards and hints for further puzzles.
+- **Challenge Level**: Easy, acting as a tutorial for more complex puzzles later.
+
+3. Collecting Seeds for [Puzzle 4](#puzzle-4-restore-flora)
+
+- **Objective**: Players collect unique seeds from the Forest. These will be used in a later puzzle where players regenerate barren lands.
+
+#### Gameplay Elements
+
+- **Exploration**: The player explores a semi-open area, encountering sometimes wildlife.
+- **Interaction**: Environmental interaction is a key mechanic; environment like bushes and trees can react to player actions, and some objects can be picked up.
+
+#### Visual and Conceptual Design
+
+- **Visuals**: The Forest's aesthetic is vibrant, with a focus on varying shades of green complemented by occasional bright-colored flora.
+- **Lighting**: A soft sunlight filters through the canopy, with dynamic lighting effects to highlight areas of interest.
+- **Concept Art**:
+
+![alt text](<image (4).png>)
+
+#### Audio Design
+
+- Background Music: A serene, melodic tune with natural undertones, like bird chirps and rustling leaves, creates an immersive experience.
+- Environmental Sounds: Layered ambient sounds, such as distant waterfalls, insect hums, and occasional footsteps on foliage.
+
+#### Unique Features
+
+- Dynamic Ecosystem: The player’s actions (e.g., cleaning up wastes) visually **impact** the Forest. Cleaning wastes restores vibrancy to nearby plants, making the area feel alive, and some tiny areas could be accessed.
+- Hidden Collectibles: Lore scrolls and rare seeds add **replayability** to the Forest area.
+
 ### Zone 2: Nuclear Power Plant
 
+The **Nuclear Power Plant** is the **second area** players explore, diving deeper into the game’s themes of **environmental conservation** and **energy resource** management. This zone shifts to a more industrial tone, showcasing the consequences of past energy misuse. The environment introduces intermediate-level challenges tied to understanding energy systems, offering both educational and narrative value.
+
+#### Objectives
+
+In the Nuclear Power Plant, players are tasked with:
+
+1. Discovering Hints and Story Elements
+  The plant is filled with clues about its abandonment, such as faded warning signs and malfunctioning machinery. These provide insights into the catastrophic decisions leading to its downfall.
+
+2. Solving [Puzzle 2](#puzzle-2-energy)
+
+- **Mechanic**: Players explore the plant’s core facilities to restart a dormant nuclear fission reactor. This involves aligning circuits, balancing energy outputs, and safely controlling the reactor’s reactivation with its panel.
+- **Challenge Level**: This puzzle integrates a side-scroller view, requiring platforming and timing to navigate unstable platforms.
+
+3. Understanding cars energy
+  Players examine abandoned vehicles, identifying their energy sources (e.g., gasoline, electricity, or hydrogen). They would understand which options are more environmentally friendly based on provided data.
+
+#### Gameplay Elements
+
+- Exploration: Players navigate a semi-linear map that combines exploration of plant exteriors with confined interiors full of machinery and tools.
+- Interaction: Interaction centers around repairing, operating, and understanding energy-related mechanisms.
+- Platforming: Mid-level platforming is introduced, with obstacles such as broken walkways and deactivated elevators.
+
+#### Visual and Conceptual Design
+
+**Visuals**: The Nuclear Power Plant involves industrial design. Expect detailed machinery, control rooms, and towering cooling towers. The plant contrasts stark steel with concrete structures.
+**Lighting**: Dynamic lighting plays a critical role, with dim, flickering lights in interior areas and an ominous orange glow in reactor rooms, juxtaposed against natural light in outdoor sections.
+**Concept Art**:
+
+![alt text](<image (5).png>)
+![alt text](<image (6).png>)
+
+#### Audio Design
+
+- Background Music: Industrial-themed, with deep, resonant tones and mechanical rhythms, contrasted by softer ambient melodies in less tense moments.
+- Environmental Sounds: Includes the hum of machines, distant alarms, dripping water, and occasional echoes of footsteps or wildlife reclaiming parts of the plant.
+
+#### Unique Features
+
+- Interactive Energy Education: Players gain an understanding of nuclear fission and green energy choices through **engaging puzzles**. The game subtly educates players on the pros and cons of energy technologies.
+- Hidden Collectibles: Energy schematics, notes from former workers, and rare items like fuel cells or vintage car parts provide replay value.
+
 ### Zone 3: Desert
+
+The **Desert** is the **third area** players explore, presenting a stark contrast to previous zones. This region highlights the devastating effects of **global warming** and **environmental neglect**. The arid, sun-scorched landscape offers challenging puzzles and narrative threads that delve deeper into the **consequences of climate change** and its impact on the world.
+
+#### Objectives
+
+In the Desert, the player's primary goals are:
+
+1. Discovering Hints and Story Elements
+  Players uncover scattered remnants of a past civilization, such as cracked solar panels, abandoned research stations, and dried riverbeds. These environmental details and artifacts reveal how rising temperatures and mismanagement led to the current desolation.
+
+2. Solving [Puzzle 3](#puzzle-3-global-warming)
+
+- Mechanic: Players must restart CO2 scrubbers scattered throughout the zone to counteract the effects of greenhouse gases. This involves activating control panels in a timed sequence, balancing speed and accuracy as the intense heat affects the environment.
+- Challenge Level: Incorporates side-scroller mechanics in enclosed areas like abandoned research facilities. The timed aspect increases tension, forcing players to quickly strategize and adapt.
+
+3. Solving [Puzzle 4](#puzzle-4-restore-flora)
+
+- Mechanic: Players find desolate garden plots and plant seeds that can be collected in Zone 1: Forest. The challenge lies in locating planting locations and understanding where to find seeds to revitalize the area.
+- Challenge Level: This puzzle requires backtracking, connecting the player’s actions across zones. It emphasizes the environmental narrative by showcasing the long-term consequences of restoration efforts.
+
+#### Gameplay Elements
+
+- Exploration: Players traverse a vast, semi-linear desert map filled with obstacles such as sand dunes, dried-out machinery, and ruins.
+- Interaction: Interaction revolves around reactivating machinery, piecing together fragments of the world’s story, and reviving dead ecosystems.
+
+#### Visual and Conceptual Design
+
+**Visuals**: The Desert features a palette dominated by yellows, oranges, and browns, creating an oppressive, barren atmosphere. Heat haze effects, cracked earth, and the remnants of failed technology, such as rusted turbines or broken solar farms, underscore the desolation.
+**Lighting**: Harsh sunlight dominates outdoor spaces, casting sharp shadows, while interiors of research facilities are dimly lit, often illuminated by flickering emergency lights.
+**Concept Art**: 
+
+![alt text](Numérisation_20241121.png)
+
+#### Audio Design
+
+- Background Music: Sparse and atmospheric, with low, resonant tones that evoke isolation. Percussive elements mimic the sound of shifting sands and windstorms.
+- Environmental Sounds: The howling wind, creaking metal, and the distant rumble of collapsing structures emphasize the desert’s harshness.
+
+#### Unique Features
+
+- Dynamic Environmental Effects: The **extreme heat affects** the player's ability to stay for a long time in the zone **as long as the CO2 scrubbers are not activated**.
+- Environmental Restoration: Players’ actions, such as reactivating CO2 scrubbers and planting flora, have **visible effects on the environment**.
 
 ## Puzzles
 
