@@ -34,9 +34,9 @@ This project is an opportunity for us to dive deeper into game design while disc
 ### Out of Scope
 
 - <u>Sellable game</u>
-  The project is aimed at teaching the fundamentals of game design using a user-friendly technology, the game is not supposed to be really huge and sellable at the final deadline.
+  - The project is aimed at teaching the fundamentals of game design using a user-friendly technology, the game is not supposed to be really huge and sellable at the final deadline.
 - <u>Complex game</u>
-  To complete the project, we need to create a game that meets our requirements. Overcomplicating gameplay and game development can be overkill.
+  - To complete the project, we need to create a game that meets our requirements. Overcomplicating gameplay and game development can be overkill.
 
 ### Personas
 

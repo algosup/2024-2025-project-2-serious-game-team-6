@@ -1,9 +1,9 @@
-![Numérisation_20241121](https://github.com/user-attachments/assets/d520c9e7-b5a2-4d57-822b-706054d2ef02)# Game Design - [Game name]
+# Game Design - Forsaken Planet
 
 <details>
 <summary>Click to expand</summary>
 
-- [Game Design - \[Game name\]](#game-design---game-name)
+- [Game Design - Forsaken Planet](#game-design---forsaken-planet)
   - [Game Overview](#game-overview)
     - [Summary \& Outline](#summary--outline)
     - [Design](#design)
