@@ -1,9 +1,9 @@
-# Functional Specifications - [Game name]
+# Functional Specifications - Forsaken Planet
 
 <details>
 <summary>Click to expand</summary>
 
-- [Functional Specifications - \[Game name\]](#functional-specifications---game-name)
+- [Functional Specifications - Forsaken Planet](#functional-specifications---forsaken-planet)
   - [Overview](#overview)
     - [Project summary](#project-summary)
     - [Project Purpose](#project-purpose)
@@ -24,7 +24,8 @@
 
 ### Project summary
 
-[Game name] is a project aimed at creating a fun and interactive serious game using Godot 4.3 engine and GDScript programming language. [Game intro]
+*Forsaken Planet* is a project aimed at creating a fun and interactive serious game using Godot 4.3 engine and GDScript programming language.
+The player will have to **learn by himself** what happened to the world he's exploring, alongside understanding how to **solve the puzzles** he will encounter.
 
 ### Project Purpose
 
@@ -39,7 +40,7 @@ This project is an opportunity for us to dive deeper into game design while disc
 
 ### Personas
 
-The primary users of [Game name] include:
+The primary users of *Forsaken Planet* include:
 
 #### Modern Gamer
 
