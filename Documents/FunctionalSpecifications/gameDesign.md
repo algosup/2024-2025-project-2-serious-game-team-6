@@ -1,4 +1,4 @@
-# Game Design - [Game name]
+![Numérisation_20241121](https://github.com/user-attachments/assets/d520c9e7-b5a2-4d57-822b-706054d2ef02)# Game Design - [Game name]
 
 <details>
 <summary>Click to expand</summary>
@@ -86,7 +86,7 @@
 
 ## Game Overview
 
-![alt text](globe1.png)
+<img src="https://github.com/user-attachments/assets/50a39179-4200-482f-b410-16211a05d68a" width="50">
 
 **Title**: Forsaken Planet
 
@@ -250,7 +250,7 @@ The core gameplay loop is focused on **puzzle-solving** combined with **story ex
 
 This loop encourages a **balance of critical thinking and exploration**, keeping the player engaged by steadily increasing the challenge level of puzzles and unveiling more of the planet’s mysteries.
 
-![alt text](image.png)
+<img width="500" src="https://github.com/user-attachments/assets/ca7a826b-9474-4ae5-8d9f-1bbbe5b16f67">
 
 #### Game progression
 
@@ -347,8 +347,10 @@ This table ensures each primary action remains in a consistent position across b
 
 **Schematics**
 
-![alt text](image-1.png)
-![alt text](image-2.png)
+<img width="500" src="https://github.com/user-attachments/assets/48fdce5c-4112-429d-b7d2-d3c044accf9e">
+<br>
+<img width="500" src="https://github.com/user-attachments/assets/cc0b232a-0cf0-43a1-b84b-f412808a952b">
+
 
 **Rationale for Minimal Controls**
 
@@ -419,21 +421,23 @@ Concept art and design for the hub should align with the game’s overall aesthe
 
 Sci-fi-inspired glowing platforms, shimmering light effects when a teleport is initiated.
 
-![alt text](<image (1).png>)
-![alt text](teleport.png)
+<img width="250" src="https://github.com/user-attachments/assets/23731f15-6fd1-4f4e-9b1c-a8b65dab96ca">
+<br>
+<img width="250" src="https://github.com/user-attachments/assets/d76ab90c-c9af-40c9-9ea4-9855c40da4fc">
 
 **Middle Area** (Map Room):
 
 A room dominated by a holographic globe, with ambient lighting emphasizing its centerpiece.
 
-![alt text](<image (2).png>)
-![alt text](image-3.png)
+<img width="250" src="https://github.com/user-attachments/assets/c16ba340-ce32-4be9-a108-af1be77c1f5f">
+<br>
+<img width="200" src="https://github.com/user-attachments/assets/058e6169-e992-481b-a70f-9d93c2f8731a">
 
 **Right Area** (Laboratory Room):
 
 A cluttered but organized workspace, with subtle animations like bubbling vials or flickering monitors
 
-![alt text](<image (3).png>)
+<img width="250" src="https://github.com/user-attachments/assets/f5bb0ef7-adcf-45b2-bf27-8b9681ccb709">
 
 ### Assets
 
@@ -451,7 +455,7 @@ To understand deeper how it should result, check in [Protagonist](#protagonist) 
 
 Color palette
 
-![alt text](image-4.png)
+<img width="250" src="https://github.com/user-attachments/assets/2eede717-cdb5-4f87-8663-e22b8f0b9048">
 
 ##### Hexadecimal indexes
 
@@ -477,20 +481,20 @@ Color palette
 
 Idle
 
-![alt text](7a51932f-3d77-4f86-a4f2-e6cf5583a7fe.gif)
-![alt text](8905d1ed-ed58-4d81-90c6-8c2210deedc7.gif)
+<img width="250" src="https://github.com/user-attachments/assets/d541f78b-ad78-44ed-8e85-496d65d913d1">
+<img width="250" src="https://github.com/user-attachments/assets/512b5bc7-798b-4e0d-9d1c-e50fb2944c2a">
 
 **Side-scroller**
 
 Idle
 
-![alt text](af03bf89-b7bf-4972-8404-86cdc8e4b999.gif)
+<img width="250" src="https://github.com/user-attachments/assets/1a502720-4d85-478d-9a62-3924af60f9ec">
 
 #### Scientist
 
 Color palette
 
-![alt text](image-5.png)
+<img width="250" src="https://github.com/user-attachments/assets/e2b80eba-2667-4236-8b1b-63b3882a1923">
 
 ##### Hexadecimal indexes
 
@@ -520,8 +524,8 @@ Color palette
 
 Idle
 
-![alt text](256bd8bb-5505-4a92-b15f-ce9f7a41e1e8.gif)
-![alt text](2973daa1-6282-4571-9dbd-bf9d852291af.gif)
+<img width="250" src="https://github.com/user-attachments/assets/0e8d3708-fd8e-4fd8-b75b-5cd37c89b20c">
+<img width="250" src="https://github.com/user-attachments/assets/63a7d784-12d6-45fe-8e07-4930d7ebaf0f">
 
 ## Zones
 
@@ -556,7 +560,7 @@ In the Forest, the player’s main objectives include:
 - **Lighting**: A soft sunlight filters through the canopy, with dynamic lighting effects to highlight areas of interest.
 - **Concept Art**:
 
-![alt text](<image (4).png>)
+<img width="500" src="https://github.com/user-attachments/assets/79d285f2-9c92-4076-8dbd-15d08c1a3175">
 
 #### Audio Design
 
@@ -599,8 +603,8 @@ In the Nuclear Power Plant, players are tasked with:
 **Lighting**: Dynamic lighting plays a critical role, with dim, flickering lights in interior areas and an ominous orange glow in reactor rooms, juxtaposed against natural light in outdoor sections.
 **Concept Art**:
 
-![alt text](<image (5).png>)
-![alt text](<image (6).png>)
+<img width="500" src="https://github.com/user-attachments/assets/8064acf1-118f-4615-bcfc-c729e54897ee">
+<img width="500" src="https://github.com/user-attachments/assets/560e3e79-47e1-447b-932b-3618906d653f">
 
 #### Audio Design
 
@@ -644,7 +648,7 @@ In the Desert, the player's primary goals are:
 **Lighting**: Harsh sunlight dominates outdoor spaces, casting sharp shadows, while interiors of research facilities are dimly lit, often illuminated by flickering emergency lights.
 **Concept Art**: 
 
-![alt text](Numérisation_20241121.png)
+<img width="500" src="https://github.com/user-attachments/assets/49b51af8-157c-4263-8956-db12e33d92d4">
 
 #### Audio Design
 
