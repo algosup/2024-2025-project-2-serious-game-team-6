@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://dohlfgkf010hf"]
+
+[ext_resource type="Texture2D" uid="uid://b6tmtyqnmt650" path="res://Sprite/globe.png" id="1_1g8ro"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xyq1g"]
+atlas = ExtResource("1_1g8ro")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ltc5s"]
+atlas = ExtResource("1_1g8ro")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vm5kn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xyq1g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ltc5s")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gmssi"]
+radius = 48.0104
+
+[node name="Area2D" type="Area2D"]
+collision_layer = 0
+collision_mask = 3
+input_pickable = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visibility_layer = 2
+position = Vector2(9.53674e-07, -1.90735e-06)
+scale = Vector2(1.46875, 1.46875)
+sprite_frames = SubResource("SpriteFrames_vm5kn")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 17)
+shape = SubResource("CircleShape2D_gmssi")

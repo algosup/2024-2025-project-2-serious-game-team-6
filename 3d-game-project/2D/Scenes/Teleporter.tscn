@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://uyu7tbudeqjc"]
+
+[ext_resource type="Texture2D" uid="uid://btxjxgpkv08ck" path="res://Sprite/teleporter.png" id="1_imshr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qetr4"]
+atlas = ExtResource("1_imshr")
+region = Rect2(0, 0, 88, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ucte7"]
+atlas = ExtResource("1_imshr")
+region = Rect2(88, 0, 88, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2pud7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qetr4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ucte7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uryyv"]
+size = Vector2(101, 131)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_2pud7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_uryyv")

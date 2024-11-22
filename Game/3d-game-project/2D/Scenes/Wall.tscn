@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0hval3pok0d1"]
+
+[ext_resource type="Texture2D" uid="uid://b7qveexfld3ta" path="res://Sprite/hubCollisions.png" id="1_mddyj"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_g0rg8"]
+a = Vector2(-319, 128)
+b = Vector2(507, 128)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_0cmmd"]
+a = Vector2(54, 287)
+b = Vector2(55, 417)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_wuk67"]
+a = Vector2(884, 282)
+b = Vector2(884, 413)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="HubCollisions" type="Sprite2D" parent="."]
+position = Vector2(469, 298)
+texture = ExtResource("1_mddyj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(376, 285)
+shape = SubResource("SegmentShape2D_g0rg8")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_0cmmd")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_wuk67")

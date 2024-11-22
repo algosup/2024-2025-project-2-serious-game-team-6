@@ -1,6 +1,5 @@
-[gd_scene load_steps=17 format=3 uid="uid://benrneih6rhle"]
+[gd_scene load_steps=16 format=3 uid="uid://benrneih6rhle"]
 
-[ext_resource type="Script" path="res://2D/Scenes/playerleft.gd" id="1_0w5p1"]
 [ext_resource type="Texture2D" uid="uid://4hu6qohc83u3" path="res://Sprite/Player/Idle/LeftIdle/leftIdle.png" id="2_kdt31"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mcbev"]
@@ -99,7 +98,7 @@ animations = [{
 size = Vector2(36, 59)
 
 [node name="Player Front 2D" type="CharacterBody2D"]
-script = ExtResource("1_0w5p1")
+collision_mask = 3
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -32)
