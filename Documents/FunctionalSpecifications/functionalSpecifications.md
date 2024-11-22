@@ -107,10 +107,14 @@ This section sets the features we plan to implement for a V2.
 
 ## Risks and Assumptions
 
-| **Risk** | **Impact** | **Mitigation** |
-| ------------------------ | ---------- | ------------------------------------------------------ |
-| **Too complex gameplay** | High | Developing the game step by step to make it maintainable, then remove some if needed. |
-| **Too tricky puzzles** | High | Adding elements to guide the player effectively, such as directives or hints. |
+| **Risk** | **Impact** | **Likelihood** | **Mitigation** |
+| ------------------------ | ---------- | ---- |------------------------------------------------------ |
+| **Too complex gameplay** | ![High](https://img.shields.io/badge/High-bb2124) | ![High](https://img.shields.io/badge/High-bb2124) | Developing the game step by step to make it maintainable, then remove some if needed. |
+| **Too tricky puzzles** | ![High](https://img.shields.io/badge/High-bb2124) | ![High](https://img.shields.io/badge/High-bb2124) | Adding elements to guide the player effectively, such as directives or hints. |
+| **Player Engagement and Retention** | ![High](https://img.shields.io/badge/High-bb2124) | ![High](https://img.shields.io/badge/High-bb2124) | Balance educational elements with engaging gameplay mechanics, ensuring the learning experience is immersive and enjoyable. |
+| **Balancing Fun and Educational Value** | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![High](https://img.shields.io/badge/High-bb2124) | Integrate gameplay mechanics that reinforce educational objectives, using challenges and rewards to motivate learning outcomes. |
+| **Balancing Education and Entertainment** | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![High](https://img.shields.io/badge/High-bb2124) | Use storytelling, player choice, and immersive scenarios to teach climate concepts without compromising enjoyment. |
+| **Effectiveness of Educational Messaging** |![High](https://img.shields.io/badge/High-bb2124) | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Use in-game feedback, consequences for actions, and reflection moments to reinforce learning and encourage meaningful engagement with climate topics. |
 
 ## Glossary
 
