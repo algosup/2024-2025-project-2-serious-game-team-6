@@ -25,7 +25,7 @@
 ### Project summary
 
 *Forsaken Planet* is a project aimed at creating a fun and interactive serious game using Godot 4.3 engine and GDScript programming language.
-The player will have to **learn by himself** what happened to the world he's exploring, alongside understanding how to **solve the puzzles** he will encounter.
+The players will have to **learn by themselves** what happened to the world they're exploring, alongside understanding how to **solve the puzzles** they will encounter.
 
 ### Project Purpose
 
@@ -53,7 +53,7 @@ The primary users of *Forsaken Planet* include:
 
 **Frustrations:**
 
-- Lack of Polish: They dislike buggy games, have poor controls, or do not feel responsive—especially when trying a new game genre.
+- Lack of polish: They dislike buggy games, have poor controls, or do not feel responsive—especially when trying a new game genre.
 - Unintuitive Controls: They would quickly loose interest if the game’s controls are not intuitive or responsive enough to quick inputs.
 
 **Preferred Features:**
@@ -63,7 +63,7 @@ The primary users of *Forsaken Planet* include:
 
 ### Use cases
 
-**Modern Gamer Explores [Game name]**:
+**Modern Gamer Explores *Forsaken Planet***:
 
 1. A modern gamer, curious about the serious game genre, dowloads the game and launches it.
 2. The gamer starts playing, testing the game’s responsiveness and the visual feedbacks.
