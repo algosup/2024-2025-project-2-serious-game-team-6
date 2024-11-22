@@ -40,7 +40,7 @@
         - [Concept Arts](#concept-arts)
       - [Scientist](#scientist)
         - [Hexadecimal indexes](#hexadecimal-indexes-1)
-        - [Concept Arts](#concept-arts-1)
+        - [Concept Art](#concept-art)
   - [Zones](#zones)
     - [Zone 1: Forest](#zone-1-forest)
       - [Objectives](#objectives-1)
@@ -62,7 +62,15 @@
       - [Unique Features](#unique-features-2)
   - [Puzzles](#puzzles)
     - [Puzzle 1: Recycling](#puzzle-1-recycling)
+      - [Objectives](#objectives-4)
+      - [Related items](#related-items)
+      - [Puzzle walkthrough](#puzzle-walkthrough)
+      - [Rewards](#rewards)
     - [Puzzle 2: Energy](#puzzle-2-energy)
+      - [Objectives](#objectives-5)
+      - [Related items](#related-items-1)
+      - [Puzzle walkthrough](#puzzle-walkthrough-1)
+      - [Rewards](#rewards-1)
     - [Puzzle 3: Global Warming](#puzzle-3-global-warming)
     - [Puzzle 4: Restore Flora](#puzzle-4-restore-flora)
 
@@ -388,7 +396,7 @@ The hub is divided into three distinct parts, each with its own functionality:
   - Functionality: Provides a detailed view of the entire game world, showing the player’s current position and the explored/locked areas.
   - Design Features:
     - A central hologram or similar interface for selecting destinations.
-    - Indicators of unlocked and locked zones, with visual feedback for zone selection.
+    - Indicators of unlocked and locked zones, with visual feedbacks for zone selection.
 - Laboratory Room
   - Functionality: A space for interacting with the scientist, who serves as a hint-giver or lore provider.
   - Design Features:
@@ -498,9 +506,9 @@ Color palette
 **Pohutukawa** #60162E
 **Black** #000000
 
-##### Concept Arts
+##### Concept Art
 
-**Top-down**
+**Side-scroller**
 
 Idle
 
@@ -644,7 +652,71 @@ In the Desert, the player's primary goals are:
 
 ### Puzzle 1: Recycling
 
+The **Recycling puzzle** is the **first puzzle** of the game, taking place in the [Zone 1](#zone-1-forest).
+
+#### Objectives
+
+The main objective of the puzzle is to **sort the wastes** the player can find in the area **into the appropriate bins**.
+
+#### Related items
+
+There are several items related to this puzzle:
+
+- Wastes
+- Bins
+- Information sheets explaining waste recycling
+
+#### Puzzle walkthrough
+
+The puzzle walkthrough involves several steps, with different gameplay mechanics and consequences, alongside what the scientist can say to the player.
+
+| Steps | Gameplay mechanics | Consequences | NPC's data |
+| ----- | ------- | -------- | ------ |
+| Find wastes on the way | See wastes | Not neglecting the wastes will make the flowers grow and bloom | "Try to explore this area, there should be some stuff that would be needed for understanding what happened." |
+| Can interact with them | Interaction with wastes | Not neglecting the wastes will make the flowers grow and bloom | "I see that you picked up something. It should be a kind of waste, from the past. According to my calculations, it should be part of the 1.5 tons of waste that the average life form generated here every year. Try to put it in the right place." |
+| Find bins | Interaction with bins | | "Hooo, we got almost the same at home! I don't know how it's called here though... It should be useful depending on what you can find." |
+| Find hints | Interaction with hints | | |
+| Understand that wastes go in the bin | | | |
+| Gather all the wastes | Interaction with wastes | | "Ookay, it seems that you gathered all the wastes you could find... Try to put them in the right place." |
+| Put them in the inappropriate bins | Interaction with bins, interaction with wastes | Not sort the wastes correctly won't have the expected effect: the path won't open | "We got the same ones at home, you should know how they work..." |
+| Put them in the appropriate bins | Interaction with bins, interaction with wastes | Sort the wastes correctly will have the expected effect: the path will open | "Good job buddy, I wish you do not neglect your wastes at home." |
+
+#### Rewards
+
+By solving the puzzle, the player **restores the environment** where the wastes were found, he can access different parts, or even find something related to the lore.
+
 ### Puzzle 2: Energy
+
+The **Energy puzzle** is the **second puzzle** of the game, taking place in the [Zone 2](#zone-2-nuclear-power-plant).
+
+#### Objectives
+
+The main objective of the puzzle is to **reactivate a dormant nuclear fission reactor** to supply power to the planet.
+
+#### Related items
+
+There are several items related to this puzzle:
+
+- Reactor's panel
+- Wires
+- Information sheets
+
+#### Puzzle walkthrough
+
+The puzzle walkthrough involves several steps, with different gameplay mechanics and consequences, alongside what the scientist can say to the player.
+
+| Steps | Gameplay mechanics | Consequences | NPC's data |
+| ----- | ------- | -------- | ------ |
+| Get into the building | Change view from top-down to side-scroller | Gameplay changes | "Wow this is really interesting! It should be a place where they created energy somehow, let's try to reactivate the process." |
+| Interact with wires | Interaction with wires | Introduction to connecting wires, cannot reactivate the plant | "I guess those cables are not connected to each other." |
+| Interact with the unfixed panel | Interaction with panel | Cannot reactivate the plant | "The panel is not supplied by power, try to make sure everything is connected in the building." |
+| Find hints | Interaction with hints | | |
+| Connect wires | Interaction with wires, connect wires | Can reactivate the plant | "I can detect electricity going in this one, it's fixed." |
+| Interact with the fixed panel | Interaction with panel | Can reactivate the plant | "Now everything is reaady to reactivate this stuff!" |
+
+#### Rewards
+
+By solving the puzzle, the player **supplies energy** to several elements within the different areas. He can access new zones, or even find something new related to the lore.
 
 ### Puzzle 3: Global Warming
 
