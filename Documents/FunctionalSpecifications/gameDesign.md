@@ -72,7 +72,15 @@
       - [Puzzle walkthrough](#puzzle-walkthrough-1)
       - [Rewards](#rewards-1)
     - [Puzzle 3: Global Warming](#puzzle-3-global-warming)
+      - [Objectives](#objectives-6)
+      - [Related items](#related-items-2)
+      - [Puzzle walkthrough](#puzzle-walkthrough-2)
+      - [Rewards](#rewards-2)
     - [Puzzle 4: Restore Flora](#puzzle-4-restore-flora)
+      - [Objectives](#objectives-7)
+      - [Related items](#related-items-3)
+      - [Puzzle walkthrough](#puzzle-walkthrough-3)
+      - [Rewards](#rewards-3)
 
 </details>
 
@@ -720,4 +728,62 @@ By solving the puzzle, the player **supplies energy** to several elements within
 
 ### Puzzle 3: Global Warming
 
+The **Global Warming puzzle** is the **third puzzle** of the game, taking place in the [Zone 3](#zone-3-desert).
+
+#### Objectives
+
+The main objective of the puzzle is to **reactivate CO2 scrubbers** the player can find in the area **to reduce the temperature**.
+
+#### Related items
+
+There are several items related to this puzzle:
+
+- CO2 scrubbers' panel
+- Information sheets
+
+#### Puzzle walkthrough
+
+The puzzle walkthrough involves several steps, with different gameplay mechanics and consequences, alongside what the scientist can say to the player.
+
+| Steps | Gameplay mechanics | Consequences | NPC's data |
+| ----- | ------- | -------- | ------ |
+| Get into the zone | Time-limited actions | Gameplay changes to a tensional one | "What the frick, it's hot! You should be quick or you'll faint." |
+| See scrubber | Exploration | | "This is a CO2 scrubber, it has been designed to eliminate the carbon dioxyde in the area. I believe they became old..." |
+| Interact with srubber | Interaction with scrubbers | If the player doesn't activate all the rubbers in time, he loses the game | "It seems that you activated its panel somehow... There should be more nearby, be quick." |
+| Interact with all srubbers | Interaction with scrubbers | Activating all the srubbers on time will make the player able to explore more | "Wow, good job, it's colder now. You're able to explore in depth the area now." |
+
+#### Rewards
+
+By solving the puzzle, the player **reduces the CO2 rate** in the air, **reducing the overall temperature**. He can explore the zone in depth, or even find something new related to the lore.
+
 ### Puzzle 4: Restore Flora
+
+The **Restore Flora puzzle** is the **fourth puzzle** of the game, taking place in the [Zone 3](#zone-3-desert).
+
+#### Objectives
+
+The main objective of the puzzle is to **plant the seeds** that the player can find in [Zone 1](#zone-1-forest) **into seedlings**.
+
+#### Related items
+
+There are several items related to this puzzle:
+
+- Seeds
+- Seedlings
+- Information sheets
+
+#### Puzzle walkthrough
+
+The puzzle walkthrough involves several steps, with different gameplay mechanics and consequences, alongside what the scientist can say to the player.
+
+| Steps | Gameplay mechanics | Consequences | NPC's data |
+| ----- | ------- | -------- | ------ |
+| See seedlings | See seedlings | | "Maybe we should plant some trees around there to restore some flora. We may find some seeds and dirt somewhere." |
+| Interact with seedlings without seeds | Interaction with seedlings | | "Those seedlings don't have any seeds." |
+| Interact with seeds in the Forest | Interaction with seeds | Get seeds | "Cleaning this zone allowed the tree to spread seeds throughout the area! That's awesome." |
+| Interact with seedlings with seeds | Interaction with seedlings | Plant in seedlings | "Those seedlings do have seeds now." |
+| Interact with all seedlings with seeds | Interaction with seedlings | Plant in seedlings | "You planted all the seeds that you could, well done buddy." |
+
+#### Rewards
+
+By solving the puzzle, the player **plants seeds** and **revitalize the area**. He can access new zones, or even find something new related to the lore.
