@@ -316,7 +316,7 @@ cull_mask = 1048545
 projection = 1
 current = true
 fov = 100.0
-size = 7.0
+size = 9.0
 near = 0.001
 
 [node name="PlayerInteractor" parent="." node_paths=PackedStringArray("player") instance=ExtResource("5_qi7q6")]

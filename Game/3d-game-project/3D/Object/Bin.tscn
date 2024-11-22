@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://dquahbivmmc6p"]
+
+[ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://3D/Interaction/interactable.tscn" id="1_heqxe"]
+
+[sub_resource type="Gradient" id="Gradient_cof37"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tm1h0"]
+gradient = SubResource("Gradient_cof37")
+fill_from = Vector2(0.230248, 0.952596)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7dxjk"]
+albedo_color = Color(0, 0.376471, 0, 1)
+metallic = 1.0
+metallic_texture = SubResource("GradientTexture2D_tm1h0")
+
+[sub_resource type="BoxMesh" id="BoxMesh_c1wt2"]
+
+[node name="Bin" type="Node3D"]
+
+[node name="BineForm" type="CSGBox3D" parent="."]
+transform = Transform3D(0.6, 0, 0, 0, 1.2, 0, 0, 0, 0.6, 0, 0, 0)
+material = SubResource("StandardMaterial3D_7dxjk")
+
+[node name="Interior" type="CSGMesh3D" parent="BineForm"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+operation = 2
+mesh = SubResource("BoxMesh_c1wt2")
+
+[node name="Open" type="CSGMesh3D" parent="BineForm"]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.3, 0.4)
+operation = 2
+mesh = SubResource("BoxMesh_c1wt2")
+
+[node name="Interactable" parent="." instance=ExtResource("1_heqxe")]
