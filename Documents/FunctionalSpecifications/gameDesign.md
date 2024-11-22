@@ -86,7 +86,7 @@
 
 ## Game Overview
 
-<img src="https://github.com/user-attachments/assets/50a39179-4200-482f-b410-16211a05d68a" width="50">
+<img src="https://github.com/user-attachments/assets/50a39179-4200-482f-b410-16211a05d68a" width="150">
 
 **Title**: Forsaken Planet
 
@@ -149,11 +149,11 @@ Learn more about the [Gameplay and Mechanics](#gameplay-and-mechanics) of the ga
 
 ### Timeline
 
-[⌛] **Functional Specification** & GDD: 11/22
-[⌛] **Technical Specification**: 11/29
-[⌛] **Test plan**: 12/6
-[⌛] **Code**: 12/13
-[⌛] **User Manual**: 12/13
+- [⌛] **Functional Specification** & GDD: 11/22
+- [⌛] **Technical Specification**: 11/29
+- [⌛] **Test plan**: 12/6
+- [⌛] **Code**: 12/13
+- [⌛] **User Manual**: 12/13
 
 ## Game Setting
 
