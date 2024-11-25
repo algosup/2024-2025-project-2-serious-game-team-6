@@ -63,9 +63,9 @@ This week was significantly more productive, with an intensive schedule of proje
 
 ## Team Mood  
 
-**Rating:** X/10  
+**Rating:** 7.86/10  
 
-*This section still needs to be completed.*
+The team was happy of the week, they were able to advance efficiently and without being highly stressed due to a huge amount of project sessions, a good communication and implication from each team member, we should have more weeks like this one.
 
 ## Conclusion  
 
