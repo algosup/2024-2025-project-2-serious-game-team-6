@@ -19,15 +19,28 @@ func _physics_process(delta: float) -> void:
 			focus(new_closest)
 		cached_closest = new_closest
 
+# Handle area exit events
+func _on_area_exited(area: Interactable) -> void:
+	if cached_closest == area:
+		unfocus(area)
+
 # Handle interaction inputs
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("interact"):
-		if held_object:
-			# Release the currently held object
-			release_held_object()
-		elif cached_closest:
-			# Interact with the closest object
-			grab_object(cached_closest.get_parent() as RigidBody3D)
+		if cached_closest:
+			if held_object:
+				# If holding an object, interact with the bin
+				if cached_closest.get_parent() is Bin:
+					interact_with_bin(cached_closest.get_parent())
+				else:
+					# Release the held object
+					release_held_object()
+			else:
+				# Interact with an object or a bin
+				if cached_closest.get_parent() is Bin:
+					interact_with_bin(cached_closest.get_parent())
+				elif cached_closest.get_parent() is RigidBody3D:
+					grab_object(cached_closest.get_parent() as RigidBody3D)
 
 # Release the currently held object
 func release_held_object() -> void:
@@ -45,7 +58,6 @@ func grab_object(object: RigidBody3D) -> void:
 		object.hold(player)
 		held_object = object
 
-# Handle area exit events
-func _on_area_exited(area: Interactable) -> void:
-	if cached_closest == area:
-		unfocus(area)
+# Interact with a bin
+func interact_with_bin(bin: Bin) -> void:
+	bin._on_interactable_interacted(self)

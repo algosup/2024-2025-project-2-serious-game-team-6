@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://554oaub4mgf2"]
 
 [ext_resource type="Script" path="res://3D/Object/object.gd" id="1_3mj55"]
-[ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://Interaction/interactable.tscn" id="1_yxfdl"]
+[ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://3D/Interaction/interactable.tscn" id="1_yxfdl"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ofp4y"]
 rough = true
@@ -17,7 +17,6 @@ albedo_color = Color(1, 0, 1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1hufy"]
 shading_mode = 0
-albedo_color = Color(0, 1, 1, 1)
 
 [sub_resource type="QuadMesh" id="QuadMesh_b0cg1"]
 material = SubResource("StandardMaterial3D_1hufy")

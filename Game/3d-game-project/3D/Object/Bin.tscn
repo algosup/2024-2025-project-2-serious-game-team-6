@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dquahbivmmc6p"]
+[gd_scene load_steps=11 format=3 uid="uid://dquahbivmmc6p"]
 
 [ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://3D/Interaction/interactable.tscn" id="1_heqxe"]
+[ext_resource type="Script" path="res://3D/Object/bin.gd" id="1_qve5h"]
 
 [sub_resource type="Gradient" id="Gradient_cof37"]
 
@@ -15,7 +16,18 @@ metallic_texture = SubResource("GradientTexture2D_tm1h0")
 
 [sub_resource type="BoxMesh" id="BoxMesh_c1wt2"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_bywq8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kuld7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nnyg1"]
+shading_mode = 0
+
+[sub_resource type="QuadMesh" id="QuadMesh_tn5nv"]
+material = SubResource("StandardMaterial3D_nnyg1")
+
 [node name="Bin" type="Node3D"]
+script = ExtResource("1_qve5h")
 
 [node name="BineForm" type="CSGBox3D" parent="."]
 transform = Transform3D(0.6, 0, 0, 0, 1.2, 0, 0, 0, 0.6, 0, 0, 0)
@@ -32,3 +44,20 @@ operation = 2
 mesh = SubResource("BoxMesh_c1wt2")
 
 [node name="Interactable" parent="." instance=ExtResource("1_heqxe")]
+
+[node name="CollisionShape3D" parent="Interactable" index="0"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+shape = SubResource("BoxShape3D_bywq8")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(0.6, 0, 0, 0, 1.2, 0, 0, 0, 0.6, 0, 0, 0)
+shape = SubResource("BoxShape3D_kuld7")
+
+[node name="Highlight" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.7, 0, 0, 0, 1.3, 0, 0, 0, 1, 0, 0, 0)
+visible = false
+mesh = SubResource("QuadMesh_tn5nv")
+
+[editable path="Interactable"]
