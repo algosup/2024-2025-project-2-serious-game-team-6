@@ -19,7 +19,7 @@ You can also find a detailed verison [HERE](projectCharter.md)
 
 # Tasks & schedules
 
-The breakdown of the tasks, their assignment, and schedule of those tasks can be found [HERE](https://algosup-serious-game-team6.monday.com/boards/1687784311).
+The breakdown of the tasks, their assignment, and schedule of those tasks can be found [HERE](https://sharing.clickup.com/9012521102/l/h/5-90123516211-1/1384ef34e36b04d).
 
 # RACI matrix
 
