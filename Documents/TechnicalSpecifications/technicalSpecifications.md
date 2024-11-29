@@ -18,10 +18,9 @@
       - [Naming conventions](#naming-conventions)
       - [Structure conventions](#structure-conventions)
 - [Software architecture](#software-architecture)
-  - [Game actions flow](#game-actions-flow)
+  - [Gameplay decision tree](#gameplay-decision-tree)
   - [Software file management](#software-file-management)
     - [File tree](#file-tree)
-    - [Files interactions](#files-interactions)
   - [Program structure](#program-structure)
 - [Risks and mitigations strategy](#risks-and-mitigation-strategies)
   - [Risks](#risks)
@@ -31,7 +30,7 @@
 
 ## Document purpose
 
-The purpose of this document is to describe how the program will be created. It will be updated following the advancements of the project, to match what has been done during the development phase.
+The purpose of this document is to describe how the program will be created. It will be updated following the advancements of the project.
 
 # Project definition
 
@@ -48,7 +47,7 @@ The project, given by ALGOSUP, is to create a serious game about climate change<
 | Evan UHRING | Technical leader |
 | Michel RIFF | Software engineer |
 | Loïc NOGUES | Software engineer |
-| Axel DAVID | Tech writer |
+| Axel DAVID | Technical writer |
 | Tino GABET | Quality assurance |
 
 ## Description
@@ -76,6 +75,7 @@ In the team, two different types of computer are used:
 | -- | -- | -- |
 | MacBook Air M3 | MacOS | 4 |
 | ThinkBook 14 G4 | Windows 11 | 3 |
+| IdeaPad slim 1-14AST-05 | Linux Ubuntu | 1 |
 
 Thus, the game that we will create will work on Windows and MacOS operating systems only. 
 
@@ -88,8 +88,8 @@ For this project, the Godot engine will be used. We will develop the game using 
 ### File tree and documents
 ---
 
-Folders are written in "CamelCase"<br>
-Files are written in "pascalCase"
+Folders are written in "PascalCase"<br>
+Files are written in "camelCase"
 
 ```md
 2023-2024-project-2-serious-game-team-6
@@ -335,7 +335,7 @@ if not is_on_floor():
 
 The player will have to use the 'A', 'D' and 'Space' buttons on a QWERTY keyboard.
 
-For each type of movement, a last function named 'move_and_slide()', which is a built in function, is called to apply the movement.
+For each type of movement, a last function named 'move_and_slide()', which is a built in function,a is called to apply the movement.
 
 ### Object interactions
 
@@ -441,7 +441,7 @@ On the last line, [destination] has to be changed depending on where the player 
 ## Risks
 
 - 1. **Cross-platform compatibility issues**<br>
-The game will be developed for both MacOS and Windows, but there may be compatibility issues due to different system configurations, performance variations, or input methods between the two platforms. This could lead to bugs or unexpected behavior when the game is run on one platform but not the other.
+The game will be developed for both MacOS, Windows and Linux, but there may be compatibility issues due to different system configurations, performance variations, or input methods between the two platforms. This could lead to bugs or unexpected behavior when the game is run on one platform but not the other.
 - 2. **Performance Optimization**<br>
 The game involves both 2D and 3D components, which could strain system resources, especially on lower-end devices. Complex scenes, interactions, and animations may cause frame rate drops or lag, impacting the player experience.
 - 3. **Godot Engine Limitations**<br>
