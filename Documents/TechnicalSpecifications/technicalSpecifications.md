@@ -31,7 +31,7 @@
 
 ## Document purpose
 
-The purpose of this document is to describe how the program will be created. It will be updated following the advancements of the project, to match what as been done during the development phase.
+The purpose of this document is to describe how the program will be created. It will be updated following the advancements of the project, to match what has been done during the development phase.
 
 # Project definition
 
@@ -273,7 +273,7 @@ Game
 
 ### Map creation
 
-While our game is created using two different mode of camera, one being a top-down view and a side view, the maps will be made differently depending on the view that will be used for said map.<br>
+While our game is created using two different modes of camera, one being a top-down view and a side view, the maps will be made differently depending on the view that will be used for said map.<br>
 So, the maps will be created using 3D for the top-down view, and complete 2D for the side view.
 For the top-down view, the maps will be created using blocks and slopes. Buildings, environmental assets and props will be 2D sprites.
 For the side view, maps will be in complete 2D with multiple layers. One for the collisions with the player, one for the interactables and a last one for the background. 
@@ -289,7 +289,7 @@ Those set buttons are done using a QWERTY keyboard<sup><a href="#3">[3]</a></sup
 
 ### Player movement
 
-Because of two different camera view, the movement available for the player will be different.<br>
+Because of two different camera views, the movement available for the player will be different.<br>
 For the top-down view, the player will be able to move forward, backward, left and right. Here is the movement handling, where we select first the direction, then we apply the movement speed and the gravity:
 
 ```GDscript
@@ -335,7 +335,7 @@ if not is_on_floor():
 
 The player will have to use the 'A', 'D' and 'Space' buttons on a QWERTY keyboard.
 
-For each type of movement, a last function named 'move_and_slide()' is called to apply the movement.
+For each type of movement, a last function named 'move_and_slide()', which is a built in function, is called to apply the movement.
 
 ### Object interactions
 
