@@ -1,35 +1,38 @@
 [gd_scene load_steps=7 format=3 uid="uid://dtq6mxwmbsnu3"]
 
-[ext_resource type="PackedScene" uid="uid://benrneih6rhle" path="res://2D/Scenes/Playerleft.tscn" id="1_clqmd"]
-[ext_resource type="PackedScene" uid="uid://cjgid6kycyiub" path="res://2D/Scenes/Font.tscn" id="1_yq4tx"]
-[ext_resource type="PackedScene" uid="uid://d2prtexbmmc0s" path="res://2D/Scenes/Glove.tscn" id="2_43xhm"]
-[ext_resource type="PackedScene" uid="uid://c0hval3pok0d1" path="res://2D/Scenes/Wall.tscn" id="3_7pign"]
-[ext_resource type="PackedScene" uid="uid://copa84ipa0wqt" path="res://2D/Scenes/Teleproter.tscn" id="5_blg1p"]
-[ext_resource type="PackedScene" uid="uid://c650gdjpww7p6" path="res://2D/Scenes/Scientist.tscn" id="5_ulglk"]
+[ext_resource type="PackedScene" uid="uid://benrneih6rhle" path="res://2D/Scenes/player.tscn" id="1_clqmd"]
+[ext_resource type="PackedScene" uid="uid://cjgid6kycyiub" path="res://2D/Scenes/background.tscn" id="1_yq4tx"]
+[ext_resource type="PackedScene" uid="uid://d2prtexbmmc0s" path="res://2D/Scenes/globe.tscn" id="2_43xhm"]
+[ext_resource type="PackedScene" uid="uid://c0hval3pok0d1" path="res://2D/Scenes/wall.tscn" id="3_7pign"]
+[ext_resource type="PackedScene" uid="uid://copa84ipa0wqt" path="res://2D/Scenes/teleporter2d.tscn" id="5_blg1p"]
+[ext_resource type="PackedScene" uid="uid://c650gdjpww7p6" path="res://2D/Scenes/scientist.tscn" id="5_ulglk"]
 
 [node name="Main" type="Node2D"]
 
-[node name="StaticBody2D2" parent="." instance=ExtResource("1_yq4tx")]
+[node name="HUB" parent="." instance=ExtResource("1_yq4tx")]
 position = Vector2(-514, -405)
 collision_priority = 3.0
 
-[node name="Area2D3" parent="." instance=ExtResource("5_ulglk")]
+[node name="Scientist" parent="." instance=ExtResource("5_ulglk")]
 visibility_layer = 4
 position = Vector2(361, -26)
 
-[node name="Area2D" parent="." instance=ExtResource("2_43xhm")]
+[node name="Globe" parent="." instance=ExtResource("2_43xhm")]
 position = Vector2(13, -85)
 
-[node name="Player Front 2D" parent="." instance=ExtResource("1_clqmd")]
+[node name="Player" parent="." instance=ExtResource("1_clqmd")]
 position = Vector2(3, 1)
+collision_layer = 1
+collision_mask = 3
 collision_priority = 2.0
 
-[node name="Camera2D" type="Camera2D" parent="Player Front 2D"]
+[node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -36)
 zoom = Vector2(4, 4)
 
-[node name="StaticBody2D" parent="." instance=ExtResource("3_7pign")]
+[node name="Wall" parent="." instance=ExtResource("3_7pign")]
 position = Vector2(-458, -408)
 
-[node name="Area2D2" parent="." groups=["player"] instance=ExtResource("5_blg1p")]
+[node name="Teleporter" parent="." instance=ExtResource("5_blg1p")]
 position = Vector2(-357, -59)
+collision_mask = 1

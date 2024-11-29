@@ -1,8 +1,8 @@
 [gd_scene load_steps=19 format=3 uid="uid://benrneih6rhle"]
 
-[ext_resource type="Script" path="res://2D/Scenes/playerleft.gd" id="1_0w5p1"]
+[ext_resource type="Script" path="res://2D/Scenes/player.gd" id="1_0w5p1"]
 [ext_resource type="Texture2D" uid="uid://4hu6qohc83u3" path="res://Sprite/Player/Idle/LeftIdle/leftIdle.png" id="2_kdt31"]
-[ext_resource type="PackedScene" uid="uid://buyvoh746a27e" path="res://2D/Interaction 2D/Interaction area/area_2d.tscn" id="3_77trh"]
+[ext_resource type="PackedScene" uid="uid://2kuwvidbomwg" path="res://2D/Interaction 2D/Interaction/playerInteractor2d.tscn" id="3_pu22m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mcbev"]
 atlas = ExtResource("2_kdt31")
@@ -99,10 +99,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_01d6r"]
 size = Vector2(36, 59)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_io64x"]
-radius = 62.2013
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6mjl4"]
 
-[node name="Player Front 2D" type="CharacterBody2D" groups=["player"]]
+[node name="Player" type="CharacterBody2D"]
 collision_layer = 2
 script = ExtResource("1_0w5p1")
 
@@ -117,9 +116,12 @@ frame_progress = 0.107571
 position = Vector2(-1, -30)
 shape = SubResource("RectangleShape2D_01d6r")
 
-[node name="InteractionArea" parent="." instance=ExtResource("3_77trh")]
-action_name = "Teleport"
+[node name="PlayerInteractor2d" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_pu22m")]
+player = NodePath("..")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="InteractionArea"]
-position = Vector2(-2, -28)
-shape = SubResource("CircleShape2D_io64x")
+[node name="CollisionShape2D" parent="PlayerInteractor2d" index="0"]
+position = Vector2(-1, -30)
+scale = Vector2(2, 3.1)
+shape = SubResource("RectangleShape2D_6mjl4")
+
+[editable path="PlayerInteractor2d"]

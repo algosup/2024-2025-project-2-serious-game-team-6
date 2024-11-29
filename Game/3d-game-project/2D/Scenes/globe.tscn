@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://d2prtexbmmc0s"]
+[gd_scene load_steps=5 format=3 uid="uid://d2prtexbmmc0s"]
 
 [ext_resource type="Texture2D" uid="uid://cl42w8h173vv1" path="res://Sprite/controlPanel.png" id="1_p2lje"]
 
@@ -24,9 +24,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_l112k"]
-radius = 86.093
-
 [node name="Globe" type="StaticBody2D"]
 collision_layer = 0
 collision_mask = 0
@@ -35,7 +32,3 @@ collision_mask = 0
 sprite_frames = SubResource("SpriteFrames_uno81")
 autoplay = "default"
 frame_progress = 0.170942
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
-position = Vector2(-2, 8)
-shape = SubResource("CircleShape2D_l112k")

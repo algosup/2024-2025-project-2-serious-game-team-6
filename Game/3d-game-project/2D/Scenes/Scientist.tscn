@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://c650gdjpww7p6"]
+[gd_scene load_steps=16 format=3 uid="uid://c650gdjpww7p6"]
 
 [ext_resource type="Texture2D" uid="uid://bjyvla44axxyk" path="res://Sprite/ScientistFrontIdle.png" id="1_f00qo"]
 
@@ -101,9 +101,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0wk60"]
-size = Vector2(70, 63)
-
 [node name="Scientist" type="StaticBody2D"]
 collision_layer = 0
 collision_priority = 3.0
@@ -112,7 +109,3 @@ collision_priority = 3.0
 sprite_frames = SubResource("SpriteFrames_joo6n")
 autoplay = "default"
 frame_progress = 0.0204835
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
-position = Vector2(-12, 0.5)
-shape = SubResource("RectangleShape2D_0wk60")

@@ -1,6 +1,5 @@
-[gd_scene load_steps=6 format=3 uid="uid://c0hval3pok0d1"]
+[gd_scene load_steps=5 format=3 uid="uid://c0hval3pok0d1"]
 
-[ext_resource type="Script" path="res://2D/Interaction 2D/interaction_manager.gd" id="1_5lxhc"]
 [ext_resource type="Texture2D" uid="uid://b7qveexfld3ta" path="res://Sprite/hubCollisions.png" id="1_mddyj"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_g0rg8"]
@@ -15,19 +14,18 @@ b = Vector2(55, 417)
 a = Vector2(884, 282)
 b = Vector2(884, 413)
 
-[node name="StaticBody2D" type="StaticBody2D"]
-script = ExtResource("1_5lxhc")
+[node name="Walls" type="StaticBody2D"]
 
-[node name="HubCollisions" type="Sprite2D" parent="."]
+[node name="HUBWallSprite" type="Sprite2D" parent="."]
 position = Vector2(469, 298)
 texture = ExtResource("1_mddyj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Floor" type="CollisionShape2D" parent="."]
 position = Vector2(376, 285)
 shape = SubResource("SegmentShape2D_g0rg8")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+[node name="LeftWall" type="CollisionShape2D" parent="."]
 shape = SubResource("SegmentShape2D_0cmmd")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+[node name="RightWall" type="CollisionShape2D" parent="."]
 shape = SubResource("SegmentShape2D_wuk67")
