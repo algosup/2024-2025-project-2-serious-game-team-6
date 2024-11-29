@@ -70,6 +70,25 @@ func handle_case_4(interactor: Interactor) -> void:
 	var held_object = interactor.held_object
 	if held_object and held_object.category in accepted_categories:
 		print("Object placed in bin:", held_object.category)
-		#held_object.queue_free()  # Destroy the object after placement
+		
+		# Check if the held object has an Interactable node and remove it
+		if held_object.has_node("Interactable"):
+			var interactable_node = held_object.get_node("Interactable")
+			interactable_node.queue_free()
+			print("Interactable node removed from object:", held_object.name)
+
+		# Optionally release the object after placing it in the bin
+		interactor.release_held_object()
+		# Reparent the object
+		held_object.get_parent().remove_child(held_object)
+		add_child(held_object)
+		
+		# Adjust position for stacking
+		var z_offset = 0.1 * get_child_count()
+		held_object.axis_lock_linear_y = true
+		held_object.remove_highlight()
+		held_object.transform.origin = Vector3(0, 0, 0.01)
+		
 	else:
 		print("This object doesn't belong in this bin.")
+		# Add any logic needed for handling incorrect placement

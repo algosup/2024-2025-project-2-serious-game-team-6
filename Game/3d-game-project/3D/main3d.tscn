@@ -4,8 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://cjv0df8txk3mi" path="res://3D/Player/player.tscn" id="2_f353c"]
 [ext_resource type="PackedScene" uid="uid://554oaub4mgf2" path="res://3D/Object/object.tscn" id="3_77y3i"]
 [ext_resource type="PackedScene" uid="uid://dquahbivmmc6p" path="res://3D/Object/bin.tscn" id="4_mc4md"]
-[ext_resource type="Texture2D" uid="uid://bhqgh7yju784q" path="res://Sprite/Object/waste4.png" id="5_7dntq"]
+[ext_resource type="Texture2D" uid="uid://d03h8xspen8c" path="res://Sprite/Object/waste4.png" id="5_7dntq"]
 [ext_resource type="PackedScene" uid="uid://d1j52qixkvv0l" path="res://3D/Object/sheet.tscn" id="5_8hxas"]
+[ext_resource type="Texture2D" uid="uid://4wtl8o146ona" path="res://Sprite/Object/waste2.png" id="5_i6tb2"]
 [ext_resource type="PackedScene" uid="uid://duxis1tq710hb" path="res://3D/Maps/Teleporter.tscn" id="6_wxe6h"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_d4xk2"]
@@ -20,9 +21,6 @@ shading_mode = 0
 
 [sub_resource type="QuadMesh" id="QuadMesh_rmbbe"]
 material = SubResource("StandardMaterial3D_1hufy")
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nd4pc"]
-load_path = "res://.godot/imported/waste2.png-bbddffb91b41daed9251bac9dc7eb89a.s3tc.ctex"
 
 [sub_resource type="QuadMesh" id="QuadMesh_ascpj"]
 material = SubResource("StandardMaterial3D_1hufy")
@@ -94,7 +92,7 @@ sleeping = true
 lock_rotation = true
 
 [node name="Sprite3D" parent="PlasticBottleTrash" index="1"]
-transform = Transform3D(-8.74228e-08, 2, 0, -2, -8.74228e-08, 0, 0, 0, 2, 0, 0, 0)
+transform = Transform3D(-7.86805e-08, 1.8, 0, -1.8, -7.86805e-08, 0, 0, 0, 1.8, 0, 0, 0)
 texture_filter = 0
 texture = SubResource("CompressedTexture2D_586m3")
 
@@ -111,7 +109,7 @@ lock_rotation = true
 [node name="Sprite3D" parent="DirtyRagTrash" index="1"]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 texture_filter = 0
-texture = SubResource("CompressedTexture2D_nd4pc")
+texture = ExtResource("5_i6tb2")
 
 [node name="Highlight" parent="DirtyRagTrash" index="3"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.01, -0.01)
@@ -141,13 +139,16 @@ physics_material_override = SubResource("PhysicsMaterial_d4xk2")
 sleeping = true
 lock_rotation = true
 
+[node name="CollisionShape3D" parent="CardBoardTrash" index="0"]
+transform = Transform3D(0.5, 0, 0, 0, 0.7, 0, 0, 0, 0.5, 0, 0.2, 0)
+
 [node name="Sprite3D" parent="CardBoardTrash" index="1"]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.3, 0)
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.3, 0)
 texture_filter = 0
 texture = ExtResource("5_7dntq")
 
 [node name="Highlight" parent="CardBoardTrash" index="3"]
-transform = Transform3D(1.1, 0, 0, 0, 0.9, 0, 0, 0, 0.9, -0.01, 0.225, -0.01)
+transform = Transform3D(0.611, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.01, 0.225, -0.01)
 mesh = SubResource("QuadMesh_v68qq")
 
 [node name="BinOrganic" parent="." instance=ExtResource("4_mc4md")]
