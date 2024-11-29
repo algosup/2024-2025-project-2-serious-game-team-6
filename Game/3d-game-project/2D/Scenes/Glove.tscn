@@ -27,7 +27,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_l112k"]
 radius = 86.093
 
-[node name="Area2D" type="Area2D"]
+[node name="Globe" type="StaticBody2D"]
 collision_layer = 0
 collision_mask = 0
 

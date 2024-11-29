@@ -104,7 +104,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0wk60"]
 size = Vector2(70, 63)
 
-[node name="Area2D" type="Area2D"]
+[node name="Scientist" type="StaticBody2D"]
 collision_layer = 0
 collision_priority = 3.0
 

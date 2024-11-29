@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnrstd2o50cuu"]
+
+[ext_resource type="FontFile" uid="uid://oggae0vrq0a7" path="res://Sprite/TexteFont/superstar.ttf" id="1_oww73"]
+[ext_resource type="Script" path="res://2D/Interaction 2D/interaction_manager.gd" id="1_s1pov"]
+
+[node name="InteractionManager" type="Node2D"]
+script = ExtResource("1_s1pov")
+
+[node name="Label" type="Label" parent="."]
+z_index = 20
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -47.0
+offset_right = 47.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_oww73")
+text = "[F] to interact"
+horizontal_alignment = 1
+vertical_alignment = 1

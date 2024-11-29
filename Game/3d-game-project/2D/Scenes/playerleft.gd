@@ -29,5 +29,5 @@ func _physics_process(delta: float) -> void:
 	elif direction < 0:
 		animated_sprite.flip_h = false
 		
-
+	
 	move_and_slide()

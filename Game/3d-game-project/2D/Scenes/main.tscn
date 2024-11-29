@@ -31,5 +31,5 @@ zoom = Vector2(4, 4)
 [node name="StaticBody2D" parent="." instance=ExtResource("3_7pign")]
 position = Vector2(-458, -408)
 
-[node name="Area2D2" parent="." instance=ExtResource("5_blg1p")]
+[node name="Area2D2" parent="." groups=["player"] instance=ExtResource("5_blg1p")]
 position = Vector2(-357, -59)

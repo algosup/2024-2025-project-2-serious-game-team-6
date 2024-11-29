@@ -1,6 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://copa84ipa0wqt"]
+[gd_scene load_steps=9 format=3 uid="uid://copa84ipa0wqt"]
 
+[ext_resource type="Script" path="res://2D/Scenes/teleproter.gd" id="1_0s8g1"]
 [ext_resource type="Texture2D" uid="uid://btxjxgpkv08ck" path="res://Sprite/teleporter.png" id="1_kexpu"]
+[ext_resource type="PackedScene" uid="uid://buyvoh746a27e" path="res://2D/Interaction 2D/Interaction area/area_2d.tscn" id="3_gocvf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5hquo"]
 atlas = ExtResource("1_kexpu")
@@ -24,16 +26,33 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_61l4w"]
-size = Vector2(93, 128)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c3kso"]
+size = Vector2(21, 95)
 
-[node name="Area2D" type="Area2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fyww"]
+size = Vector2(18, 94)
+
+[node name="Teleporter" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_0s8g1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_irl26")
 autoplay = "default"
 frame_progress = 0.708212
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
-position = Vector2(-1.5, -1)
-shape = SubResource("RectangleShape2D_61l4w")
+[node name="InteractionArea" parent="." instance=ExtResource("3_gocvf")]
+action_name = "use"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(-0.5, 12.5)
+shape = SubResource("RectangleShape2D_c3kso")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 14)
+shape = SubResource("RectangleShape2D_8fyww")
+
+[connection signal="body_entered" from="InteractionArea" to="." method="_on_interaction_area_body_entered"]
+
+[editable path="InteractionArea"]
