@@ -77,7 +77,7 @@ In the team, two different types of computer are used:
 | ThinkBook 14 G4 | Windows 11 | 3 |
 | IdeaPad slim 1-14AST-05 | Linux Ubuntu | 1 |
 
-Thus, the game that we will create will work on Windows and MacOS operating systems only. 
+Thus, the game that we will create will work on Windows, MacOS and Linux operating systems only. 
 
 ## Programming language
 
