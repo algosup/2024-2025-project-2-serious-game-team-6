@@ -1,17 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://554oaub4mgf2"]
+[gd_scene load_steps=8 format=3 uid="uid://554oaub4mgf2"]
 
 [ext_resource type="Script" path="res://3D/Object/object.gd" id="1_3mj55"]
-[ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://3D/Interaction/interactable.tscn" id="1_yxfdl"]
+[ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://3D/Object/Interaction/interactable.tscn" id="1_yxfdl"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ofp4y"]
 rough = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ef7xh"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_g2nkk"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mje8r"]
-albedo_color = Color(1, 0, 1, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_58wu5"]
 
@@ -32,10 +27,7 @@ script = ExtResource("1_3mj55")
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.1, 0)
 shape = SubResource("BoxShape3D_ef7xh")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
-mesh = SubResource("BoxMesh_g2nkk")
-surface_material_override/0 = SubResource("StandardMaterial3D_mje8r")
+[node name="Sprite3D" type="Sprite3D" parent="."]
 
 [node name="Interactable" parent="." instance=ExtResource("1_yxfdl")]
 collision_mask = 0
@@ -45,7 +37,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 shape = SubResource("BoxShape3D_58wu5")
 
 [node name="Highlight" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, -0.01)
 visible = false
 mesh = SubResource("QuadMesh_b0cg1")
 

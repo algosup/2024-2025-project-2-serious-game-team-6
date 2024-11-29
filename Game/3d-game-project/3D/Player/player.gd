@@ -62,3 +62,10 @@ func handle_animation(input_dir: Vector3):
 	sprite.flip_h = input_dir.x > 0 # Flip the "LeftIdle" sprite to work on right direction
 	if !sprite.is_playing():
 		sprite.play()
+
+# Teleporter the player back in his spawn if he goes through the floor
+func _on_fall_zone_player_body_entered(body: Node3D) -> void:
+	global_position.x = 16.5
+	global_position.y = 3
+	global_position.z = 57
+	print("Player glitched")

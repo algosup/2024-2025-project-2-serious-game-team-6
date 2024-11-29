@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://ct13ums3h8jlc"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_hjv14"]
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+initial_velocity_min = 0.1
+initial_velocity_max = 0.5
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 0.1
+linear_accel_max = 0.5
+radial_accel_min = 0.1
+radial_accel_max = 0.5
+scale_max = 5.0
+turbulence_enabled = true
+
+[sub_resource type="Gradient" id="Gradient_5w72e"]
+offsets = PackedFloat32Array(0.443636, 0.650909)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_rmr7l"]
+gradient = SubResource("Gradient_5w72e")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ml70s"]
+transparency = 1
+blend_mode = 1
+vertex_color_use_as_albedo = true
+albedo_color = Color(0, 0.552941, 0.25098, 1)
+albedo_texture = SubResource("GradientTexture2D_rmr7l")
+
+[sub_resource type="QuadMesh" id="QuadMesh_1qodp"]
+material = SubResource("StandardMaterial3D_ml70s")
+size = Vector2(10, 0.1)
+
+[node name="Node3D" type="GPUParticles3D"]
+lifetime = 5.0
+randomness = 0.15
+visibility_aabb = AABB(-10, -10, -10, 20, 20, 20)
+local_coords = true
+process_material = SubResource("ParticleProcessMaterial_hjv14")
+draw_pass_1 = SubResource("QuadMesh_1qodp")

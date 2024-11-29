@@ -1,0 +1,71 @@
+[gd_scene load_steps=12 format=3 uid="uid://duxis1tq710hb"]
+
+[ext_resource type="Script" path="res://3D/Maps/teleporter.gd" id="1_4iltm"]
+[ext_resource type="Texture2D" uid="uid://btxjxgpkv08ck" path="res://Sprite/Map/teleporter.png" id="1_08tey"]
+[ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://3D/Object/Interaction/interactable.tscn" id="2_3iv5x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xh3ww"]
+atlas = ExtResource("1_08tey")
+region = Rect2(0, 0, 88, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5b6fu"]
+atlas = ExtResource("1_08tey")
+region = Rect2(88, 0, 88, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wvonu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xh3ww")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5b6fu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3wlpx"]
+
+[sub_resource type="Gradient" id="Gradient_w3vr6"]
+offsets = PackedFloat32Array(0.565217, 0.879599)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7v3me"]
+gradient = SubResource("Gradient_w3vr6")
+fill = 1
+fill_from = Vector2(0.471, 0.55)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x6hmq"]
+transparency = 1
+blend_mode = 1
+shading_mode = 0
+albedo_texture = SubResource("GradientTexture2D_7v3me")
+
+[sub_resource type="QuadMesh" id="QuadMesh_kdi8x"]
+material = SubResource("StandardMaterial3D_x6hmq")
+
+[node name="Teleporter" type="Node3D"]
+script = ExtResource("1_4iltm")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_wvonu")
+frame_progress = 0.130999
+
+[node name="Interactable" parent="." instance=ExtResource("2_3iv5x")]
+
+[node name="CollisionShape3D" parent="Interactable" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1.3, 0, 0, 0, 0.8, 0, 0, 0)
+shape = SubResource("BoxShape3D_3wlpx")
+
+[node name="HighLight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.3, 0, 0, 0, 1, 0, 0, -0.01)
+visible = false
+mesh = SubResource("QuadMesh_kdi8x")
+
+[connection signal="focused" from="Interactable" to="." method="_on_interactable_focused"]
+[connection signal="interacted" from="Interactable" to="." method="_on_interactable_interacted"]
+[connection signal="unfocused" from="Interactable" to="." method="_on_interactable_unfocused"]
+
+[editable path="Interactable"]
