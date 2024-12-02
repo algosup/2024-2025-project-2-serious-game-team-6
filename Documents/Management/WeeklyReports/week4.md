@@ -51,16 +51,10 @@ This week, our team made significant progress while adhering to the planned sche
 
 ## Team Mood  
 
-**Rating:** X/10  
+**Rating:** 6.14/10  
 
-<!-- TODO: Update this section after gathering feedback from the team -->
-*Awaiting input from the team.*  
+This week, the team felt overwhelmed due to insufficient project time, compounded by personal challenges. These factors caused delays in some tasks, but we are optimistic about catching up and making progress next week.
 
-## Conclusion  
+## Conclusion 
 
-This week was a pivotal one for the project, with key accomplishments such as animations, interactions, and the hub interface being completed as planned. Despite challenges like task balancing and tight deadlines, the team demonstrated exceptional resilience and commitment.  
-
-Looking ahead, the team is well-prepared to tackle the next phase of development. By focusing on level design, testing, and gameplay integration, we aim to sustain the project's strong momentum and deliver high-quality results.  
-
-<!-- TODO: Add final comments based on next week's progress and team feedback -->
-*To be updated in the next report.*  
+Despite the challenges faced this week, including time constraints and personal hurdles, the team demonstrated resilience and a strong commitment to the project. Key accomplishments, such as player movement animations, hub display, and technical deliverables, underscore our progress and dedication. With a clear plan for next week focusing on level design, testing, and gameplay integration, we are confident in our ability to maintain momentum and deliver high-quality results.
