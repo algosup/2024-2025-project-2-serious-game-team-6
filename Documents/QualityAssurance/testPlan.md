@@ -1,6 +1,7 @@
 <h1 align="center"> Forsaken Planet Test Plan </h1>
 
-<p align="center">
+<center>
+<p>
 
 | Created by | Creation date | Last modified |
 |:-------------:|:---------------:|:---------------:|
@@ -8,4 +9,16 @@
 
 </p>
 
+___
 
+<details>
+<summary>
+
+## Table Of Content ⤵️
+
+</summary>
+
+#### Hi
+
+</details>
+</center>
