@@ -131,7 +131,7 @@ The primary goal of testing our serious game is to ensure that the game effectiv
 
 ### 3-Test-Environment
 
-#### a . Hardware:
+#### a-Hardware:
 
 The following is a comprehensive list of the various types of hardware that will be utilized during the testing process.
 Each hardware plays a crucial role in ensuring the accuracy, reliability, and overall performance of the system under test.
@@ -142,13 +142,13 @@ Each hardware plays a crucial role in ensuring the accuracy, reliability, and ov
 | [ThinkBook 14 G4](https://www.lenovo.com/fr/fr/p/laptops/thinkbook/thinkbook-series/thinkbook-14-gen-4-14-inch-intel/len101b0012?orgRef=https%253A%252F%252Fwww.google.com%252F&srsltid=AfmBOopBOFr6V3tso5XgeaO93pHfZ6EcHRxYFLVsx8v8W9MFWoyUkbq0) | Windows 11 |
 | IdeaPad slim 1-14AST-05 | Linux Ubuntu |
 
-#### b . Software:
+#### b-Software:
 
 The software utilized for this project is the [Godot 4.3](https://godotengine.org/) Engine, a powerful and versatile open-source game development platform.
 It serves as the foundation for both the development and testing phases, providing robust tools for creating, executing, and evaluating the application.
 Godot’s built-in debugging, profiling, and cross-platform support make it an integral part of the testing process, enabling the accurate identification of issues and ensuring the application meets quality standards across multiple environments.
 
-#### c . Testing-tools:
+#### c-Testing-tools:
 
 The following testing tools within the Godot Engine will be utilized:
 
