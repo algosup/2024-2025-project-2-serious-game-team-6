@@ -1,8 +1,8 @@
 [gd_scene load_steps=18 format=3 uid="uid://ddmxnhk3wsyqu"]
 
-[ext_resource type="Texture2D" uid="uid://cryk6wooq3c3p" path="res://Sprite/scientistIcon.png" id="1_uh5rm"]
-[ext_resource type="Texture2D" uid="uid://yjllupk1t1vt" path="res://Sprite/dialogueCenter.png" id="2_lucrl"]
-[ext_resource type="Texture2D" uid="uid://gyl2phh2pshm" path="res://Sprite/dialogueSide.png" id="3_foy2u"]
+[ext_resource type="Texture2D" uid="uid://cryk6wooq3c3p" path="res://Sprite/Scientist/scientistIcon.png" id="1_uh5rm"]
+[ext_resource type="Texture2D" uid="uid://yjllupk1t1vt" path="res://Sprite/HUB/dialogueCenter.png" id="2_lucrl"]
+[ext_resource type="Texture2D" uid="uid://gyl2phh2pshm" path="res://Sprite/HUB/dialogueSide.png" id="3_foy2u"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_unygy"]
 atlas = ExtResource("1_uh5rm")

@@ -6,7 +6,7 @@ func _on_interactable_2d_focused(interactor: Interactor2D) -> void:
 
 
 func _on_interactable_2d_interacted(interactor: Interactor2D) -> void:
-	print("test")
+	Dialogic.start("Globe")
 
 
 func _on_interactable_2d_unfocused(interactor: Interactor2D) -> void:

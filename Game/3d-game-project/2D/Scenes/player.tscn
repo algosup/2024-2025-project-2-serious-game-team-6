@@ -1,7 +1,7 @@
 [gd_scene load_steps=28 format=3 uid="uid://benrneih6rhle"]
 
 [ext_resource type="Script" path="res://2D/Scenes/player.gd" id="1_0w5p1"]
-[ext_resource type="Texture2D" uid="uid://1b4tv7xuf18v" path="res://Sprite/Left-jumping-Sheet.png" id="2_3sgu4"]
+[ext_resource type="Texture2D" uid="uid://1b4tv7xuf18v" path="res://Sprite/Player/Idle/Left-jumping-Sheet.png" id="2_3sgu4"]
 [ext_resource type="Texture2D" uid="uid://4hu6qohc83u3" path="res://Sprite/Player/Idle/LeftIdle/leftIdle.png" id="2_kdt31"]
 [ext_resource type="PackedScene" uid="uid://2kuwvidbomwg" path="res://2D/Interaction 2D/Interaction/playerInteractor2d.tscn" id="3_pu22m"]
 
