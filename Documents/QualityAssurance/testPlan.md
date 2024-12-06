@@ -206,8 +206,6 @@ The **test plan** is the document that the reader is currently reviewing. It out
 
 ## VI-Glossary-of-Terms
 
-## VI-Glossary-of-Terms
-
 | Term | Definition | More Information |
 |------|------------|------------------|
 | **Godot** | An open-source game engine used for developing 2D and 3D games. | [Godot Engine](https://godotengine.org/) |
