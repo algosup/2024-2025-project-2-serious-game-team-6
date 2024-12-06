@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://dtq6mxwmbsnu3"]
+[gd_scene load_steps=8 format=3 uid="uid://dtq6mxwmbsnu3"]
 
 [ext_resource type="PackedScene" uid="uid://benrneih6rhle" path="res://2D/Scenes/player.tscn" id="1_clqmd"]
 [ext_resource type="PackedScene" uid="uid://cjgid6kycyiub" path="res://2D/Scenes/background.tscn" id="1_yq4tx"]
 [ext_resource type="PackedScene" uid="uid://d2prtexbmmc0s" path="res://2D/Scenes/globe.tscn" id="2_43xhm"]
-[ext_resource type="PackedScene" uid="uid://c0hval3pok0d1" path="res://2D/Scenes/wall.tscn" id="3_7pign"]
+[ext_resource type="PackedScene" uid="uid://c0hval3pok0d1" path="res://2D/Scenes/Wall.tscn" id="3_7pign"]
 [ext_resource type="PackedScene" uid="uid://copa84ipa0wqt" path="res://2D/Scenes/teleporter2d.tscn" id="5_blg1p"]
-[ext_resource type="PackedScene" uid="uid://c650gdjpww7p6" path="res://2D/Scenes/scientist.tscn" id="5_ulglk"]
+[ext_resource type="PackedScene" uid="uid://c650gdjpww7p6" path="res://2D/Scenes/Scientist.tscn" id="5_ulglk"]
+[ext_resource type="PackedScene" uid="uid://ddmxnhk3wsyqu" path="res://2D/Scenes/Dialogue.tscn" id="7_p643y"]
 
 [node name="Main" type="Node2D"]
 
@@ -29,6 +30,9 @@ collision_priority = 2.0
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -36)
 zoom = Vector2(4, 4)
+
+[node name="Dialogue" parent="Player/Camera2D" instance=ExtResource("7_p643y")]
+position = Vector2(-72, 73)
 
 [node name="Wall" parent="." instance=ExtResource("3_7pign")]
 position = Vector2(-458, -408)

@@ -26,8 +26,23 @@ func _on_area_exited(area: Interactable2D) -> void:
 # Handle interaction inputs
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("interact"):
-		if cached_closest.get_parent() is Teleporter2D:
-			interact_with_teleporter(cached_closest.get_parent())
+		if cached_closest:
+			
+			if cached_closest.get_parent() is Teleporter2D:
+				interact_with_teleporter(cached_closest.get_parent())
+			if cached_closest.get_parent() is Scientist:
+				interact_with_scientist((cached_closest.get_parent()))
+			if cached_closest.get_parent() is Globe:
+				interact_with_globe((cached_closest.get_parent()))
+			
+
+func interact_with_globe(globe: Globe) -> void:
+	globe._on_interactable_2d_interacted(self)
+
+
+func interact_with_scientist(scientist: Scientist) -> void:
+	scientist._on_interactable_2d_interacted(self)
+
 
 func interact_with_teleporter(teleporter: Teleporter2D) -> void:
 	teleporter._on_interactable_2d_interacted(self)
