@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://on2iqjp62avo" path="res://Sprite/hubBackground.png" id="1_e4mxd"]
 
-[node name="StaticBody2D" type="StaticBody2D"]
+[node name="Background" type="StaticBody2D"]
 
 [node name="HubBackground" type="Sprite2D" parent="."]
 position = Vector2(525, 294)
