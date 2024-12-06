@@ -19,13 +19,13 @@ ___
 
 </summary>
 
-- [Table of Content](#Table-Of-Content)
-- [I . Introduction](#I.Introduction)
-    - [1 . Purpose of the Test Plan](#1.Purpose-of-the-Test-Plan)
-    - [2 . Scope of Testing](#2.Scope-of-Testing)
-        - [a . In Scope](#a.In-Scope)
-        - [b . Out of Scope](#b.Out-of-Scope)
-        - [c . Goal of Testing](#c.Goal-of-Testing)
+- [Table of Content](#table-of-content)
+- [I . Introduction](#introduction)
+    - [1 . Purpose of the Test Plan](#purpose-of-the-test-plan)
+    - [2 . Scope of Testing](#scope-of-testing)
+        - [a . In Scope](#in-scope)
+        - [b . Out of Scope](#out-of-scope)
+        - [c . Goal of Testing](#goal-of-testing)
 
 </details>
 
