@@ -80,7 +80,7 @@ By serving as a **comprehensive guide**, it provides **clear instructions** for 
 
 ### 2-Product-Overview
 
-The project is a **serious game about ecology** developed using the **Godot Engine**, designed to educate and engage users on critical environmental topics.
+The project is a **serious game about climate change** developed using the **Godot Engine**, designed to educate and engage users on critical environmental topics.
 
 The game incorporates **dynamic ecosystem simulations**, **mission-based gameplay**, and **educational content** to raise awareness about issues such as **climate change**, **pollution**, and **sustainable living**.
 
@@ -127,7 +127,7 @@ The scope of testing for **Forsaken Planet** primarily focuses on ensuring the *
 Certain areas of testing will be **excluded** or minimized due to constraints such as time and resources. **Compatibility testing** will focus exclusively on the **target platform(s)**, such as **PC** or **mobile**, without extending to other devices or operating systems. **Localization testing** will be limited, with only **one language** supported unless additional translations are deemed essential. **Advanced performance optimization**, such as fine-tuning **frame rates** to perfection, will be deferred, with the priority placed on ensuring **basic playability**. Additionally, the scope excludes testing of **non-core features**, such as minor gameplay variations or additional content not critical to the main experience.
 
 #### c-Goal-of-Testing:
-The primary goal of testing our serious game is to ensure that the game effectively **educates players about ecology** while providing an **engaging and enjoyable experience**. This involves **verifying the educational validity and clarity of ecological concepts**, assessing the overall **user experience for intuitiveness and enjoyment**, evaluating the game's ability to **engage and motivate players**, testing for **technical issues such as bugs and performance lags**, ensuring **accessibility for all players**, measuring the **effectiveness of learning outcomes**, and collecting **feedback to identify areas for improvement**. By achieving these objectives, the testing process will confirm that **"Forsaken Planet"** is both a fun, engaging game and an effective educational tool for beginners interested in ecology.
+The primary goal of testing our serious game is to ensure that the game effectively **educates players about climate change** while providing an **engaging and enjoyable experience**. This involves **verifying the educational validity and clarity of ecological concepts**, assessing the overall **user experience for intuitiveness and enjoyment**, evaluating the game's ability to **engage and motivate players**, testing for **technical issues such as bugs and performance lags**, ensuring **accessibility for all players**, measuring the **effectiveness of learning outcomes**, and collecting **feedback to identify areas for improvement**. By achieving these objectives, the testing process will confirm that **"Forsaken Planet"** is both a fun, engaging game and an effective educational tool for beginners interested in climate change.
 
 ### 3-Test-Environment
 
@@ -138,13 +138,13 @@ Each hardware plays a crucial role in ensuring the accuracy, reliability, and ov
 
 | Computer | OS |
 | -- | -- |
-| [MacBook Air M3](https://www.apple.com/fr/shop/buy-mac/macbook-air/13-pouces-minuit-puce-apple-m3-avec-cpu-8-c%C5%93urs-et-gpu-10-c%C5%93urs-24-go-de-m%C3%A9moire-512go?cid=aos-fr-seo-pla-mac-mac) | MacOS |
+| [MacBook Air M3](https://www.apple.com/fr/shop/buy-mac/macbook-air/13-pouces-minuit-puce-apple-m3-avec-cpu-8-c%C5%93urs-et-gpu-10-c%C5%93urs-24-go-de-m%C3%A9moire-512go?cid=aos-fr-seo-pla-mac-mac) | MacOS Sequoia |
 | [ThinkBook 14 G4](https://www.lenovo.com/fr/fr/p/laptops/thinkbook/thinkbook-series/thinkbook-14-gen-4-14-inch-intel/len101b0012?orgRef=https%253A%252F%252Fwww.google.com%252F&srsltid=AfmBOopBOFr6V3tso5XgeaO93pHfZ6EcHRxYFLVsx8v8W9MFWoyUkbq0) | Windows 11 |
 | IdeaPad slim 1-14AST-05 | Linux Ubuntu |
 
 #### b . Software:
 
-The software utilized for this project is the [Godot](https://godotengine.org/) Engine, a powerful and versatile open-source game development platform.
+The software utilized for this project is the [Godot 4.3](https://godotengine.org/) Engine, a powerful and versatile open-source game development platform.
 It serves as the foundation for both the development and testing phases, providing robust tools for creating, executing, and evaluating the application.
 Godot’s built-in debugging, profiling, and cross-platform support make it an integral part of the testing process, enabling the accurate identification of issues and ensuring the application meets quality standards across multiple environments.
 
@@ -205,7 +205,6 @@ The **test plan** is the document that the reader is currently reviewing. It out
 
 | Term | Definition | More Information |
 |------|------------|------------------|
-| **Godot** | An open-source game engine used for developing 2D and 3D games. | [Godot Engine](https://godotengine.org/) |
+| **Godot 4.3** | An open-source game engine used for developing 2D and 3D games. | [Godot Engine](https://godotengine.org/) |
 | **Software** | The programs and other operating information used by a computer. | [Tech Target](https://www.techtarget.com/searchapparchitecture/definition/software#:~:text=Software%20is%20a%20set%20of,that%20run%20on%20a%20device.)|
 | **Hardware** | The physical and electronic parts of a computer, rather than the instructions it follows | [Cambridge Dictionary - Hardware](https://dictionary.cambridge.org/dictionary/english/hardware) |
-| **Quality Assurance** | The maintenance of a desired level of quality in a service or product, especially by means of attention to every stage of the process of delivery or production. | [Cambridge Dictionary - Quality Assurance](https://dictionary.cambridge.org/dictionary/english/quality-assurance) |
