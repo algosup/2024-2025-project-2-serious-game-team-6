@@ -15,13 +15,13 @@ ___
 ## Test-Plan-Approval
 | Role | Name | Signature | Date |
 |------|------|-----------|------|
-| Project Manager      | [Mathias GAGNEPAIN](https://github.com/MistzSoftware) | ⬛ |12/06/2024|
-| Program Manager      | [Enzo GUILLOUCHE](https://github.com/EnzoGuillouche)  | ⬛ |12/06/2024|
-| Technical Lead       | [Evan UHRING](https://github.com/Evan-UHRING)         | ⬛ |12/06/2024|
-| Software Developer 1 | [Michel RIFF](https://github.com/MichelRiff)          | ⬛ |12/06/2024|
-| Software Developer 2 | [Loïc NOGUES](https://github.com/Loic-nogues)         | ⬛ |12/06/2024|
-| Technical Writer     | [Axel DAVID](https://github.com/Fus1onAxel)	       | ⬛ |12/06/2024|
-| Quality Assurance    | [Tino GABET](https://github.com/Furimizu)             | ⬛ |12/06/2024|
+| Project Manager      | [Mathias GAGNEPAIN](https://github.com/MistzSoftware) | ✅ |12/06/2024|
+| Program Manager      | [Enzo GUILLOUCHE](https://github.com/EnzoGuillouche)  | ✅ |12/06/2024|
+| Technical Lead       | [Evan UHRING](https://github.com/Evan-UHRING)         | ✅ |12/06/2024|
+| Software Developer 1 | [Michel RIFF](https://github.com/MichelRiff)          | ✅ |12/06/2024|
+| Software Developer 2 | [Loïc NOGUES](https://github.com/Loic-nogues)         | ✅ |12/06/2024|
+| Technical Writer     | [Axel DAVID](https://github.com/Fus1onAxel)	       | ✅ |12/06/2024|
+| Quality Assurance    | [Tino GABET](https://github.com/Furimizu)             | ✅ |12/06/2024|
 
 <details>
 <summary>
