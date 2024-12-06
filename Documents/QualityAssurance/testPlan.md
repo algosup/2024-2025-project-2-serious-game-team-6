@@ -15,13 +15,13 @@ ___
 ## Test-Plan-Approval
 | Role | Name | Signature | Date |
 |------|------|-----------|------|
-| Project Manager      | Mathias GAGNEPAIN | ⬛ |12/06/2024|
-| Program Manager      | Enzo GUILLOUCHE   | ⬛ |12/06/2024|
-| Technical Lead       | Evan UHRING       | ⬛ |12/06/2024|
-| Software Developer 1 | Michel RIFF       | ⬛ |12/06/2024|
-| Software Developer 2 | Loïc NOGUES       | ⬛ |12/06/2024|
-| Technical Writer     | Axel DAVID	       | ⬛ |12/06/2024|
-| Quality Assurance    | Tino GABET        | ⬛ |12/06/2024|
+| Project Manager      | [Mathias GAGNEPAIN](https://github.com/MistzSoftware) | ⬛ |12/06/2024|
+| Program Manager      | [Enzo GUILLOUCHE](https://github.com/EnzoGuillouche)  | ⬛ |12/06/2024|
+| Technical Lead       | [Evan UHRING](https://github.com/Evan-UHRING)         | ⬛ |12/06/2024|
+| Software Developer 1 | [Michel RIFF](https://github.com/MichelRiff)          | ⬛ |12/06/2024|
+| Software Developer 2 | [Loïc NOGUES](https://github.com/Loic-nogues)         | ⬛ |12/06/2024|
+| Technical Writer     | [Axel DAVID](https://github.com/Fus1onAxel)	       | ⬛ |12/06/2024|
+| Quality Assurance    | [Tino GABET](https://github.com/Furimizu)             | ⬛ |12/06/2024|
 
 <details>
 <summary>
@@ -43,7 +43,7 @@ ___
         - [a . In Scope](#a-in-scope)
         - [b . Out of Scope](#b-out-of-scope)
         - [c . Goal of Testing](#c-goal-of-testing)
-    - [3 . Test Setup](#3-test-setup)
+    - [3 . Test Environment](#3-test-environment)
 
 </details>
 
@@ -90,11 +90,21 @@ Certain areas of testing will be **excluded** or minimized due to constraints su
 #### c-Goal-of-Testing:
 The primary goal of testing our serious game is to ensure that the game effectively **educates players about ecology** while providing an **engaging and enjoyable experience**. This involves **verifying the educational validity and clarity of ecological concepts**, assessing the overall **user experience for intuitiveness and enjoyment**, evaluating the game's ability to **engage and motivate players**, testing for **technical issues such as bugs and performance lags**, ensuring **accessibility for all players**, measuring the **effectiveness of learning outcomes**, and collecting **feedback to identify areas for improvement**. By achieving these objectives, the testing process will confirm that **"Forsaken Planet"** is both a fun, engaging game and an effective educational tool for beginners interested in ecology.
 
-### 3-Test-Setup
-These are the differents types of hardware that will be used for testing.
+### 3-Test-Environment
+
+#### a . Hardware:
+
+The following is a comprehensive list of the various types of hardware that will be utilized during the testing process.
+Each hardware plays a crucial role in ensuring the accuracy, reliability, and overall performance of the system under test.
 
 | Computer | OS |
 | -- | -- |
-| MacBook Air M3 | MacOS |
-| ThinkBook 14 G4 | Windows 11 |
+| [MacBook Air M3](https://www.apple.com/fr/shop/buy-mac/macbook-air/13-pouces-minuit-puce-apple-m3-avec-cpu-8-c%C5%93urs-et-gpu-10-c%C5%93urs-24-go-de-m%C3%A9moire-512go?cid=aos-fr-seo-pla-mac-mac) | MacOS |
+| [ThinkBook 14 G4](https://www.lenovo.com/fr/fr/p/laptops/thinkbook/thinkbook-series/thinkbook-14-gen-4-14-inch-intel/len101b0012?orgRef=https%253A%252F%252Fwww.google.com%252F&srsltid=AfmBOopBOFr6V3tso5XgeaO93pHfZ6EcHRxYFLVsx8v8W9MFWoyUkbq0) | Windows 11 |
 | IdeaPad slim 1-14AST-05 | Linux Ubuntu |
+
+#### b . Software:
+
+The software utilized for this project is the [Godot](https://godotengine.org/) Engine, a powerful and versatile open-source game development platform.
+It serves as the foundation for both the development and testing phases, providing robust tools for creating, executing, and evaluating the application.
+Godot’s built-in debugging, profiling, and cross-platform support make it an integral part of the testing process, enabling the accurate identification of issues and ensuring the application meets quality standards across multiple environments.
