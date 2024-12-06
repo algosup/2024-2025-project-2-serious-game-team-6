@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjgid6kycyiub"]
+
+[ext_resource type="Texture2D" uid="uid://on2iqjp62avo" path="res://Sprite/hubBackground.png" id="1_e4mxd"]
+
+[node name="Background" type="StaticBody2D"]
+
+[node name="HubBackground" type="Sprite2D" parent="."]
+position = Vector2(525, 294)
+texture = ExtResource("1_e4mxd")
