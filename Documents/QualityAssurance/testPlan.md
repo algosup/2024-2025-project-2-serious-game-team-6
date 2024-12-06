@@ -206,6 +206,11 @@ The **test plan** is the document that the reader is currently reviewing. It out
 
 ## VI-Glossary-of-Terms
 
-| Term | Definition | More Information|
-|------|------------|-----------------|
-| **Godot**|An open-source game engine used for developing 2D and 3D games.| [Godot Engine](https://godotengine.org/)|
+## VI-Glossary-of-Terms
+
+| Term | Definition | More Information |
+|------|------------|------------------|
+| **Godot** | An open-source game engine used for developing 2D and 3D games. | [Godot Engine](https://godotengine.org/) |
+| **Software** | The programs and other operating information used by a computer. | [Tech Target](https://www.techtarget.com/searchapparchitecture/definition/software#:~:text=Software%20is%20a%20set%20of,that%20run%20on%20a%20device.)|
+| **Hardware** | The physical and electronic parts of a computer, rather than the instructions it follows | [Cambridge Dictionary - Hardware](https://dictionary.cambridge.org/dictionary/english/hardware) |
+| **Quality Assurance** | The maintenance of a desired level of quality in a service or product, especially by means of attention to every stage of the process of delivery or production. | [Cambridge Dictionary - Quality Assurance](https://dictionary.cambridge.org/dictionary/english/quality-assurance) |
