@@ -73,13 +73,10 @@ ___
 
 The primary aim of this test plan is to define a structured and systematic approach to testing for our serious game **Forsaken Planet**.  
   
-It outlines the **testing objectives**, **scope**, and **methodology** to ensure that all features and functionalities are 
-**thoroughly verified** against the specified requirements. This document plays a key role in identifying **potential risks**, 
-resolving **defects**, and validating the software’s **readiness for deployment**.
+It outlines the **testing objectives**, **scope**, and **methodology** to ensure that all features and functionalities are **thoroughly verified** against the specified requirements. This document plays a key role in identifying **potential risks**, resolving **defects**, and validating the software’s **readiness for deployment**.
 
 Additionally, the test plan supports the broader project goal of delivering a **high-quality**, **secure**, and **user-friendly product**. 
-By serving as a **comprehensive guide**, it provides **clear instructions** for the QA team and acts as a **reference** for project managers 
-and stakeholders involved in the testing process.
+By serving as a **comprehensive guide**, it provides **clear instructions** for the QA team and acts as a **reference** for project managers and stakeholders involved in the testing process.
 
 ### 2-Product-Overview
 
@@ -115,7 +112,7 @@ This document is primarily intended for:
 #### a-Playtesting:
 **Playtesting** is a crucial aspect of game development that focuses on evaluating the game from the player's perspective. The primary goals of playtesting include **assessing user experience** to ensure the game is intuitive, enjoyable, and engaging for players. This involves observing how players interact with the game, **identifying any usability issues**, and gathering feedback on the overall gameplay experience. Playtesting also evaluates **game balance** to ensure the difficulty level is appropriate and the game mechanics are fair and balanced, creating a challenging yet rewarding experience. Additionally, playtesting helps in identifying any **technical problems**, such as bugs, crashes, or performance lags, that may affect the player's experience. It is typically conducted with a **diverse group of players** to ensure that the game appeals to its target audience and meets their expectations.
 
-#### b-Functionnal-Testing:
+#### b-Functional-Testing:
 **Functional Testing** is a systematic approach to verifying that the game's features and functionalities work as intended. The primary goals of functional testing include **verifying requirements** to ensure that all specified requirements and features are implemented correctly and function as expected. It involves identifying **defects or issues** in the game's functionality, such as broken features, incorrect behavior, or inconsistencies. Additionally, it validates **performance** by assessing the game's performance, including load times, frame rates, and overall stability, to ensure a smooth and uninterrupted gaming experience. Functional testing is typically conducted by **quality assurance (QA) teams** who follow a structured testing process, including creating test cases, executing tests, and documenting results.
 
 #### c-Unit-Testing:
