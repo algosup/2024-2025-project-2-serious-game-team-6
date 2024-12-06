@@ -63,6 +63,7 @@ ___
 - [V . Test Deliverables](#v-test-deliverables)
     - [1 . Test Plan](#1-test-plan)
     - [2 . Test Cases and Test Reports](#2-test-cases-and-test-reports)
+- [VI . Glossary of Terms](#vi-glossary-of-terms)
 
 </details>
 
