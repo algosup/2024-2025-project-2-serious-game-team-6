@@ -170,8 +170,9 @@ script = ExtResource("1_0w5p1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -32)
 sprite_frames = SubResource("SpriteFrames_bglo3")
-animation = &"Jump"
+animation = &"new_animation"
 autoplay = "new_animation"
+frame_progress = 0.974932
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -30)
@@ -184,5 +185,7 @@ player = NodePath("..")
 position = Vector2(-1, -30)
 scale = Vector2(2, 3.1)
 shape = SubResource("RectangleShape2D_6mjl4")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
 
 [editable path="PlayerInteractor2d"]

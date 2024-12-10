@@ -31,6 +31,7 @@ collision_priority = 2.0
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -36)
 zoom = Vector2(4, 4)
+limit_bottom = 25
 
 [node name="Dialogue" parent="Player/Camera2D" instance=ExtResource("7_p643y")]
 visible = false

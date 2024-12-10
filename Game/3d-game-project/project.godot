@@ -28,6 +28,7 @@ directories/dch_directory={
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
+"Enter_forest": "res://Enter_forest.dtl",
 "Globe": "res://2D/Scenes/Globe.dtl",
 "Scientist_Hub": "res://Dialogue/Scientist_Hub.dtl"
 }
@@ -35,7 +36,7 @@ layout/style_list=["res://Dialogue/TEST.tres"]
 layout/default_style="res://Dialogue/TEST.tres"
 glossary/default_case_sensitive=true
 extensions_folder="res://addons/dialogic_additions"
-text/letter_speed=0.01
+text/letter_speed=0.001
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
 text/advance_delay=0.1
@@ -46,7 +47,7 @@ animations/join_default_length=0.5
 animations/join_default_wait=true
 animations/leave_default_length=0.5
 animations/leave_default_wait=true
-animations/cross_fade_default_length=0.5
+animations/cross_fade_default_length=0.0
 choices/autofocus_first=true
 choices/delay=0.2
 choices/reveal_delay=0
@@ -55,6 +56,12 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
 variables={}
+animations/join_default="Instant In"
+animations/leave_default="Instant Out"
+portraits/default_portrait=""
+animations/cross_fade_default="Fade Cross"
+text/input_action="interact"
+text/autocolor_names=false
 
 [display]
 

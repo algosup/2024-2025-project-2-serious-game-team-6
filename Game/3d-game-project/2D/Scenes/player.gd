@@ -1,7 +1,6 @@
 extends CharacterBody2D
 
 
-
 const SPEED = 300.0
 const JUMP_VELOCITY = -250
 
@@ -36,4 +35,13 @@ func _physics_process(delta: float) -> void:
 		animated_sprite.flip_h = false
 		
 	
+		
+		
+		
+		
+	
 	move_and_slide()
+
+
+func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	pass # Replace with function body.

@@ -8,21 +8,58 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "New portrait",
+"default_portrait": "Normal",
 "description": "",
 "display_name": "Scientist",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 30),
 "portraits": {
-"New portrait": {
+"Disapointed": {
 "export_overrides": {
-"image": "\"res://Sprite/Scientist/Screenshot 2024-12-06 155943.png\""
+"image": "\"res://Sprite/Scientist/scientistdisappointed.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
+"scene": ""
+},
+"Happy": {
+"export_overrides": {
+"image": "\"res://Sprite/Scientist/scientisthappy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Normal": {
+"export_overrides": {
+"image": "\"res://Sprite/Scientist/scientistneutral.png\""
+},
+"ignore_char_scale": true,
+"mirror": false,
+"offset": Vector2(-1, 0),
+"scale": 1.0,
 "scene": "res://addons/dialogic/Modules/Character/default_portrait.tscn"
+},
+"Reading": {
+"export_overrides": {
+"image": "\"res://Sprite/Scientist/scientistreading.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"Serious": {
+"export_overrides": {
+"image": "\"res://Sprite/Scientist/scientistserious.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
 }
 },
 "scale": 1.0

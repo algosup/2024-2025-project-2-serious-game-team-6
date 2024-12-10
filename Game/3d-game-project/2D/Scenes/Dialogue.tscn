@@ -110,7 +110,7 @@ position = Vector2(-7, 3)
 position = Vector2(139, 10)
 sprite_frames = SubResource("SpriteFrames_ak7eu")
 animation = &"Scientistcon"
-frame_progress = 0.120525
+frame_progress = 0.341409
 
 [node name="DialogueCenter" type="Sprite2D" parent="."]
 position = Vector2(74, 11)

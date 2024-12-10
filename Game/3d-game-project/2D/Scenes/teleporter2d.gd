@@ -7,6 +7,7 @@ func _on_interactable_2d_focused(interactor: Interactor2D) -> void:
 
 func _on_interactable_2d_interacted(interactor: Interactor2D) -> void:
 	get_tree().change_scene_to_file("res://3D/main3d.tscn")
+	Dialogic.start("Enter_forest")
 
 
 func _on_interactable_2d_unfocused(interactor: Interactor2D) -> void:
