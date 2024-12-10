@@ -42,7 +42,7 @@ Quick Access:
   - [Weekly Report - Week 7](#weekly-report---week-7)
 
 ## Weekly Report - Week 1
-[Acces to the weekly report 1 here](week1.md)
+[Dedicated File](week1.md)
 
 ### Overview
 
@@ -89,7 +89,7 @@ The team was a bit disappointed to not have any project hours this week forcing 
 The project has had a promising start with strong team spirit and effective communication. This foundation enhances our confidence in meeting project deadlines and delivering quality results to the client.
 
 ## Weekly Report - Week 2
-[Detailed File](week2.md)
+[Dedicated File](week2.md)
 
 ### Overview
 
@@ -147,7 +147,7 @@ This week marked significant progress in refining the project scope and laying t
 
 
 ## Weekly Report - Week 3
-[Detailed File](week3.md)
+[Dedicated File](week3.md)
 
 ### Overview
 
@@ -224,7 +224,7 @@ Despite challenges such as adapting to a new task management platform and mainta
 
 
 ## Weekly Report - Week 4
-[Detailed File](week4.md)
+[Dedicated File](week4.md)
 
 ### Overview  
 
@@ -287,7 +287,7 @@ Despite the challenges faced this week, including time constraints and personal 
 
 
 ## Weekly Report - Week 5
-[Detailed File](week5.md)
+[Dedicated File](week5.md)
 
 ### Overview  
 
@@ -344,7 +344,7 @@ Week 5 was a pivotal week for the project, marked by both **notable progress** a
 
 
 ## Weekly Report - Week 6
-[Detailed File](week6.md)
+[Dedicated File](week6.md)
 
 ## Weekly Report - Week 7
-[Detailed File](week7.md)
+[Dedicated File](week7.md)
