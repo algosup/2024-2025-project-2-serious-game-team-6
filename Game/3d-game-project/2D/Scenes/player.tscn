@@ -187,5 +187,6 @@ scale = Vector2(2, 3.1)
 shape = SubResource("RectangleShape2D_6mjl4")
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="input_event" from="PlayerInteractor2d" to="." method="_on_player_interactor_2d_input_event"]
 
 [editable path="PlayerInteractor2d"]

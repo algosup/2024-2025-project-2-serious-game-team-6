@@ -28,7 +28,8 @@ directories/dch_directory={
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
-"Enter_forest": "res://Enter_forest.dtl",
+"Dialogue/Globe": "res://Dialogue/Globe.dtl",
+"Enter_forest": "res://Dialogue/Enter_forest.dtl",
 "Globe": "res://2D/Scenes/Globe.dtl",
 "Scientist_Hub": "res://Dialogue/Scientist_Hub.dtl"
 }
@@ -36,7 +37,7 @@ layout/style_list=["res://Dialogue/TEST.tres"]
 layout/default_style="res://Dialogue/TEST.tres"
 glossary/default_case_sensitive=true
 extensions_folder="res://addons/dialogic_additions"
-text/letter_speed=0.001
+text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
 text/advance_delay=0.1
@@ -62,6 +63,7 @@ portraits/default_portrait=""
 animations/cross_fade_default="Fade Cross"
 text/input_action="interact"
 text/autocolor_names=false
+timer/process_in_physics=false
 
 [display]
 
