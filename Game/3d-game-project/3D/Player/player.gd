@@ -3,6 +3,8 @@ extends CharacterBody3D
 const CLIMB_HEIGHT = 1.0  # Height of a single block
 const MOVE_SPEED = 15.0  # Movement speed
 
+var movement_disabled: bool = false  # Flag to disable movement
+
 # Sprite import and settup
 var sprite: AnimatedSprite3D
 var last_direction: String = "FrontIdle"
@@ -15,6 +17,9 @@ func _ready():
 	DebugMenu.style = DebugMenu.Style.VISIBLE_DETAILED
 
 func _physics_process(delta): # control
+	if movement_disabled:
+		return  # Skip processing if movement is disabled
+
 	var input_dir = Vector3.ZERO
 	if Input.is_action_pressed("move_forward"):
 		input_dir.z -= 1
@@ -69,3 +74,9 @@ func _on_fall_zone_player_body_entered(body: Node3D) -> void:
 	global_position.y = 3
 	global_position.z = 57
 	print("Player glitched")
+
+func disable_movement() -> void:
+	movement_disabled = true
+
+func enable_movement() -> void:
+	movement_disabled = false

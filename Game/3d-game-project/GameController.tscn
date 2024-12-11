@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dev8p0hbh4n8b"]
+
+[ext_resource type="Script" path="res://gamecontroller.gd" id="1_xa41e"]
+[ext_resource type="PackedScene" uid="uid://dtq6mxwmbsnu3" path="res://2D/Scenes/main.tscn" id="2_2jbtu"]
+
+[node name="GameController" type="Node"]
+script = ExtResource("1_xa41e")
+
+[node name="HUB" parent="." instance=ExtResource("2_2jbtu")]
+
+[editable path="HUB"]
