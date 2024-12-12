@@ -1,29 +1,41 @@
-[gd_scene load_steps=16 format=3 uid="uid://btsnua661cpjb"]
+[gd_scene load_steps=29 format=3 uid="uid://btsnua661cpjb"]
 
-[ext_resource type="PackedScene" uid="uid://d2touj7sh6lww" path="res://3D/Map/map1.tscn" id="1_egyof"]
+[ext_resource type="Script" path="res://3D/main3d.gd" id="1_2tsxk"]
+[ext_resource type="PackedScene" uid="uid://bvpj6gim073ls" path="res://3D/Maps/Forest/house.tscn" id="2_7t8po"]
 [ext_resource type="PackedScene" uid="uid://cjv0df8txk3mi" path="res://3D/Player/player.tscn" id="2_f353c"]
+[ext_resource type="PackedScene" uid="uid://dw22r5xmrcwnw" path="res://3D/Maps/Forest/forest.tscn" id="2_lis2t"]
 [ext_resource type="PackedScene" uid="uid://554oaub4mgf2" path="res://3D/Object/object.tscn" id="3_77y3i"]
 [ext_resource type="PackedScene" uid="uid://dquahbivmmc6p" path="res://3D/Object/bin.tscn" id="4_mc4md"]
+[ext_resource type="Texture2D" uid="uid://d03h8xspen8c" path="res://Sprite/Object/waste4.png" id="5_7dntq"]
+[ext_resource type="PackedScene" uid="uid://d1j52qixkvv0l" path="res://3D/Object/sheet.tscn" id="5_8hxas"]
+[ext_resource type="Texture2D" uid="uid://4wtl8o146ona" path="res://Sprite/Object/waste2.png" id="5_i6tb2"]
+[ext_resource type="PackedScene" uid="uid://duxis1tq710hb" path="res://3D/Maps/Forest/Teleporter.tscn" id="6_wxe6h"]
+[ext_resource type="Texture2D" uid="uid://bsfaeq5rnwt2q" path="res://Sprite/Object/waste1.png" id="7_q3e2l"]
+[ext_resource type="Texture2D" uid="uid://bs5gxhngcoubb" path="res://Sprite/Object/waste3.png" id="9_4a83c"]
 
-[sub_resource type="Environment" id="Environment_2njts"]
-background_color = Color(0.685146, 0.685146, 0.685146, 1)
+[sub_resource type="BoxShape3D" id="BoxShape3D_6csft"]
+size = Vector3(1.218, 1, 3.52612)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_d4xk2"]
 friction = 0.0
 rough = true
 
-[sub_resource type="BoxMesh" id="BoxMesh_yfsj5"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1hufy"]
+shading_mode = 0
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wynej"]
-albedo_color = Color(0.303059, 0.736154, 0, 1)
+[sub_resource type="QuadMesh" id="QuadMesh_rmbbe"]
+material = SubResource("StandardMaterial3D_1hufy")
+
+[sub_resource type="QuadMesh" id="QuadMesh_ascpj"]
+material = SubResource("StandardMaterial3D_1hufy")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5a8m0"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lgvsh"]
-albedo_color = Color(2.5028e-06, 0.679106, 0.902998, 1)
+[sub_resource type="QuadMesh" id="QuadMesh_bau2a"]
+material = SubResource("StandardMaterial3D_1hufy")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ieo37"]
-albedo_color = Color(1, 0.54902, 0, 1)
+[sub_resource type="QuadMesh" id="QuadMesh_v68qq"]
+material = SubResource("StandardMaterial3D_1hufy")
 
 [sub_resource type="Gradient" id="Gradient_cof37"]
 
@@ -31,96 +43,196 @@ albedo_color = Color(1, 0.54902, 0, 1)
 gradient = SubResource("Gradient_cof37")
 fill_from = Vector2(0.230248, 0.952596)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0x201"]
-albedo_color = Color(0, 0, 0.709804, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q7nwx"]
+albedo_color = Color(0, 0.513726, 0, 1)
 metallic = 1.0
 metallic_texture = SubResource("GradientTexture2D_tm1h0")
+
+[sub_resource type="Gradient" id="Gradient_dynm3"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_08j3w"]
+gradient = SubResource("Gradient_dynm3")
+fill_from = Vector2(0.230248, 0.952596)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0x201"]
+albedo_color = Color(0.268105, 0.216335, 0.211623, 1)
+metallic = 1.0
+metallic_texture = SubResource("GradientTexture2D_08j3w")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kpoo0"]
-albedo_color = Color(0.580392, 0.576471, 0, 1)
+albedo_color = Color(0.796078, 0.866667, 0, 1)
 metallic = 1.0
-metallic_texture = SubResource("GradientTexture2D_tm1h0")
+metallic_texture = SubResource("GradientTexture2D_08j3w")
 
-[node name="Main" type="Node3D"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_7wlyg"]
+
+[node name="Zone1" type="Node3D" node_paths=PackedStringArray("gridmap")]
+script = ExtResource("1_2tsxk")
+forest_path = NodePath("Forest")
+gridmap = NodePath("Forest/GridMap")
+
+[node name="House" parent="." instance=ExtResource("2_7t8po")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 31.586, 7, 23.207)
+
+[node name="CollisionShape3D" parent="House/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.664039, -2.5, -0.209745)
+
+[node name="CollisionShape3D3" parent="House/StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.597333, -0.676514, -2.20026)
+
+[node name="CollisionShape3D7" parent="House/StaticBody3D" index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.52797, -2.01805, 1.02955)
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="House/StaticBody3D" index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.472, -2.5, 0.736438)
+shape = SubResource("BoxShape3D_6csft")
+
+[node name="WorldSettup" type="WorldEnvironment" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("2_f353c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5, 3, 57)
+
+[node name="Forest" parent="." instance=ExtResource("2_lis2t")]
 
 [node name="SunLight" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.563825, 0.588724, -0.579228, 0.231281, 0.785824, 0.573576, 0.792849, 0.189433, -0.579228, -15, 40, 20)
+transform = Transform3D(0.783383, 0.199178, -0.588762, 0.231281, 0.785823, 0.573577, 0.576907, -0.585499, 0.569535, -15, 40, 20)
 light_color = Color(1, 1, 0.666667, 1)
 light_energy = 2.0
 shadow_enabled = true
 shadow_normal_bias = 2.5
 directional_shadow_max_distance = 8192.0
 
-[node name="Map1" parent="." instance=ExtResource("1_egyof")]
+[node name="Teleporter" parent="." instance=ExtResource("6_wxe6h")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 17.5, 3, 56.5)
 
-[node name="WorldSettup" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_2njts")
-
-[node name="Player" parent="." instance=ExtResource("2_f353c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5, 3, 57)
-
-[node name="Object" parent="." instance=ExtResource("3_77y3i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, 50)
+[node name="PlasticBottleTrash" parent="." instance=ExtResource("3_77y3i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2, 50)
 physics_material_override = SubResource("PhysicsMaterial_d4xk2")
 sleeping = true
 lock_rotation = true
 
-[node name="Object2" parent="." instance=ExtResource("3_77y3i")]
+[node name="Sprite3D" parent="PlasticBottleTrash" index="1"]
+transform = Transform3D(-7.86805e-08, 1.8, 0, -1.8, -7.86805e-08, 0, 0, 0, 1.8, 0, 0, 0)
+texture_filter = 0
+texture = ExtResource("7_q3e2l")
+
+[node name="Highlight" parent="PlasticBottleTrash" index="3"]
+transform = Transform3D(0.7, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, -0.01)
+mesh = SubResource("QuadMesh_rmbbe")
+
+[node name="DirtyRagTrash" parent="." instance=ExtResource("3_77y3i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 3, 20)
 physics_material_override = SubResource("PhysicsMaterial_d4xk2")
 sleeping = true
 lock_rotation = true
 
-[node name="MeshInstance3D" parent="Object2" index="1"]
-mesh = SubResource("BoxMesh_yfsj5")
-surface_material_override/0 = SubResource("StandardMaterial3D_wynej")
+[node name="Sprite3D" parent="DirtyRagTrash" index="1"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+texture_filter = 0
+texture = ExtResource("5_i6tb2")
 
-[node name="Object3" parent="." instance=ExtResource("3_77y3i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67, 1, 33)
+[node name="Highlight" parent="DirtyRagTrash" index="3"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.01, -0.01)
+mesh = SubResource("QuadMesh_ascpj")
+
+[node name="AppleTrash" parent="." instance=ExtResource("3_77y3i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67, 1, 36)
 physics_material_override = SubResource("PhysicsMaterial_d4xk2")
 sleeping = true
 lock_rotation = true
 
-[node name="CollisionShape3D" parent="Object3" index="0"]
+[node name="CollisionShape3D" parent="AppleTrash" index="0"]
 shape = SubResource("BoxShape3D_5a8m0")
 
-[node name="MeshInstance3D" parent="Object3" index="1"]
-surface_material_override/0 = SubResource("StandardMaterial3D_lgvsh")
+[node name="Sprite3D" parent="AppleTrash" index="1"]
+transform = Transform3D(-8.74228e-08, -2, 0, 2, -8.74228e-08, 0, 0, 0, 2, 0, 0, 0)
+texture_filter = 0
+texture = ExtResource("9_4a83c")
 
-[node name="Object4" parent="." instance=ExtResource("3_77y3i")]
+[node name="Highlight" parent="AppleTrash" index="3"]
+transform = Transform3D(0.5, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.1, -0.02, -0.01)
+mesh = SubResource("QuadMesh_bau2a")
+
+[node name="CardBoardTrash" parent="." instance=ExtResource("3_77y3i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 106, 3, 24)
 physics_material_override = SubResource("PhysicsMaterial_d4xk2")
 sleeping = true
 lock_rotation = true
 
-[node name="MeshInstance3D" parent="Object4" index="1"]
-mesh = SubResource("BoxMesh_yfsj5")
-surface_material_override/0 = SubResource("StandardMaterial3D_ieo37")
+[node name="CollisionShape3D" parent="CardBoardTrash" index="0"]
+transform = Transform3D(0.5, 0, 0, 0, 0.7, 0, 0, 0, 0.5, 0, 0.2, 0)
 
-[node name="Bin" parent="." instance=ExtResource("4_mc4md")]
+[node name="Sprite3D" parent="CardBoardTrash" index="1"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.3, 0)
+texture_filter = 0
+texture = ExtResource("5_7dntq")
+
+[node name="Highlight" parent="CardBoardTrash" index="3"]
+transform = Transform3D(0.611, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.01, 0.225, -0.01)
+mesh = SubResource("QuadMesh_v68qq")
+
+[node name="BinOrganic" parent="." node_paths=PackedStringArray("main3d") instance=ExtResource("4_mc4md")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 1.6, 29)
+main3d = NodePath("..")
 
-[node name="Bin2" parent="." instance=ExtResource("4_mc4md")]
+[node name="BineForm" parent="BinOrganic" index="0"]
+material = SubResource("StandardMaterial3D_q7nwx")
+
+[node name="BinNonRecyclable" parent="." node_paths=PackedStringArray("main3d") instance=ExtResource("4_mc4md")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31, 1.6, 29)
+main3d = NodePath("..")
 
-[node name="BineForm" parent="Bin2" index="0"]
+[node name="BineForm" parent="BinNonRecyclable" index="0"]
 material = SubResource("StandardMaterial3D_0x201")
 
-[node name="Bin3" parent="." instance=ExtResource("4_mc4md")]
+[node name="BinRecyclable" parent="." node_paths=PackedStringArray("main3d") instance=ExtResource("4_mc4md")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 1.6, 29)
+main3d = NodePath("..")
 
-[node name="BineForm" parent="Bin3" index="0"]
+[node name="BineForm" parent="BinRecyclable" index="0"]
 material = SubResource("StandardMaterial3D_kpoo0")
 
-[editable path="Object2"]
-[editable path="Object2/Interactable"]
-[editable path="Object3"]
-[editable path="Object3/Interactable"]
-[editable path="Object4"]
-[editable path="Object4/Interactable"]
-[editable path="Bin"]
-[editable path="Bin/Interactable"]
-[editable path="Bin2"]
-[editable path="Bin2/Interactable"]
-[editable path="Bin3"]
-[editable path="Bin3/Interactable"]
+[node name="Sheet" parent="." node_paths=PackedStringArray("bin", "bin2", "bin3") instance=ExtResource("5_8hxas")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 38, 1.4, 4)
+bin = NodePath("../BinOrganic")
+bin2 = NodePath("../BinNonRecyclable")
+bin3 = NodePath("../BinRecyclable")
+
+[node name="FallZoneObject" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 6
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FallZoneObject"]
+transform = Transform3D(130, 0, 0, 0, 10, 0, 0, 0, 80, 55, -7, 30)
+shape = SubResource("BoxShape3D_7wlyg")
+
+[node name="FallZonePlayer" type="Area3D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FallZonePlayer"]
+transform = Transform3D(130, 0, 0, 0, 10, 0, 0, 0, 80, 55, -7, 30)
+shape = SubResource("BoxShape3D_7wlyg")
+
+[connection signal="body_entered" from="FallZoneObject" to="PlasticBottleTrash" method="_on_fall_zone_body_entered"]
+[connection signal="body_entered" from="FallZoneObject" to="DirtyRagTrash" method="_on_fall_zone_object_body_entered"]
+[connection signal="body_entered" from="FallZoneObject" to="AppleTrash" method="_on_fall_zone_object_body_entered"]
+[connection signal="body_entered" from="FallZoneObject" to="CardBoardTrash" method="_on_fall_zone_object_body_entered"]
+[connection signal="body_entered" from="FallZonePlayer" to="Player" method="_on_fall_zone_player_body_entered"]
+
+[editable path="House"]
+[editable path="House/Interactable"]
+[editable path="Forest"]
+[editable path="PlasticBottleTrash"]
+[editable path="PlasticBottleTrash/Interactable"]
+[editable path="DirtyRagTrash"]
+[editable path="DirtyRagTrash/Interactable"]
+[editable path="AppleTrash"]
+[editable path="AppleTrash/Interactable"]
+[editable path="CardBoardTrash"]
+[editable path="CardBoardTrash/Interactable"]
+[editable path="BinOrganic"]
+[editable path="BinOrganic/Interactable"]
+[editable path="BinNonRecyclable"]
+[editable path="BinNonRecyclable/Interactable"]
+[editable path="BinRecyclable"]
+[editable path="BinRecyclable/Interactable"]

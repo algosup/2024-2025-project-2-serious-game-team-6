@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="3D-game-project"
-run/main_scene="res://2D/Scenes/main.tscn"
+run/main_scene="res://gameController.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -28,9 +28,9 @@ directories/dch_directory={
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
-"Dialogue/Globe": "res://Dialogue/Globe.dtl",
 "Enter_forest": "res://Dialogue/Enter_forest.dtl",
-"Globe": "res://2D/Scenes/Globe.dtl",
+"Globe": "res://Dialogue/Globe.dtl",
+"Scenes/Globe": "res://2D/Scenes/Globe.dtl",
 "Scientist_Hub": "res://Dialogue/Scientist_Hub.dtl"
 }
 layout/style_list=["res://Dialogue/TEST.tres"]
