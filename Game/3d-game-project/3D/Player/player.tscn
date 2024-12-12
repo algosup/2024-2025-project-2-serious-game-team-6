@@ -310,7 +310,7 @@ transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_1p8qn")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.882947, 0.469471, 0, -0.469471, 0.882947, 0, 4, 7)
+transform = Transform3D(1, 0, 0, 0, 0.882947, 0.469471, 0, -0.469471, 0.882947, 0, 15, 28)
 cull_mask = 1048545
 projection = 1
 current = true
