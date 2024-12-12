@@ -6,7 +6,11 @@ extends Interactor2D
 var cached_closest: Interactable2D
 
 func _ready() -> void:
-	controller = player
+	Dialogic.timeline_started.connect(set_physics_process.bind(false))
+	Dialogic.timeline_started.connect(set_process_input.bind(false))
+ 
+	Dialogic.timeline_ended.connect(set_physics_process.bind(true))
+	Dialogic.timeline_ended.connect(set_process_input.bind(true))
 
 # Update the closest interactable object in each physics frame
 func _physics_process(delta: float) -> void:
@@ -35,6 +39,7 @@ func _input(event: InputEvent) -> void:
 			if cached_closest.get_parent() is Globe:
 				interact_with_globe((cached_closest.get_parent()))
 			
+
 
 func interact_with_globe(globe: Globe) -> void:
 	globe._on_interactable_2d_interacted(self)

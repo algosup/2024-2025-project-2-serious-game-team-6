@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c0hval3pok0d1"]
 
-[ext_resource type="Texture2D" uid="uid://b7qveexfld3ta" path="res://Sprite/hubCollisions.png" id="1_mddyj"]
+[ext_resource type="Texture2D" uid="uid://b7qveexfld3ta" path="res://Sprite/HUB/hubCollisions.png" id="1_mddyj"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_g0rg8"]
 a = Vector2(-319, 128)

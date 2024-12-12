@@ -9,6 +9,7 @@ func _on_interactable_2d_focused(interactor: Interactor2D) -> void:
 
 func _on_interactable_2d_interacted(interactor: Interactor2D) -> void:
 	save_and_teleport()
+	Dialogic.start("Enter_forest")
 
 func _on_interactable_2d_unfocused(interactor: Interactor2D) -> void:
 	pass  # Optional: Remove highlight logic or other effects
