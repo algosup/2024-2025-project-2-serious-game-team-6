@@ -1,4 +1,4 @@
-# [2024 - 2025] - Serious Game about Climat changes
+# [2024 - 2025] - Forsaken Planet
 
 
 <div align="center">
@@ -28,11 +28,13 @@ Read the list of [contributors](https://github.com/algosup/2024-2025-project-2-s
 
 ## 📚 What is this project ?
 
-<!-- TODO -->
+**Forsaken Planet** is a serious game developed in Godot 4.3, focused on the theme of climate change. In the game, players will explore various environments on a mysterious planet, solving puzzles and uncovering clues about the disappearance of an ancient civilization that once thrived there.
+
+As Quireo, an explorer from the planet Eradon, your mission is to uncover the fate of the ancient civilization and gather crucial information to prevent similar catastrophic events from occurring on your home planet. Along the way, you will be assisted by your colleague and friend, Thothan a brilliant scientist whose knowledge and insight will be vital in your quest for answers.
 
 ## 🛠️ Made with
 
-* [Godot 4](https://en.wikipedia.org/wiki/Godot_(game_engine)) - Open Source Game Engine.
+* [Godot 4.3](https://en.wikipedia.org/wiki/Godot_(game_engine)) - Open Source Game Engine.
 
 ## 🤝 Contributing
 

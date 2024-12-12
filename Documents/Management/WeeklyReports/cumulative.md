@@ -25,12 +25,24 @@ Quick Access:
     - [Team Mood](#team-mood-2)
     - [Conclusion](#conclusion-2)
   - [Weekly Report - Week 4](#weekly-report---week-4)
+    - [Overview](#overview-3)
+    - [Accomplishments](#accomplishments-3)
+    - [Challenges](#challenges-3)
+    - [Plan for Next Week](#plan-for-next-week-3)
+    - [Team Mood](#team-mood-3)
+    - [Conclusion](#conclusion-3)
   - [Weekly Report - Week 5](#weekly-report---week-5)
+    - [Overview](#overview-4)
+    - [Accomplishments](#accomplishments-4)
+    - [Challenges](#challenges-4)
+    - [Plan for Next Week](#plan-for-next-week-4)
+    - [Team Mood](#team-mood-4)
+    - [Conclusion](#conclusion-4)
   - [Weekly Report - Week 6](#weekly-report---week-6)
   - [Weekly Report - Week 7](#weekly-report---week-7)
 
 ## Weekly Report - Week 1
-[Acces to the weekly report 1 here](week1.md)
+[Dedicated File](week1.md)
 
 ### Overview
 
@@ -77,7 +89,7 @@ The team was a bit disappointed to not have any project hours this week forcing 
 The project has had a promising start with strong team spirit and effective communication. This foundation enhances our confidence in meeting project deadlines and delivering quality results to the client.
 
 ## Weekly Report - Week 2
-[Detailed File](week2.md)
+[Dedicated File](week2.md)
 
 ### Overview
 
@@ -135,7 +147,7 @@ This week marked significant progress in refining the project scope and laying t
 
 
 ## Weekly Report - Week 3
-[Detailed File](week3.md)
+[Dedicated File](week3.md)
 
 ### Overview
 
@@ -212,13 +224,127 @@ Despite challenges such as adapting to a new task management platform and mainta
 
 
 ## Weekly Report - Week 4
-[Detailed File](week4.md)
+[Dedicated File](week4.md)
+
+### Overview  
+
+This week, our team made significant progress while adhering to the planned schedule. Key milestones, including player movement animations, hub display, and interactions, were successfully completed. Additionally, all technical deliverables were finished on time, highlighting the team's dedication and efficiency.  
+
+### Accomplishments  
+
+1. **Player Movement Animations**  
+   - Finalized all player movement animations, ensuring seamless transitions and an improved gameplay experience.  
+
+2. **Hub Display**  
+   - Polished and displayed the hub interface, offering an intuitive and visually engaging central navigation area for players.  
+
+3. **Interactions**  
+   - Fully implemented all planned player-environment interactions, enriching the game’s depth and interactivity.  
+
+4. **Technical Specifications**  
+   - Delivered the technical specifications on schedule, overcoming time constraints through excellent teamwork and commitment.  
+
+5. **Streamlined Workflow in ClickUp**  
+   - Optimized task management and workflows in ClickUp, resulting in improved team collaboration and productivity.  
+
+6. **User Manual**  
+   - Completed an initial draft of the user manual, establishing a clear framework for expansion as development progresses.  
+
+### Challenges  
+
+1. **Design Refinements**  
+   - Adjustments were necessary to enhance the aesthetics and functionality of the hub display, slightly affecting timelines but improving the final quality.  
+
+2. **Balancing Tasks**  
+   - Managing multiple high-priority tasks required careful resource allocation to maintain project momentum without compromising quality.  
+
+3. **Meeting the Technical Specifications Deadline**  
+   - With the functional specifications completed last Friday and limited project sessions this week, the team worked overtime to ensure the technical specifications were finalized on time.  
+
+### Plan for Next Week  
+
+1. **Level Design Enhancements**  
+   - Refine levels by adding assets and interactive elements to improve player immersion and overall visual appeal.  
+
+2. **Testing Phase Initiation**  
+   - Begin rigorous internal testing of gameplay mechanics, animations, and hub functionalities to identify and address potential issues.  
+
+3. **Documentation Completion**  
+   - Finalize the test plan and detailed test cases, ensuring all necessary documentation is completed before the deadline.  
+
+4. **Gameplay Integration**  
+   - Integrate dialogue and storyline elements to deepen the narrative and enhance the player experience.  
+
+### Team Mood  
+
+**Rating:** 6.14/10  
+
+This week, the team felt overwhelmed due to insufficient project time, compounded by personal challenges. These factors caused delays in some tasks, but we are optimistic about catching up and making progress next week.
+
+### Conclusion 
+
+Despite the challenges faced this week, including time constraints and personal hurdles, the team demonstrated resilience and a strong commitment to the project. Key accomplishments, such as player movement animations, hub display, and technical deliverables, underscore our progress and dedication. With a clear plan for next week focusing on level design, testing, and gameplay integration, we are confident in our ability to maintain momentum and deliver high-quality results.
+
 
 ## Weekly Report - Week 5
-[Detailed File](week5.md)
+[Dedicated File](week5.md)
+
+### Overview  
+
+This week, our team focused on finalizing the test plan and test cases to meet the deadline. Additionally, we made significant progress on hub completion, implemented the first set of dialogs, linked the hub to the first zone, and began searching for and generating sound effects and music to enhance the game’s atmosphere.  
+
+### Accomplishments  
+
+1. **Hub Completion**  
+   - All planned interactions have been added, including placeholders for unlinked functionalities, ensuring a comprehensive framework for future expansions.  
+
+2. **Teleporter**  
+   - Successfully implemented teleportation mechanics, allowing seamless travel between the ship and Zone 1, and vice versa.  
+
+3. **Dialogs**  
+   - Introduced basic dialog interactions with the scientist character to test the functionality and responsiveness of the dialog box system.  
+
+4. **Sound Design**  
+   - Initiated the search and AI generation of sound effects and music tracks to build an engaging audio environment.  
+
+5. **Documentation**  
+   - Completed and reviewed the test plan and test cases, ensuring all requirements are clearly outlined and ready for execution.  
+
+### Challenges  
+
+1. **Limited Project Sessions**  
+   - The lack of project sessions created delays and forced the team to adjust timelines.  
+
+2. **Minor Merging Issue**  
+   - A merge oversight caused missing sprites in the pre-production environment, leading to an invisible environment. This issue caused some stress during the customer meeting but was quickly resolved.  
+
+3. **Meeting Tight Deadlines**  
+   - The test plan and test cases required last-minute efforts due to earlier underinvestment, leading to a rushed completion within limited time.  
+
+### Plan for Next Week  
+
+1. **Development**  
+   - Finalize game development and complete the implementation of key features.  
+
+2. **User Manual**  
+   - Finish writing the user manual to meet the deadline.  
+
+3. **Slideshow Creation**  
+   - Begin working on the slideshow presentation, originally scheduled for this week but postponed due to time constraints.  
+
+### Team Mood  
+
+**Rating:** 6.2/10  
+
+The team mood reflects a mix of accomplishments and challenges. While significant progress was made on key features, limited project time, tight deadlines, and personal frustrations impacted overall morale. Achievements such as meeting the test case deadline and resolving technical issues were tempered by fatigue and external distractions.  
+
+### Conclusion  
+
+Week 5 was a pivotal week for the project, marked by both **notable progress** and **challenges**. The team demonstrated resilience in addressing last-minute issues, meeting key deadlines, and advancing the game’s development. However, the lack of project sessions and the need to rush certain deliverables highlight areas for improvement in time management and workload distribution. Moving forward, we aim to maintain our momentum while addressing these challenges to enhance both productivity and team morale.
+
 
 ## Weekly Report - Week 6
-[Detailed File](week6.md)
+[Dedicated File](week6.md)
 
 ## Weekly Report - Week 7
-[Detailed File](week7.md)
+[Dedicated File](week7.md)
