@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btstn604qveyi"
-path.s3tc="res://.godot/imported/grassPolluted.png-68ccd24ae882ca119c91155fa1f215f5.s3tc.ctex"
+uid="uid://dr2ehl2ed6jp2"
+path.s3tc="res://.godot/imported/cabinRoof.png-9da7b1f24ab87f9feafa3b3031e5b603.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Sprite/Cube/Grass/grassPolluted.png"
-dest_files=["res://.godot/imported/grassPolluted.png-68ccd24ae882ca119c91155fa1f215f5.s3tc.ctex"]
+source_file="res://Sprite/Map/cabinRoof.png"
+dest_files=["res://.godot/imported/cabinRoof.png-9da7b1f24ab87f9feafa3b3031e5b603.s3tc.ctex"]
 
 [params]
 

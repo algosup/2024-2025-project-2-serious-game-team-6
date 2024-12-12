@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://byhg2lq1bolbr" path="res://Sprite/Cube/stone2.png" id="4_7fr3x"]
 [ext_resource type="Texture2D" uid="uid://hetatldh2j50" path="res://Sprite/Cube/stone3.png" id="5_nrqat"]
 [ext_resource type="Texture2D" uid="uid://q2a8365wuabc" path="res://Sprite/Cube/grassPath.png" id="6_j8nyd"]
-[ext_resource type="Texture2D" uid="uid://tb3ojqorbbvy" path="res://Sprite/Cube/water.png" id="7_iknsw"]
+[ext_resource type="Texture2D" uid="uid://calw67gh3ifq3" path="res://Sprite/Cube/water.png" id="7_iknsw"]
 [ext_resource type="Texture2D" uid="uid://d202a6lx5ugyo" path="res://Sprite/Cube/Sand/sand1.png" id="30_mtb4i"]
 [ext_resource type="Texture2D" uid="uid://q4vkthk5d7r7" path="res://Sprite/Cube/Sand/sand2.png" id="31_ali87"]
 [ext_resource type="Texture2D" uid="uid://bx3d0vngv1uk5" path="res://Sprite/Cube/Sand/sand3.png" id="32_1uq1e"]

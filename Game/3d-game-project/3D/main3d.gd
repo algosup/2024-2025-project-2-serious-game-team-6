@@ -2,8 +2,9 @@ extends Node3D
 class_name Main3D
 
 @export var forest_path: NodePath
+@export var gridmap: GridMap
 
-var cleaned: bool = false
+var cleaned: bool = true
 
 func is_cleaned() -> void:
 	if cleaned:
@@ -56,11 +57,17 @@ func change_environment() -> void:
 	# Make all the nodes visible and activate collision
 	for name in node_names:
 		var node = forest_node.get_node_or_null(name)
+		if not gridmap:
+			gridmap = forest_node.get_node("GridMap")
 		if node:
 			node.visible = true
 			activate_collision(node)
+			change_gridmap_textures_by_id(gridmap)
 		else:
 			print("Node not found:", name)
+	
+	#change texture
+	
 
 func activate_collision(node: Node) -> void:
 	# Look for StaticBody and its CollisionShape child
@@ -70,3 +77,42 @@ func activate_collision(node: Node) -> void:
 			if child is CollisionShape3D:
 				child.disabled = false
 				print("Activated collision for:", node.name)
+
+func change_gridmap_textures_by_id(gridmap: GridMap) -> void:
+
+	# Preload the textures
+	var textures = [
+		preload("res://Sprite/Cube/Decor/Flower/grassRedFlower.png"),  # For items 23, 24
+		preload("res://Sprite/Cube/Decor/Flower/grassPurpleFlower.png"),  # For items 25, 26, 31
+		preload("res://Sprite/Cube/Decor/Flower/grassWhiteFlower.png"),  # For items 27, 29, 30, 32
+		preload("res://Sprite/Cube/Decor/Flower/grassBlueFlower.png"),  # For item 28
+		preload("res://Sprite/Cube/Grass/grass2.png"),  # For items 0, 14, 21, 22
+		preload("res://Sprite/Cube/Grass/grass.png"),  # For items 1, 3, 8, 9, 12, 13
+		preload("res://Sprite/Cube/Grass/grassSticks.png"),  # For items 2, 4, 5, 6, 7, 10, 11
+		preload("res://Sprite/Cube/water.png")   # For item 19
+	]
+	
+	# Define the ID groups
+	var id_groups = {
+		23: 0, 24: 0,
+		25: 1, 26: 1, 31: 1,
+		27: 2, 29: 2, 30: 2, 32: 2,
+		28: 3,
+		0: 4, 14: 4, 21: 4, 22: 4,
+		1: 5, 3: 5, 8: 5, 9: 5, 12: 5, 13: 5,
+		2: 6, 4: 6, 5: 6, 6: 6, 7: 6, 10: 6, 11: 6,
+		19: 7
+	}
+	
+	# Iterate over all items in the gridmap
+	for item_id in id_groups.keys():
+		var mesh = gridmap.mesh_library.get_item_mesh(item_id)
+		if mesh:
+			var material = mesh.surface_get_material(0)
+			if material and material is StandardMaterial3D:
+				var new_material = material.duplicate()
+				new_material.albedo_texture = textures[id_groups[item_id]]
+				mesh.surface_set_material(0, new_material)
+				print("Updated texture for ID:", item_id)
+			else:
+				print("Material not found or invalid for ID:", item_id)

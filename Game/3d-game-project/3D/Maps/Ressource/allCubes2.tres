@@ -1,8 +1,12 @@
-[gd_resource type="MeshLibrary" load_steps=254 format=4 uid="uid://dyt2uno6315ns"]
+[gd_resource type="MeshLibrary" load_steps=234 format=4 uid="uid://dyt2uno6315ns"]
 
+[ext_resource type="Texture2D" uid="uid://cey72glkmuotv" path="res://Sprite/Cube/Grass/grassPolluted2.png" id="1_fg5lg"]
 [ext_resource type="Texture2D" uid="uid://xed417diq860" path="res://Sprite/Cube/stone.png" id="7_v71cr"]
+[ext_resource type="Texture2D" uid="uid://bsm71oqfo5lu2" path="res://Sprite/Cube/Grass/grassPollutedSticks.png" id="8_5doab"]
 [ext_resource type="Texture2D" uid="uid://byhg2lq1bolbr" path="res://Sprite/Cube/stone2.png" id="8_q3rfm"]
 [ext_resource type="Texture2D" uid="uid://hetatldh2j50" path="res://Sprite/Cube/stone3.png" id="9_4l84h"]
+[ext_resource type="Texture2D" uid="uid://3m8q4xttv3by" path="res://Sprite/Cube/Decor/Flower/grassPollutedDyingFlower.png" id="9_08vut"]
+[ext_resource type="Texture2D" uid="uid://btstn604qveyi" path="res://Sprite/Cube/Grass/grassPolluted.png" id="9_ungxw"]
 [ext_resource type="Texture2D" uid="uid://q2a8365wuabc" path="res://Sprite/Cube/grassPath.png" id="10_l4qjf"]
 [ext_resource type="Texture2D" uid="uid://dtclufjuf7drn" path="res://Sprite/Cube/dirtyWater.png" id="11_mep8j"]
 [ext_resource type="Texture2D" uid="uid://d202a6lx5ugyo" path="res://Sprite/Cube/Sand/sand1.png" id="24_5j7vm"]
@@ -21,11 +25,8 @@
 [ext_resource type="Texture2D" uid="uid://sdri6tqfm0wd" path="res://Sprite/Cube/Sand/sandLight4.png" id="38_utfk5"]
 [ext_resource type="Texture2D" uid="uid://cjvnnvxfrvqov" path="res://Sprite/Cube/Sand/sandLight5.png" id="39_fatav"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tyaq5"]
-load_path = "res://.godot/imported/grass2.png-8e20e8cb88872afb839065845d8d3949.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_faba3"]
-albedo_texture = SubResource("CompressedTexture2D_tyaq5")
+albedo_texture = ExtResource("1_fg5lg")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -47,11 +48,8 @@ image = SubResource("Image_wfelf")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fvmsb"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3orrb"]
-load_path = "res://.godot/imported/grass.png-c292a043b1e7c18985e6b8ba2795ae54.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m0j7b"]
-albedo_texture = SubResource("CompressedTexture2D_3orrb")
+albedo_texture = ExtResource("9_ungxw")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -73,11 +71,8 @@ image = SubResource("Image_dbpw5")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_u5nn3"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bfotj"]
-load_path = "res://.godot/imported/grassSticks.png-ac6cc83a286c7d15c64623dfb5763f53.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4tvkt"]
-albedo_texture = SubResource("CompressedTexture2D_bfotj")
+albedo_texture = ExtResource("8_5doab")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -97,11 +92,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_2nre5"]
 image = SubResource("Image_4wmcp")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s0s5m"]
-load_path = "res://.godot/imported/grassSticks.png-ac6cc83a286c7d15c64623dfb5763f53.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6v2cc"]
-albedo_texture = SubResource("CompressedTexture2D_s0s5m")
+albedo_texture = ExtResource("8_5doab")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -121,11 +113,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_qfl7g"]
 image = SubResource("Image_wu2c5")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rsgxf"]
-load_path = "res://.godot/imported/grass.png-c292a043b1e7c18985e6b8ba2795ae54.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tdhlc"]
-albedo_texture = SubResource("CompressedTexture2D_rsgxf")
+albedo_texture = ExtResource("9_ungxw")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -145,11 +134,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_73nwl"]
 image = SubResource("Image_3v6fr")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jg55p"]
-load_path = "res://.godot/imported/grass.png-c292a043b1e7c18985e6b8ba2795ae54.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7yrhc"]
-albedo_texture = SubResource("CompressedTexture2D_jg55p")
+albedo_texture = ExtResource("9_ungxw")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -170,7 +156,7 @@ data = {
 image = SubResource("Image_aamsw")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b8nvj"]
-albedo_texture = SubResource("CompressedTexture2D_tyaq5")
+albedo_texture = ExtResource("1_fg5lg")
 uv1_triplanar = true
 texture_filter = 0
 
@@ -298,11 +284,8 @@ image = SubResource("Image_2eubq")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wn1s2"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_irh3m"]
-load_path = "res://.godot/imported/grassSticks.png-ac6cc83a286c7d15c64623dfb5763f53.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3hbfb"]
-albedo_texture = SubResource("CompressedTexture2D_irh3m")
+albedo_texture = ExtResource("8_5doab")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -351,13 +334,10 @@ image = SubResource("Image_etxv5")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5uhlg"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2fvv6"]
-load_path = "res://.godot/imported/grass.png-c292a043b1e7c18985e6b8ba2795ae54.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ip0vb"]
 resource_name = "Material"
 cull_mode = 2
-albedo_texture = SubResource("CompressedTexture2D_2fvv6")
+albedo_texture = ExtResource("1_fg5lg")
 roughness = 0.5
 uv1_triplanar = true
 texture_filter = 0
@@ -412,7 +392,7 @@ data = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7tsnq"]
 resource_name = "Material"
 cull_mode = 2
-albedo_texture = SubResource("CompressedTexture2D_tyaq5")
+albedo_texture = ExtResource("1_fg5lg")
 roughness = 0.5
 uv1_triplanar = true
 texture_filter = 0
@@ -464,11 +444,8 @@ image = SubResource("Image_qpbd8")
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ry6nk"]
 data = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o06aj"]
-load_path = "res://.godot/imported/grassRedFlower.png-0f98271cca9585a0faaf54b4501a45e6.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l46wg"]
-albedo_texture = SubResource("CompressedTexture2D_o06aj")
+albedo_texture = ExtResource("9_08vut")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -490,11 +467,8 @@ image = SubResource("Image_kh72m")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_q1k5g"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_heqrn"]
-load_path = "res://.godot/imported/grassRedFlower.png-0f98271cca9585a0faaf54b4501a45e6.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m65va"]
-albedo_texture = SubResource("CompressedTexture2D_heqrn")
+albedo_texture = ExtResource("9_08vut")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -514,11 +488,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_u5kbn"]
 image = SubResource("Image_fiyug")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0snww"]
-load_path = "res://.godot/imported/grassPurpleFlower.png-a725dfaa147067ab0f91d0f017dcc8fe.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kf0b0"]
-albedo_texture = SubResource("CompressedTexture2D_0snww")
+albedo_texture = ExtResource("9_08vut")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -538,11 +509,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_4gnrp"]
 image = SubResource("Image_vbonc")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_l2plc"]
-load_path = "res://.godot/imported/grassPurpleFlower.png-a725dfaa147067ab0f91d0f017dcc8fe.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a7ibn"]
-albedo_texture = SubResource("CompressedTexture2D_l2plc")
+albedo_texture = ExtResource("9_08vut")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -562,11 +530,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_pm1jc"]
 image = SubResource("Image_kmymb")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vlsit"]
-load_path = "res://.godot/imported/grassWhiteFlower.png-317b442704ef1c4e08f90648f329e039.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ixlf3"]
-albedo_texture = SubResource("CompressedTexture2D_vlsit")
+albedo_texture = ExtResource("9_08vut")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -586,11 +551,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_ibm1k"]
 image = SubResource("Image_sym80")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ygmg8"]
-load_path = "res://.godot/imported/grassBlueFlower.png-5d0cd2e970179b5e381551ab1b29ec05.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_60byu"]
-albedo_texture = SubResource("CompressedTexture2D_ygmg8")
+albedo_texture = ExtResource("9_08vut")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -610,11 +572,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_130y3"]
 image = SubResource("Image_bjpui")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v6uq4"]
-load_path = "res://.godot/imported/grassWhiteFlower.png-317b442704ef1c4e08f90648f329e039.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_duogu"]
-albedo_texture = SubResource("CompressedTexture2D_v6uq4")
+albedo_texture = ExtResource("9_08vut")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -635,7 +594,7 @@ data = {
 image = SubResource("Image_gi54v")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y2ox6"]
-albedo_texture = SubResource("CompressedTexture2D_2fvv6")
+albedo_texture = ExtResource("9_ungxw")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -655,11 +614,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_83x2x"]
 image = SubResource("Image_o8p3n")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oc6sm"]
-load_path = "res://.godot/imported/grassWhiteFlower.png-317b442704ef1c4e08f90648f329e039.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gywrk"]
-albedo_texture = SubResource("CompressedTexture2D_oc6sm")
+albedo_texture = ExtResource("9_08vut")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -679,11 +635,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_130ne"]
 image = SubResource("Image_sok77")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_puehi"]
-load_path = "res://.godot/imported/grassPurpleFlower.png-a725dfaa147067ab0f91d0f017dcc8fe.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ks8l"]
-albedo_texture = SubResource("CompressedTexture2D_puehi")
+albedo_texture = ExtResource("9_08vut")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -703,11 +656,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_vgy4n"]
 image = SubResource("Image_w8ckr")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_trb2g"]
-load_path = "res://.godot/imported/grassWhiteFlower.png-317b442704ef1c4e08f90648f329e039.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7wdt5"]
-albedo_texture = SubResource("CompressedTexture2D_trb2g")
+albedo_texture = ExtResource("9_08vut")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -871,11 +821,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_pnylb"]
 image = SubResource("Image_8kryg")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fno3e"]
-load_path = "res://.godot/imported/grassSticks.png-ac6cc83a286c7d15c64623dfb5763f53.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y1h0p"]
-albedo_texture = SubResource("CompressedTexture2D_fno3e")
+albedo_texture = ExtResource("8_5doab")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -1057,11 +1004,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_ivl0d"]
 image = SubResource("Image_1cwn8")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pkary"]
-load_path = "res://.godot/imported/grassSticks.png-ac6cc83a286c7d15c64623dfb5763f53.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ds7xm"]
-albedo_texture = SubResource("CompressedTexture2D_pkary")
+albedo_texture = ExtResource("8_5doab")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -1081,11 +1025,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_b2r1a"]
 image = SubResource("Image_b40ym")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cvmuk"]
-load_path = "res://.godot/imported/grassSticks.png-ac6cc83a286c7d15c64623dfb5763f53.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g65d8"]
-albedo_texture = SubResource("CompressedTexture2D_cvmuk")
+albedo_texture = ExtResource("8_5doab")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -1105,11 +1046,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_ttr8f"]
 image = SubResource("Image_4jlrs")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_r4gwr"]
-load_path = "res://.godot/imported/grassSticks.png-ac6cc83a286c7d15c64623dfb5763f53.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8skqg"]
-albedo_texture = SubResource("CompressedTexture2D_r4gwr")
+albedo_texture = ExtResource("8_5doab")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -1129,11 +1067,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_abhts"]
 image = SubResource("Image_w1s2l")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t6rxp"]
-load_path = "res://.godot/imported/grass.png-c292a043b1e7c18985e6b8ba2795ae54.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_82lwe"]
-albedo_texture = SubResource("CompressedTexture2D_t6rxp")
+albedo_texture = ExtResource("9_ungxw")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0
@@ -1153,11 +1088,8 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_eaaxh"]
 image = SubResource("Image_0n3l4")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_otimd"]
-load_path = "res://.godot/imported/grass.png-c292a043b1e7c18985e6b8ba2795ae54.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1fjuf"]
-albedo_texture = SubResource("CompressedTexture2D_otimd")
+albedo_texture = ExtResource("9_ungxw")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 texture_filter = 0

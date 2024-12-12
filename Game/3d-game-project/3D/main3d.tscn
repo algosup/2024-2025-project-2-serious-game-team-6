@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://btsnua661cpjb"]
+[gd_scene load_steps=29 format=3 uid="uid://btsnua661cpjb"]
 
 [ext_resource type="Script" path="res://3D/main3d.gd" id="1_2tsxk"]
 [ext_resource type="PackedScene" uid="uid://bvpj6gim073ls" path="res://3D/Maps/house.tscn" id="2_7t8po"]
@@ -10,12 +10,15 @@
 [ext_resource type="PackedScene" uid="uid://d1j52qixkvv0l" path="res://3D/Object/sheet.tscn" id="5_8hxas"]
 [ext_resource type="Texture2D" uid="uid://4wtl8o146ona" path="res://Sprite/Object/waste2.png" id="5_i6tb2"]
 [ext_resource type="PackedScene" uid="uid://duxis1tq710hb" path="res://3D/Maps/Teleporter.tscn" id="6_wxe6h"]
+[ext_resource type="Texture2D" uid="uid://bsfaeq5rnwt2q" path="res://Sprite/Object/waste1.png" id="7_q3e2l"]
+[ext_resource type="Texture2D" uid="uid://bs5gxhngcoubb" path="res://Sprite/Object/waste3.png" id="9_4a83c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6csft"]
+size = Vector3(1.218, 1, 3.52612)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_d4xk2"]
 friction = 0.0
 rough = true
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_586m3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1hufy"]
 shading_mode = 0
@@ -27,8 +30,6 @@ material = SubResource("StandardMaterial3D_1hufy")
 material = SubResource("StandardMaterial3D_1hufy")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5a8m0"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oan2h"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_bau2a"]
 material = SubResource("StandardMaterial3D_1hufy")
@@ -65,18 +66,26 @@ metallic_texture = SubResource("GradientTexture2D_08j3w")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7wlyg"]
 
-[node name="Zone1" type="Node3D"]
+[node name="Zone1" type="Node3D" node_paths=PackedStringArray("gridmap")]
 script = ExtResource("1_2tsxk")
 forest_path = NodePath("Forest")
+gridmap = NodePath("Forest/GridMap")
 
-[node name="House" parent="." instance=ExtResource("2_7t8po")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 31.5858, 7.13139, 23.2072)
+[node name="House2" parent="." instance=ExtResource("2_7t8po")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 31.586, 7, 23.207)
 
-[node name="CollisionShape3D" parent="House/StaticBody3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, -2.5, -0.414917)
+[node name="CollisionShape3D" parent="House2/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.664039, -2.5, -0.209745)
 
-[node name="CollisionShape3D3" parent="House/StaticBody3D" index="1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, -0.676514, -1.23965)
+[node name="CollisionShape3D3" parent="House2/StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.597333, -0.676514, -2.20026)
+
+[node name="CollisionShape3D7" parent="House2/StaticBody3D" index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.52797, -2.01805, 1.02955)
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="House2/StaticBody3D" index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.472, -2.5, 0.736438)
+shape = SubResource("BoxShape3D_6csft")
 
 [node name="WorldSettup" type="WorldEnvironment" parent="."]
 
@@ -105,7 +114,7 @@ lock_rotation = true
 [node name="Sprite3D" parent="PlasticBottleTrash" index="1"]
 transform = Transform3D(-7.86805e-08, 1.8, 0, -1.8, -7.86805e-08, 0, 0, 0, 1.8, 0, 0, 0)
 texture_filter = 0
-texture = SubResource("CompressedTexture2D_586m3")
+texture = ExtResource("7_q3e2l")
 
 [node name="Highlight" parent="PlasticBottleTrash" index="3"]
 transform = Transform3D(0.7, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, -0.01)
@@ -138,7 +147,7 @@ shape = SubResource("BoxShape3D_5a8m0")
 [node name="Sprite3D" parent="AppleTrash" index="1"]
 transform = Transform3D(-8.74228e-08, -2, 0, 2, -8.74228e-08, 0, 0, 0, 2, 0, 0, 0)
 texture_filter = 0
-texture = SubResource("CompressedTexture2D_oan2h")
+texture = ExtResource("9_4a83c")
 
 [node name="Highlight" parent="AppleTrash" index="3"]
 transform = Transform3D(0.5, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.1, -0.02, -0.01)
@@ -210,8 +219,9 @@ shape = SubResource("BoxShape3D_7wlyg")
 [connection signal="body_entered" from="FallZoneObject" to="CardBoardTrash" method="_on_fall_zone_object_body_entered"]
 [connection signal="body_entered" from="FallZonePlayer" to="Player" method="_on_fall_zone_player_body_entered"]
 
-[editable path="House"]
-[editable path="House/Interactable"]
+[editable path="House2"]
+[editable path="House2/Interactable"]
+[editable path="Forest"]
 [editable path="PlasticBottleTrash"]
 [editable path="PlasticBottleTrash/Interactable"]
 [editable path="DirtyRagTrash"]
