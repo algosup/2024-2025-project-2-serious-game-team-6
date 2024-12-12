@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckrxyatcf5p3v"
-path.s3tc="res://.godot/imported/grassSticks.png-c9077f133bdabf3600988217ea389706.s3tc.ctex"
+uid="uid://darmwih73b8oo"
+path.s3tc="res://.godot/imported/kyogreVerticalLine.png-41ea27f50c5333e4afa99e20518aba63.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Sprite/Cube/Grass/grassSticks.png"
-dest_files=["res://.godot/imported/grassSticks.png-c9077f133bdabf3600988217ea389706.s3tc.ctex"]
+source_file="res://Sprite/Cube/kyogreVerticalLine.png"
+dest_files=["res://.godot/imported/kyogreVerticalLine.png-41ea27f50c5333e4afa99e20518aba63.s3tc.ctex"]
 
 [params]
 

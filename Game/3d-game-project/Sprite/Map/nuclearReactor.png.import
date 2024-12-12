@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckrxyatcf5p3v"
-path.s3tc="res://.godot/imported/grassSticks.png-c9077f133bdabf3600988217ea389706.s3tc.ctex"
+uid="uid://rgs40n1qo7x5"
+path.s3tc="res://.godot/imported/nuclearReactor.png-459f89bae2f2fed31413f038cd15fdfa.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Sprite/Cube/Grass/grassSticks.png"
-dest_files=["res://.godot/imported/grassSticks.png-c9077f133bdabf3600988217ea389706.s3tc.ctex"]
+source_file="res://Sprite/Map/nuclearReactor.png"
+dest_files=["res://.godot/imported/nuclearReactor.png-459f89bae2f2fed31413f038cd15fdfa.s3tc.ctex"]
 
 [params]
 
