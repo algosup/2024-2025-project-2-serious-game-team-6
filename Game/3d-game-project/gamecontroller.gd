@@ -3,9 +3,9 @@ class_name GameController
 
 @onready var zone1 = preload("res://3D/main3d.tscn")  # 3D scene
 @onready var HUB = preload("res://2D/Scenes/main.tscn")  # 2D scene
-@onready var house = preload("res://2D/Scenes/cabin.tscn") #2D house scene
+@onready var house = preload("res://2D/Scenes/House/cabin.tscn") #2D house scene
 
-# Variables to store the instances of the scenes
+# Variables to store the instances of the scenesaa
 var zone1_instance: Node = null
 var hub_instance: Node = null
 var house_instance: Node = null

@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://copa84ipa0wqt" path="res://2D/Scenes/HUB/teleporter2d.tscn" id="5_blg1p"]
 [ext_resource type="PackedScene" uid="uid://c650gdjpww7p6" path="res://2D/Scenes/HUB/Scientist.tscn" id="5_ulglk"]
 [ext_resource type="Script" path="res://2D/Scenes/dialogue.gd" id="6_0dops"]
-[ext_resource type="PackedScene" uid="uid://ddmxnhk3wsyqu" path="res://2D/Scenes/dialogue.tscn" id="7_p643y"]
+[ext_resource type="PackedScene" uid="uid://ddmxnhk3wsyqu" path="res://2D/Scenes/Dialogue.tscn" id="7_p643y"]
 
 [node name="Main" type="Node2D"]
 
