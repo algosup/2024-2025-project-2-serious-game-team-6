@@ -46,6 +46,8 @@ func _input(event: InputEvent) -> void:
 					grab_object(cached_closest.get_parent() as RigidBody3D)
 				elif cached_closest.get_parent() is Teleporter:
 					interact_with_teleporter(cached_closest.get_parent())
+				elif cached_closest.get_parent() is House:
+					interact_with_house(cached_closest.get_parent())
 
 # Release the currently held object
 func release_held_object() -> void:
@@ -74,3 +76,6 @@ func interact_with_sheet(sheet: Sheet) -> void:
 # Interact with the teleporter
 func interact_with_teleporter(teleporter: Teleporter):
 	teleporter._on_interactable_interacted(self)
+
+func interact_with_house(house: House):
+	house._on_interactable_interacted(self)
