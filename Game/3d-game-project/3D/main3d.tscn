@@ -1,15 +1,15 @@
 [gd_scene load_steps=29 format=3 uid="uid://btsnua661cpjb"]
 
 [ext_resource type="Script" path="res://3D/main3d.gd" id="1_2tsxk"]
-[ext_resource type="PackedScene" uid="uid://bvpj6gim073ls" path="res://3D/Maps/house.tscn" id="2_7t8po"]
+[ext_resource type="PackedScene" uid="uid://bvpj6gim073ls" path="res://3D/Maps/Forest/house.tscn" id="2_7t8po"]
 [ext_resource type="PackedScene" uid="uid://cjv0df8txk3mi" path="res://3D/Player/player.tscn" id="2_f353c"]
-[ext_resource type="PackedScene" uid="uid://dw22r5xmrcwnw" path="res://3D/Maps/forest.tscn" id="2_lis2t"]
+[ext_resource type="PackedScene" uid="uid://dw22r5xmrcwnw" path="res://3D/Maps/Forest/forest.tscn" id="2_lis2t"]
 [ext_resource type="PackedScene" uid="uid://554oaub4mgf2" path="res://3D/Object/object.tscn" id="3_77y3i"]
-[ext_resource type="PackedScene" uid="uid://dquahbivmmc6p" path="res://3D/Object/Bin.tscn" id="4_mc4md"]
+[ext_resource type="PackedScene" uid="uid://dquahbivmmc6p" path="res://3D/Object/bin.tscn" id="4_mc4md"]
 [ext_resource type="Texture2D" uid="uid://d03h8xspen8c" path="res://Sprite/Object/waste4.png" id="5_7dntq"]
 [ext_resource type="PackedScene" uid="uid://d1j52qixkvv0l" path="res://3D/Object/sheet.tscn" id="5_8hxas"]
 [ext_resource type="Texture2D" uid="uid://4wtl8o146ona" path="res://Sprite/Object/waste2.png" id="5_i6tb2"]
-[ext_resource type="PackedScene" uid="uid://duxis1tq710hb" path="res://3D/Maps/Teleporter.tscn" id="6_wxe6h"]
+[ext_resource type="PackedScene" uid="uid://duxis1tq710hb" path="res://3D/Maps/Forest/Teleporter.tscn" id="6_wxe6h"]
 [ext_resource type="Texture2D" uid="uid://bsfaeq5rnwt2q" path="res://Sprite/Object/waste1.png" id="7_q3e2l"]
 [ext_resource type="Texture2D" uid="uid://bs5gxhngcoubb" path="res://Sprite/Object/waste3.png" id="9_4a83c"]
 
@@ -71,19 +71,19 @@ script = ExtResource("1_2tsxk")
 forest_path = NodePath("Forest")
 gridmap = NodePath("Forest/GridMap")
 
-[node name="House2" parent="." instance=ExtResource("2_7t8po")]
+[node name="House" parent="." instance=ExtResource("2_7t8po")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 31.586, 7, 23.207)
 
-[node name="CollisionShape3D" parent="House2/StaticBody3D" index="0"]
+[node name="CollisionShape3D" parent="House/StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.664039, -2.5, -0.209745)
 
-[node name="CollisionShape3D3" parent="House2/StaticBody3D" index="1"]
+[node name="CollisionShape3D3" parent="House/StaticBody3D" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.597333, -0.676514, -2.20026)
 
-[node name="CollisionShape3D7" parent="House2/StaticBody3D" index="6"]
+[node name="CollisionShape3D7" parent="House/StaticBody3D" index="6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.52797, -2.01805, 1.02955)
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="House2/StaticBody3D" index="7"]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="House/StaticBody3D" index="7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.472, -2.5, 0.736438)
 shape = SubResource("BoxShape3D_6csft")
 
@@ -219,8 +219,8 @@ shape = SubResource("BoxShape3D_7wlyg")
 [connection signal="body_entered" from="FallZoneObject" to="CardBoardTrash" method="_on_fall_zone_object_body_entered"]
 [connection signal="body_entered" from="FallZonePlayer" to="Player" method="_on_fall_zone_player_body_entered"]
 
-[editable path="House2"]
-[editable path="House2/Interactable"]
+[editable path="House"]
+[editable path="House/Interactable"]
 [editable path="Forest"]
 [editable path="PlasticBottleTrash"]
 [editable path="PlasticBottleTrash/Interactable"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://bvpj6gim073ls"]
 
-[ext_resource type="Script" path="res://3D/Maps/house.gd" id="1_82xto"]
+[ext_resource type="Script" path="res://3D/Maps/Forest/house.gd" id="1_82xto"]
 [ext_resource type="Texture2D" uid="uid://dq2axe722io80" path="res://Sprite/Map/cabin-alone.png" id="1_s2gli"]
 [ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://3D/Object/Interaction/interactable.tscn" id="2_536c6"]
 [ext_resource type="Texture2D" uid="uid://dr2ehl2ed6jp2" path="res://Sprite/Map/cabinRoof.png" id="3_2vfcq"]
