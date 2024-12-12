@@ -35,10 +35,11 @@ func _input(event: InputEvent) -> void:
 			if cached_closest.get_parent() is Teleporter2D:
 				interact_with_teleporter(cached_closest.get_parent())
 			if cached_closest.get_parent() is Scientist:
-				interact_with_scientist((cached_closest.get_parent()))
+				interact_with_scientist(cached_closest.get_parent())
 			if cached_closest.get_parent() is Globe:
-				interact_with_globe((cached_closest.get_parent()))
-			
+				interact_with_globe(cached_closest.get_parent())
+			if cached_closest.get_parent() is Cabin:
+				interact_with_door(cached_closest.get_parent())
 
 
 func interact_with_globe(globe: Globe) -> void:
@@ -51,3 +52,6 @@ func interact_with_scientist(scientist: Scientist) -> void:
 
 func interact_with_teleporter(teleporter: Teleporter2D) -> void:
 	teleporter._on_interactable_2d_interacted(self)
+
+func interact_with_door(cabin: Cabin):
+	cabin._on_interactable_2d_interacted(self)

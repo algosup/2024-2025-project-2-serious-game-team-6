@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=3 uid="uid://dik8vxervdoc0"]
 
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Character/node_portrait_container.gd" id="1_4jxq7"]
-[ext_resource type="Script" path="res://2D/Scenes/TextboxWithPortrait/speaker_portrait_textbox_layer.gd" id="1_7jt4d"]
+[ext_resource type="Script" path="res://2D/Scenes/TextboxWithPortrait/speakerPortraitTextboxLayer.gd" id="1_7jt4d"]
 [ext_resource type="Texture2D" uid="uid://cryk6wooq3c3p" path="res://Sprite/Scientist/scientistIcon.png" id="2_n8dup"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_name_label.gd" id="2_y0h34"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="3_11puy"]

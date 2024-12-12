@@ -4,21 +4,16 @@ class_name Main3D
 @export var forest_path: NodePath
 @export var gridmap: GridMap
 
-var cleaned: bool = true
+var cleaned: bool = false
 
 func is_cleaned() -> void:
 	if cleaned:
 		change_environment()
-		print("teste")
-	else:
-		print("notest")
 
 func change_environment() -> void:
 	var forest_node = get_node(forest_path)
-	print("test")
 	
 	if not forest_node:
-		print("Forest node not found.")
 		return
 	
 	# List all node names
@@ -63,11 +58,6 @@ func change_environment() -> void:
 			node.visible = true
 			activate_collision(node)
 			change_gridmap_textures_by_id(gridmap)
-		else:
-			print("Node not found:", name)
-	
-	#change texture
-	
 
 func activate_collision(node: Node) -> void:
 	# Look for StaticBody and its CollisionShape child
@@ -76,7 +66,6 @@ func activate_collision(node: Node) -> void:
 		for child in static_body.get_children():
 			if child is CollisionShape3D:
 				child.disabled = false
-				print("Activated collision for:", node.name)
 
 func change_gridmap_textures_by_id(gridmap: GridMap) -> void:
 
@@ -113,6 +102,3 @@ func change_gridmap_textures_by_id(gridmap: GridMap) -> void:
 				var new_material = material.duplicate()
 				new_material.albedo_texture = textures[id_groups[item_id]]
 				mesh.surface_set_material(0, new_material)
-				print("Updated texture for ID:", item_id)
-			else:
-				print("Material not found or invalid for ID:", item_id)

@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://6ujtn6cjjxqa"]
 
-[ext_resource type="PackedScene" uid="uid://djfl34w5v6262" path="res://2D/Scenes/Reactorbackground.tscn" id="1_fu5oj"]
-[ext_resource type="PackedScene" uid="uid://bci5imo6fj32h" path="res://2D/Scenes/ReactorCollision.tscn" id="2_1y7yj"]
-[ext_resource type="PackedScene" uid="uid://benrneih6rhle" path="res://2D/Scenes/player.tscn" id="3_8w32j"]
+[ext_resource type="PackedScene" uid="uid://djfl34w5v6262" path="res://2D/Scenes/ReactorPowerPlant/reactorBackground.tscn" id="1_fu5oj"]
+[ext_resource type="PackedScene" uid="uid://bci5imo6fj32h" path="res://2D/Scenes/ReactorPowerPlant/reactorCollision.tscn" id="2_1y7yj"]
+[ext_resource type="PackedScene" uid="uid://benrneih6rhle" path="res://2D/Scenes/Player/player.tscn" id="3_8w32j"]
 
 [node name="Powerplant2D" type="Node2D"]
 

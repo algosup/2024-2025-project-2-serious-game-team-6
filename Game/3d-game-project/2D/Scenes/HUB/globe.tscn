@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://d2prtexbmmc0s"]
 
-[ext_resource type="Script" path="res://2D/Scenes/globe.gd" id="1_4xpvc"]
+[ext_resource type="Script" path="res://2D/Scenes/HUB/globe.gd" id="1_4xpvc"]
 [ext_resource type="Texture2D" uid="uid://cl42w8h173vv1" path="res://Sprite/HUB/controlPanel.png" id="1_p2lje"]
 [ext_resource type="PackedScene" uid="uid://dm1uaq5fv2nh6" path="res://2D/Interaction 2D/Interaction/interactable2d.tscn" id="3_6necw"]
 

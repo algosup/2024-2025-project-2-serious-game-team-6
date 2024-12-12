@@ -603,7 +603,7 @@ texture = ExtResource("2_3e2uw")
 [node name="StaticBody3D" type="StaticBody3D" parent="LittleGrass21"]
 
 [node name="LittleGrass22" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.9653, 1.23, 12.2843)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.1898, 1.23, 5.57773)
 visible = false
 shaded = true
 alpha_cut = 2

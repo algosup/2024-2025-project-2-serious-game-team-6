@@ -9,7 +9,6 @@ func _on_interactable_focused(interactor: Interactor) -> void:
 
 func _on_interactable_interacted(interactor: Interactor) -> void:
 	enter()
-	print("test")
 
 
 func _on_interactable_unfocused(interactor: Interactor) -> void:
