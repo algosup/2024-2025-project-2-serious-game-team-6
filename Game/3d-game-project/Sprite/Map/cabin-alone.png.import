@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc0u6jlpd68u"
-path.s3tc="res://.godot/imported/grass2.png-bac795d80935777e59d15c3d61015614.s3tc.ctex"
+uid="uid://dq2axe722io80"
+path.s3tc="res://.godot/imported/cabin-alone.png-e48bb789ed1375b5d0957177f048b0db.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Sprite/Cube/Grass/grass2.png"
-dest_files=["res://.godot/imported/grass2.png-bac795d80935777e59d15c3d61015614.s3tc.ctex"]
+source_file="res://Sprite/Map/cabin-alone.png"
+dest_files=["res://.godot/imported/cabin-alone.png-e48bb789ed1375b5d0957177f048b0db.s3tc.ctex"]
 
 [params]
 

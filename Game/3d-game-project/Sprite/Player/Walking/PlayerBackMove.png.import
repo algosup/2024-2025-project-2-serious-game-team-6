@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc0u6jlpd68u"
-path.s3tc="res://.godot/imported/grass2.png-bac795d80935777e59d15c3d61015614.s3tc.ctex"
+uid="uid://croakqfxg8aef"
+path.s3tc="res://.godot/imported/PlayerBackMove.png-4b197969ff9b8f93da8e26895a30975a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Sprite/Cube/Grass/grass2.png"
-dest_files=["res://.godot/imported/grass2.png-bac795d80935777e59d15c3d61015614.s3tc.ctex"]
+source_file="res://Sprite/Player/Walking/PlayerBackMove.png"
+dest_files=["res://.godot/imported/PlayerBackMove.png-4b197969ff9b8f93da8e26895a30975a.s3tc.ctex"]
 
 [params]
 

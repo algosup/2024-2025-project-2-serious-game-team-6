@@ -52,16 +52,16 @@ func _physics_process(delta): # control
 # Sprite depending on direction
 func handle_animation(input_dir: Vector3):
 	if input_dir.z < 0: # Detect direction
-		sprite.animation = "BackIdle" #Play a specific animation
+		sprite.animation = "BackWalk" #Play a specific animation
 		last_direction = "BackIdle" 
 	elif input_dir.z > 0:
-		sprite.animation = "FrontIdle"
+		sprite.animation = "FrontWalk"
 		last_direction = "FrontIdle"
 	elif input_dir.x < 0:
-		sprite.animation = "LeftIdle"
+		sprite.animation = "LeftWalk"
 		last_direction = "LeftIdle"
 	elif input_dir.x > 0:
-		sprite.animation = "LeftIdle"
+		sprite.animation = "LeftWalk"
 		last_direction = "LeftIdle"
 
 	sprite.flip_h = input_dir.x > 0 # Flip the "LeftIdle" sprite to work on right direction
