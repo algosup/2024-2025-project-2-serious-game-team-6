@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 DebugMenu="*res://addons/debug_menu/debug_menu.tscn"
-InteractionManager="*res://2D/Interaction 2D/Interaction area/interactionManager.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
@@ -68,6 +67,10 @@ timer/process_in_physics=false
 [display]
 
 window/size/mode=2
+
+[dotnet]
+
+project/assembly_name="3D-game-project"
 
 [editor_plugins]
 
