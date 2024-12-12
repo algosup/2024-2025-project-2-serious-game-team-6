@@ -1,12 +1,18 @@
 extends CharacterBody2D
 
 
-
 const SPEED = 300.0
-const JUMP_VELOCITY = -250
+const JUMP_VELOCITY = -375
 
 @onready var animated_sprite = $AnimatedSprite2D
 
+	
+func _ready() -> void:
+	Dialogic.timeline_started.connect(set_physics_process.bind(false))
+	Dialogic.timeline_started.connect(set_process_input.bind(false))
+ 
+	Dialogic.timeline_ended.connect(set_physics_process.bind(true))
+	Dialogic.timeline_ended.connect(set_process_input.bind(true))
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -34,6 +40,14 @@ func _physics_process(delta: float) -> void:
 		animated_sprite.flip_h = true
 	elif direction < 0:
 		animated_sprite.flip_h = false
+	
+	
+	
 		
+	
+	
+	
+	
+	
 	
 	move_and_slide()
