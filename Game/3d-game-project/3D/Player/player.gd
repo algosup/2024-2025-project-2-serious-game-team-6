@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 const CLIMB_HEIGHT = 1.0  # Height of a single block
-const MOVE_SPEED = 15.0  # Movement speed
+const MOVE_SPEED = 9.0  # Movement speed
 
 var movement_disabled: bool = false  # Flag to disable movement
 
