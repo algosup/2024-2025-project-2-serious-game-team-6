@@ -1,0 +1,195 @@
+[gd_scene load_steps=30 format=3 uid="uid://dblpkkn2ue2fx"]
+
+[ext_resource type="Texture2D" uid="uid://bkr7uywxfq6hg" path="res://Sprite/Cube/wireMesh.png" id="1_b415t"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4c62t"]
+load_path = "res://.godot/imported/grass.png-fbb1f82d1da58e591805dd1d37b9f831.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4vuqk"]
+albedo_texture = SubResource("CompressedTexture2D_4c62t")
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_o8ss6"]
+material = SubResource("StandardMaterial3D_4vuqk")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f3rkw"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qr1de"]
+load_path = "res://.godot/imported/grass2.png-bac795d80935777e59d15c3d61015614.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hrtte"]
+albedo_texture = SubResource("CompressedTexture2D_qr1de")
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_m8ede"]
+material = SubResource("StandardMaterial3D_hrtte")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hcafa"]
+load_path = "res://.godot/imported/grassWhiteFlower.png-f24f802524e0fafa40eedfec26321bf6.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vs61l"]
+albedo_texture = SubResource("CompressedTexture2D_hcafa")
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ewxuc"]
+material = SubResource("StandardMaterial3D_vs61l")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t0kc1"]
+load_path = "res://.godot/imported/grassSticks.png-c9077f133bdabf3600988217ea389706.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tlwle"]
+albedo_texture = SubResource("CompressedTexture2D_t0kc1")
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_caypw"]
+material = SubResource("StandardMaterial3D_tlwle")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_66jrf"]
+load_path = "res://.godot/imported/groudon.png-bf57fe310d4edb97f22303b6f0ed912d.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pojof"]
+albedo_texture = SubResource("CompressedTexture2D_66jrf")
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_g8vdc"]
+material = SubResource("StandardMaterial3D_pojof")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qxr6j"]
+load_path = "res://.godot/imported/kyogre.png-2c6902a3ba10feecb1312320ee62bf43.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l7r45"]
+albedo_texture = SubResource("CompressedTexture2D_qxr6j")
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_0qcf6"]
+material = SubResource("StandardMaterial3D_l7r45")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ek52i"]
+load_path = "res://.godot/imported/kyogreVerticalLine.png-41ea27f50c5333e4afa99e20518aba63.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ftck3"]
+albedo_texture = SubResource("CompressedTexture2D_ek52i")
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_n3bd4"]
+material = SubResource("StandardMaterial3D_ftck3")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sbu0n"]
+load_path = "res://.godot/imported/kyogreCross.png-7d21a10f87962b316895fed4e3337b2c.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m54of"]
+albedo_texture = SubResource("CompressedTexture2D_sbu0n")
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_iim48"]
+material = SubResource("StandardMaterial3D_m54of")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uqlq7"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("1_b415t")
+texture_filter = 0
+
+[sub_resource type="QuadMesh" id="QuadMesh_hw0x6"]
+material = SubResource("StandardMaterial3D_uqlq7")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bgwa2"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="grass1" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_o8ss6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="grass1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="grass1/StaticBody3D"]
+shape = SubResource("BoxShape3D_f3rkw")
+
+[node name="grass2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = SubResource("BoxMesh_m8ede")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="grass2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="grass2/StaticBody3D"]
+shape = SubResource("BoxShape3D_f3rkw")
+
+[node name="grassWhiteFlower" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = SubResource("BoxMesh_ewxuc")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="grassWhiteFlower"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="grassWhiteFlower/StaticBody3D"]
+shape = SubResource("BoxShape3D_f3rkw")
+
+[node name="grassSticks" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+mesh = SubResource("BoxMesh_caypw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="grassSticks"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="grassSticks/StaticBody3D"]
+shape = SubResource("BoxShape3D_f3rkw")
+
+[node name="tarmac" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+mesh = SubResource("BoxMesh_g8vdc")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="tarmac"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tarmac/StaticBody3D"]
+shape = SubResource("BoxShape3D_f3rkw")
+
+[node name="tarmacVerticalLine" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+mesh = SubResource("BoxMesh_0qcf6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="tarmacVerticalLine"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tarmacVerticalLine/StaticBody3D"]
+shape = SubResource("BoxShape3D_f3rkw")
+
+[node name="tarmacHorizontalLine" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
+mesh = SubResource("BoxMesh_n3bd4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="tarmacHorizontalLine"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tarmacHorizontalLine/StaticBody3D"]
+shape = SubResource("BoxShape3D_f3rkw")
+
+[node name="tarmacCross" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14)
+mesh = SubResource("BoxMesh_iim48")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="tarmacCross"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tarmacCross/StaticBody3D"]
+shape = SubResource("BoxShape3D_f3rkw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 16)
+mesh = SubResource("QuadMesh_hw0x6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("BoxShape3D_bgwa2")

@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://de7347wxd1ck5"]
+
+[ext_resource type="Texture2D" uid="uid://b2oyi2gy6r4hb" path="res://Sprite/Cube/grass.png" id="1_q4gop"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_tj8ge"]
+left_to_right = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vv83y"]
+albedo_texture = ExtResource("1_q4gop")
+uv1_triplanar = true
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1nb3l"]
+points = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[node name="TriangleGrass1" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="form" type="MeshInstance3D" parent="StaticBody3D"]
+lod_bias = 0.001
+mesh = SubResource("PrismMesh_tj8ge")
+surface_material_override/0 = SubResource("StandardMaterial3D_vv83y")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_1nb3l")

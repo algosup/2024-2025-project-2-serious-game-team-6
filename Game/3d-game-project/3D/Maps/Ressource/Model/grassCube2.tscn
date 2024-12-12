@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://op810mq62buy"]
+
+[ext_resource type="Texture2D" uid="uid://mtltk757xjbk" path="res://Sprite/Cube/grass2.png" id="1_1ay4k"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_vtrf1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xv12l"]
+albedo_texture = ExtResource("1_1ay4k")
+uv1_triplanar = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dgr38"]
+
+[node name="cube" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="form" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("BoxMesh_vtrf1")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xv12l")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_dgr38")
