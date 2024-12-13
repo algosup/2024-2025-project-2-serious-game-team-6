@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cenokne0646xn"
-path="res://.godot/imported/forestCabinBackground.png-49486c25849f75861ca4e5631d690051.ctex"
+path="res://.godot/imported/forestcabinbackground.png-c35cd88ef4b364c2b857e6d8b9c01dcc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprite/Cabin/forestCabinBackground.png"
-dest_files=["res://.godot/imported/forestCabinBackground.png-49486c25849f75861ca4e5631d690051.ctex"]
+source_file="res://Sprite/Cabin/forestcabinbackground.png"
+dest_files=["res://.godot/imported/forestcabinbackground.png-c35cd88ef4b364c2b857e6d8b9c01dcc.ctex"]
 
 [params]
 

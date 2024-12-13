@@ -66,6 +66,6 @@ max_distance = 500.0
 [node name="TeleporterNoise" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-350, 0)
 stream = ExtResource("12_jug3s")
-volume_db = 5.0
+volume_db = -10.0
 autoplay = true
 max_distance = 250.0

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjljqidqcvewt"
-path.s3tc="res://.godot/imported/teleportOutside.png-fe88f84e26aa494c53c4d4fe630eb250.s3tc.ctex"
+path.s3tc="res://.godot/imported/teleportOutside.png-8fa72f77fc518d6e2dbfb085b14cfd72.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Sprite/Hub/teleportOutside.png"
-dest_files=["res://.godot/imported/teleportOutside.png-fe88f84e26aa494c53c4d4fe630eb250.s3tc.ctex"]
+source_file="res://Sprite/HUB/teleportOutside.png"
+dest_files=["res://.godot/imported/teleportOutside.png-8fa72f77fc518d6e2dbfb085b14cfd72.s3tc.ctex"]
 
 [params]
 

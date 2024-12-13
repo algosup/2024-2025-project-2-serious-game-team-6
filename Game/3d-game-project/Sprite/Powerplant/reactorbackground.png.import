@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://j016n2m243c6"
-path="res://.godot/imported/reactorBackground.png-e2ff1defe169703471203b94ead1a130.ctex"
+path="res://.godot/imported/reactorbackground.png-a76d0308db019ce1792b43e0b7bb022f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprite/Powerplant/reactorBackground.png"
-dest_files=["res://.godot/imported/reactorBackground.png-e2ff1defe169703471203b94ead1a130.ctex"]
+source_file="res://Sprite/Powerplant/reactorbackground.png"
+dest_files=["res://.godot/imported/reactorbackground.png-a76d0308db019ce1792b43e0b7bb022f.ctex"]
 
 [params]
 
