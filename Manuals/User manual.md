@@ -60,7 +60,7 @@ Throughout the game you will have to face puzzles in multiple zones. These puzzl
 
 **Recycling (forest)**
 
-The first puzzle you face will ask you to sort wastes. To do so, you will have to find wastes and put them in the appropriate bins. To help you, you will find an information sheet that tells you how to sort wastes. By doing it right, you will be able to see the nature coming back, to access the next zone and even find something new related to the lore.
+The first puzzle you face will ask you to sort wastes. To do so, you will have to find wastes and put them in the appropriate bin. To help you, you will find an information sheet that tells you how to sort wastes. By doing it right, you will be able to see the nature coming back, to access the next zone and even find something new related to the lore.
 
 **Energy (nuclear power plant)**
 
