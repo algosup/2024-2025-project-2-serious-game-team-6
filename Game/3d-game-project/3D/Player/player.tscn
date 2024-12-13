@@ -560,7 +560,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_ca6t5")
 animation = &"FrontIdle"
-frame_progress = 0.661402
+frame_progress = 0.167405
 metadata/_aseprite_wizard_interface_config_ = {
 "layer_section": false,
 "pending_changes": {
@@ -585,7 +585,7 @@ cull_mask = 1048545
 projection = 1
 current = true
 fov = 37.8493
-size = 6.0
+size = 8.0
 
 [node name="PlayerInteractor" parent="." node_paths=PackedStringArray("player") instance=ExtResource("5_qi7q6")]
 player = NodePath("..")

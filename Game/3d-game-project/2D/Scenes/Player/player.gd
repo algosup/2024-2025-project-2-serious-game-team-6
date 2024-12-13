@@ -5,7 +5,6 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -375
 
 @onready var animated_sprite = $AnimatedSprite2D
-
 	
 func _ready() -> void:
 	Dialogic.timeline_started.connect(set_physics_process.bind(false))

@@ -8,8 +8,7 @@ func _on_interactable_2d_focused(interactor: Interactor2D) -> void:
 
 
 func _on_interactable_2d_interacted(interactor: Interactor2D) -> void:
-	Dialogic.start("Dialogue/Globe")
-	
+	Dialogic.start("Globe")
 	
 
 
