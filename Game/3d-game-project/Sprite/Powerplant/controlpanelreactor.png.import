@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bk1vo3xns6kd0"
-path="res://.godot/imported/controlpanelreactor.png-aae060f4f23af0675c3922926505201a.ctex"
+path="res://.godot/imported/controlPanelReactor.png-22ed77758add7460af44f599609a7dba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprite/Powerplant/controlpanelreactor.png"
-dest_files=["res://.godot/imported/controlpanelreactor.png-aae060f4f23af0675c3922926505201a.ctex"]
+source_file="res://Sprite/Powerplant/controlPanelReactor.png"
+dest_files=["res://.godot/imported/controlPanelReactor.png-22ed77758add7460af44f599609a7dba.ctex"]
 
 [params]
 

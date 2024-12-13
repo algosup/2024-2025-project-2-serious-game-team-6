@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cjgid6kycyiub"]
 
-[ext_resource type="Texture2D" uid="uid://on2iqjp62avo" path="res://Sprite/HUB/hubBackground.png" id="1_e4mxd"]
+[ext_resource type="Texture2D" uid="uid://on2iqjp62avo" path="res://Sprite/Hub/hubBackground.png" id="1_e4mxd"]
 
 [node name="Background" type="StaticBody2D"]
 

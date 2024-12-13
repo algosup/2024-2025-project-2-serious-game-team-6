@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://6ujtn6cjjxqa"]
 
-[ext_resource type="Script" path="res://2D/Scenes/ReactorPowerPlant/power_plant_2d.gd" id="1_3gcbn"]
+[ext_resource type="Script" path="res://2D/Scenes/ReactorPowerPlant/powerPlant2d.gd" id="1_3gcbn"]
 [ext_resource type="PackedScene" uid="uid://djfl34w5v6262" path="res://2D/Scenes/ReactorPowerPlant/reactorBackground.tscn" id="1_fu5oj"]
 [ext_resource type="PackedScene" uid="uid://bci5imo6fj32h" path="res://2D/Scenes/ReactorPowerPlant/reactorCollision.tscn" id="2_1y7yj"]
 [ext_resource type="PackedScene" uid="uid://benrneih6rhle" path="res://2D/Scenes/Player/player.tscn" id="3_8w32j"]

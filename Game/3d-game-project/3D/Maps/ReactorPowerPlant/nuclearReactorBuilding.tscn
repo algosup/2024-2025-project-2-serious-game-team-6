@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://daqcahpqsjm8u"]
 
 [ext_resource type="Texture2D" uid="uid://rgs40n1qo7x5" path="res://Sprite/Map/nuclearReactor.png" id="1_0x3yh"]
-[ext_resource type="Script" path="res://3D/Maps/ReactorPowerPlant/nuclear_reactor_building.gd" id="1_4db0g"]
+[ext_resource type="Script" path="res://3D/Maps/ReactorPowerPlant/nuclearReactorBuilding.gd" id="1_4db0g"]
 [ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://3D/Object/Interaction/interactable.tscn" id="2_bbfku"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qby6q"]

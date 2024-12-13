@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=3 uid="uid://bci5imo6fj32h"]
 
-[ext_resource type="Texture2D" uid="uid://pq7asr6rn7ge" path="res://Sprite/Powerplant/reactorcollisions.png" id="1_1q0vp"]
+[ext_resource type="Texture2D" uid="uid://pq7asr6rn7ge" path="res://Sprite/Powerplant/reactorCollisions.png" id="1_1q0vp"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_l73qy"]
 a = Vector2(-327, 281)

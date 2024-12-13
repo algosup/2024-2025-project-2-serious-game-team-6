@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dgtdiqk4a0xkt"]
 
 [ext_resource type="PackedScene" uid="uid://im6qesuucsc3" path="res://3D/Maps/ReactorPowerPlant/nuclearReactor.tscn" id="1_25mhv"]
-[ext_resource type="Script" path="res://3D/Maps/ReactorPowerPlant/nuclear_reactor_zone.gd" id="1_gdpp6"]
+[ext_resource type="Script" path="res://3D/Maps/ReactorPowerPlant/nuclearReactorZone.gd" id="1_gdpp6"]
 [ext_resource type="PackedScene" uid="uid://cfptiwe8b3u07" path="res://3D/Maps/ReactorPowerPlant/teleporter.tscn" id="2_otaro"]
 [ext_resource type="PackedScene" uid="uid://cjv0df8txk3mi" path="res://3D/Player/player.tscn" id="4_we3w1"]
 [ext_resource type="PackedScene" uid="uid://daqcahpqsjm8u" path="res://3D/Maps/ReactorPowerPlant/nuclearReactorBuilding.tscn" id="5_n2cev"]

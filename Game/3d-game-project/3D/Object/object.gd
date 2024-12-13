@@ -97,7 +97,7 @@ func place_on_ground() -> void:
 	player = null  # Clear player reference
 	set_process(false)  # Stop following the player
 
-# Teleporter all the objects below the map if one is going through the floor
+# Teleport all the objects below the map if one is going through the floor
 func _on_fall_zone_body_entered(body: Node3D) -> void:
 	global_position.y = 7
 	print("object glitched")
