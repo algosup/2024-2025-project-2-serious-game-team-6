@@ -63,13 +63,13 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_66hf1")
 }, {
-"duration": 1.0,
+"duration": 2.0,
 "texture": SubResource("AtlasTexture_sklj7")
 }, {
-"duration": 1.0,
+"duration": 2.0,
 "texture": SubResource("AtlasTexture_xi0yp")
 }, {
-"duration": 1.0,
+"duration": 2.0,
 "texture": SubResource("AtlasTexture_3xnpj")
 }, {
 "duration": 1.0,
@@ -101,7 +101,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 3.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m437d"]
@@ -115,7 +115,7 @@ script = ExtResource("1_p4fdd")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_joo6n")
 autoplay = "default"
-frame_progress = 0.0204835
+frame_progress = 0.635534
 
 [node name="Interactable2D" parent="." instance=ExtResource("2_wuigl")]
 

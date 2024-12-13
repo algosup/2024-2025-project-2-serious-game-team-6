@@ -111,16 +111,16 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_mcbev")
 }, {
-"duration": 1.0,
+"duration": 2.0,
 "texture": SubResource("AtlasTexture_k4aly")
 }, {
-"duration": 1.0,
+"duration": 2.0,
 "texture": SubResource("AtlasTexture_g76ob")
 }, {
-"duration": 1.0,
+"duration": 2.0,
 "texture": SubResource("AtlasTexture_c7576")
 }, {
-"duration": 1.0,
+"duration": 2.0,
 "texture": SubResource("AtlasTexture_ry3ni")
 }, {
 "duration": 1.0,
@@ -146,7 +146,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 0.03,
@@ -192,7 +192,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"move",
-"speed": 5.0
+"speed": 4.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_01d6r"]
@@ -207,8 +207,10 @@ script = ExtResource("1_0w5p1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -32)
 sprite_frames = SubResource("SpriteFrames_bglo3")
-animation = &"jump"
+animation = &"move"
 autoplay = "idle"
+frame = 1
+frame_progress = 0.0290583
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -30)

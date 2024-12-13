@@ -28,10 +28,14 @@ directories/dch_directory={
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
+"BinAlone": "res://Dialogue/BinAlone.dtl",
+"CleanedAllBins": "res://Dialogue/CleanedAllBins.dtl",
 "Enter_forest": "res://Dialogue/Enter_forest.dtl",
 "Globe": "res://Dialogue/Globe.dtl",
 "Scenes/Globe": "res://2D/Scenes/Globe.dtl",
-"Scientist_Hub": "res://Dialogue/Scientist_Hub.dtl"
+"Scientist_Hub": "res://Dialogue/Scientist_Hub.dtl",
+"WrongBin": "res://Dialogue/WrongBin.dtl",
+"firstHoldWaste": "res://Dialogue/firstHoldWaste.dtl"
 }
 layout/style_list=["res://Dialogue/TEST.tres"]
 layout/default_style="res://Dialogue/TEST.tres"
@@ -61,7 +65,7 @@ animations/join_default="Instant In"
 animations/leave_default="Instant Out"
 portraits/default_portrait=""
 animations/cross_fade_default="Fade Cross"
-text/input_action="interact"
+text/input_action="call"
 text/autocolor_names=false
 timer/process_in_physics=false
 

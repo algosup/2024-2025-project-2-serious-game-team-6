@@ -34,19 +34,15 @@ collision_priority = 2.0
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -36)
-zoom = Vector2(4, 4)
+offset = Vector2(0, 50)
+zoom = Vector2(5, 5)
 limit_bottom = 25
-
-[node name="Dialogue" parent="Player/Camera2D" instance=ExtResource("7_p643y")]
-visible = false
-position = Vector2(-72, 73)
-script = ExtResource("6_0dops")
 
 [node name="Wall" parent="." instance=ExtResource("3_7pign")]
 position = Vector2(-458, -408)
 
 [node name="Teleporter" parent="." instance=ExtResource("5_blg1p")]
-position = Vector2(-357, -59)
+position = Vector2(-357, -60)
 collision_mask = 1
 
 [node name="AudioLab" type="AudioStreamPlayer2D" parent="."]

@@ -2,20 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6ehrhysn75yg"
-path="res://.godot/imported/Left-Walk.png-11b5d9ed175c1a34ae5d0210ef188bb0.ctex"
+uid="uid://cjljqidqcvewt"
+path.s3tc="res://.godot/imported/teleportOutside.png-8fa72f77fc518d6e2dbfb085b14cfd72.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://Sprite/Player/Walking/Left-Walk.png"
-dest_files=["res://.godot/imported/Left-Walk.png-11b5d9ed175c1a34ae5d0210ef188bb0.ctex"]
+source_file="res://Sprite/HUB/teleportOutside.png"
+dest_files=["res://.godot/imported/teleportOutside.png-8fa72f77fc518d6e2dbfb085b14cfd72.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

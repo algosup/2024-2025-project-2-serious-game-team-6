@@ -9,6 +9,8 @@ var is_holded: bool = false # Is the object currently being held?
 var player: CharacterBody3D # Reference to the player holding the object
 var map: GridMap
 
+var firstHoldObject: bool = true
+
 # Highlight the nearest objects
 func add_highlight() -> void: 
 	highlight.show()
@@ -68,6 +70,9 @@ func hold(player_ref: CharacterBody3D) -> void:
 		player = player_ref
 		is_holded = true
 		axis_lock_linear_y = true # lock the y axis so the object doesn't gain falling speed while being hold
+		if firstHoldObject:
+			firstHoldObject = false
+			Dialogic.start("firstHoldWaste")
 		set_process(true) # Start updating the object's position
 
 # Function to release the object

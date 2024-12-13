@@ -6,7 +6,7 @@ class_name Bin
 @export var accepted_categories: Array[String] = [] # categories of trash accepted
 @export var main3d: Node3D
 
-var sheet_interacted: bool = false  # Tracks if the "sheet" was interacted with
+var sheet_interacted: bool = true  # Tracks if the "sheet" was interacted with
 var objects_in_bin: Array[Node] = [] # List of objects in the bin
 var cleaned: bool = false # Becomes true when this bin has received all its objects
 
@@ -43,12 +43,14 @@ func _on_interactable_interacted(interactor: Interactor) -> void:
 
 	# Handle different cases based on conditions
 	if not sheet_interacted and interactor.held_object == null:
+		Dialogic.start("BinAlone")
 		handle_case_1()
 
 	elif not sheet_interacted and interactor.held_object != null:
 		handle_case_2()
 
 	elif sheet_interacted and interactor.held_object == null:
+		Dialogic.start("BinAlone")
 		handle_case_3()
 
 	elif sheet_interacted and interactor.held_object != null:
@@ -93,6 +95,7 @@ func handle_case_4(interactor: Interactor) -> void:
 		# Update cleaned status for this bin
 		check_bin_cleaned()
 	else:
+		Dialogic.start("WrongBin")
 		print("This object doesn't belong in this bin.", held_object.category)
 
 func check_bin_cleaned() -> void:
@@ -115,3 +118,4 @@ func check_all_bins_cleaned() -> void:
 	main3d.cleaned = all_bins_cleaned
 	if all_bins_cleaned:
 		print("All bins are cleaned!")
+		Dialogic.start("CleanedAllBins")

@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cjv0df8txk3mi" path="res://3D/Player/player.tscn" id="2_f353c"]
 [ext_resource type="PackedScene" uid="uid://dw22r5xmrcwnw" path="res://3D/Maps/Forest/forest.tscn" id="2_lis2t"]
 [ext_resource type="PackedScene" uid="uid://554oaub4mgf2" path="res://3D/Object/object.tscn" id="3_77y3i"]
-[ext_resource type="PackedScene" uid="uid://dquahbivmmc6p" path="res://3D/Object/bin.tscn" id="4_mc4md"]
+[ext_resource type="PackedScene" uid="uid://dquahbivmmc6p" path="res://3D/Object/Bin.tscn" id="4_mc4md"]
 [ext_resource type="Texture2D" uid="uid://d03h8xspen8c" path="res://Sprite/Object/waste4.png" id="5_7dntq"]
 [ext_resource type="PackedScene" uid="uid://d1j52qixkvv0l" path="res://3D/Object/sheet.tscn" id="5_8hxas"]
 [ext_resource type="Texture2D" uid="uid://4wtl8o146ona" path="res://Sprite/Object/waste2.png" id="5_i6tb2"]
@@ -92,7 +92,7 @@ shape = SubResource("BoxShape3D_6csft")
 [node name="WorldSettup" type="WorldEnvironment" parent="."]
 
 [node name="Player" parent="." instance=ExtResource("2_f353c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5, 3, 57)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 3, 54)
 
 [node name="Forest" parent="." instance=ExtResource("2_lis2t")]
 

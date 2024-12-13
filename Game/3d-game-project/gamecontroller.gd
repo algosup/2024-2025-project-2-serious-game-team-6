@@ -3,14 +3,18 @@ class_name GameController
 
 @onready var zone1 = preload("res://3D/main3d.tscn")  # 3D scene
 @onready var zone2 = preload("res://3D/Maps/ReactorPowerPlant/nuclearReactorZone.tscn")  # 3D scene
-@onready var HUB = preload("res://2D/Scenes/main.tscn")  # 2D scene
+@onready var hub = preload("res://2D/Scenes/main.tscn")  # 2D scene
 @onready var house = preload("res://2D/Scenes/House/cabin.tscn") #2D house scene
 @onready var power_plant = preload("res://2D/Scenes/ReactorPowerPlant/powerPlant2d.tscn") #2D house scene
 
+
+var firstEnteredForest: bool = true
+
 # Variables to store the instances of the scenes
+
 var zone1_instance: Node = null
 var zone2_instance: Node = null
-@onready var hub_instance: Node = $HUB
+@onready var hub_instance: Node = $hub
 var house_instance: Node = null
 var power_plant_instance: Node = null
 
@@ -26,6 +30,9 @@ func teleporte_to_zone1() -> void:
 	else:
 		zone1_instance = zone1.instantiate()
 		add_child(zone1_instance)
+	if firstEnteredForest:
+		firstEnteredForest = false
+		Dialogic.start("Enter_forest")
 		
 func teleporte_to_zone2() -> void:
 	# Remove the current child (if any)
@@ -38,6 +45,7 @@ func teleporte_to_zone2() -> void:
 	else:
 		zone2_instance = zone2.instantiate()
 		add_child(zone2_instance)
+	
 
 func teleporte_to_hub() -> void:
 	# Remove the current child (if any)
@@ -48,7 +56,7 @@ func teleporte_to_hub() -> void:
 	if hub_instance:
 		add_child(hub_instance)
 	else:
-		hub_instance = HUB.instantiate()
+		hub_instance = hub.instantiate()
 		add_child(hub_instance)
 
 func change_env(main3d: Node) -> void:
