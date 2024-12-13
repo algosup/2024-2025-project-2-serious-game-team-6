@@ -30,7 +30,7 @@
 
 **The beginning :**
 
-You start your journey in a spaceship on a planet you don’t know about... Working in pair with a scientist, and it seems he has a task for you! You will have to explore this planet to understand how it has fallen. Thothan, the scientist, believes the key to the planet’s mystery lies in its ancient ruins, and it’s up to you to uncover the truth. Good luck, explorer. Your journey begins now.
+You start your journey in a spaceship on a planet you don’t know about... You are working in pair with a scientist, and it seems like he has a task for you! You will have to explore this planet to understand how it has fallen. Thothan, the scientist, believes the key to the planet’s mystery lies in its ancient ruins, and it’s up to you to uncover the truth. Good luck, explorer. Your journey begins now.
 
 
 ### Basic-controls
@@ -50,7 +50,7 @@ You start your journey in a spaceship on a planet you don’t know about... Work
 
 **Set out for a journey on a dystopian planet...**
 
-The Goal of the game is to learn about global warming. To do so, you will have to discover how a lack of consideration of ecology has led to the fall of a civilization.
+The Goal of the game is to learn about global warming. To do so, you will have to discover how a lack of consideration of global warming has led to the fall of a civilization.
 
 **Explore and learn!**
 
