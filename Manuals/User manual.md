@@ -11,7 +11,7 @@
 
 - [Your adventure begins](#your-adventure-begins)
 - [Basic controls](#basic-controls)
-- [Object of the game](#object-of-the-game)
+- [Goal of the game](#goal-of-the-game)
 
 - [About puzzles](#about-puzzles)
 - [About zones](#about-zones)
@@ -46,7 +46,7 @@ You start your journey in a spaceship on a planet you don’t know about... You 
 | Call                 | C             | C             |
 | Menu/Settings        | Esc           | Esc           |
 
-### Object-of-the-game
+### Goal-of-the-game
 
 **Set out for a journey on a dystopian planet...**
 
