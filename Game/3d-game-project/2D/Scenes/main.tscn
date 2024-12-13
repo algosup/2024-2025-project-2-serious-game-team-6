@@ -42,5 +42,5 @@ script = ExtResource("6_0dops")
 position = Vector2(-458, -408)
 
 [node name="Teleporter" parent="." instance=ExtResource("5_blg1p")]
-position = Vector2(-357, -59)
+position = Vector2(-357, -60)
 collision_mask = 1
