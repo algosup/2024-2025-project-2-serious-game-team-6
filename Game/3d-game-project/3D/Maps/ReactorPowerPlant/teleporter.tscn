@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=3 uid="uid://cfptiwe8b3u07"]
+
+[ext_resource type="Script" path="res://3D/Maps/ReactorPowerPlant/teleporter.gd" id="1_qubat"]
+[ext_resource type="Texture2D" uid="uid://c2iyge5qfo31s" path="res://Sprite/Map/teleportOutside.png" id="2_r88n1"]
+[ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://3D/Object/Interaction/interactable.tscn" id="3_i3us2"]
+
+[sub_resource type="Gradient" id="Gradient_w3vr6"]
+offsets = PackedFloat32Array(0.565217, 0.879599)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_cusew"]
+gradient = SubResource("Gradient_w3vr6")
+fill = 1
+fill_from = Vector2(0.471, 0.55)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x6hmq"]
+transparency = 1
+blend_mode = 1
+shading_mode = 0
+albedo_texture = SubResource("GradientTexture2D_cusew")
+
+[sub_resource type="QuadMesh" id="QuadMesh_3as0f"]
+material = SubResource("StandardMaterial3D_x6hmq")
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_qubat")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = ExtResource("2_r88n1")
+
+[node name="Interactable" parent="." instance=ExtResource("3_i3us2")]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Interactable"]
+
+[node name="HighLight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.3, 0, 0, 0, 1, 0, 0, -0.01)
+visible = false
+mesh = SubResource("QuadMesh_3as0f")
+
+[connection signal="focused" from="Interactable" to="." method="_on_interactable_focused"]
+[connection signal="interacted" from="Interactable" to="." method="_on_interactable_interacted"]
+[connection signal="unfocused" from="Interactable" to="." method="_on_interactable_unfocused"]

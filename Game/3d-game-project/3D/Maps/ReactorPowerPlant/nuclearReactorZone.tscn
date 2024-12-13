@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://dgtdiqk4a0xkt"]
+
+[ext_resource type="PackedScene" uid="uid://im6qesuucsc3" path="res://3D/Maps/ReactorPowerPlant/nuclearReactor.tscn" id="1_25mhv"]
+[ext_resource type="Script" path="res://3D/Maps/ReactorPowerPlant/nuclear_reactor_zone.gd" id="1_gdpp6"]
+[ext_resource type="PackedScene" uid="uid://cfptiwe8b3u07" path="res://3D/Maps/ReactorPowerPlant/teleporter.tscn" id="2_otaro"]
+[ext_resource type="PackedScene" uid="uid://cjv0df8txk3mi" path="res://3D/Player/player.tscn" id="4_we3w1"]
+[ext_resource type="PackedScene" uid="uid://daqcahpqsjm8u" path="res://3D/Maps/ReactorPowerPlant/nuclearReactorBuilding.tscn" id="5_n2cev"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_gdpp6")
+
+[node name="NuclearReactor" parent="." instance=ExtResource("1_25mhv")]
+
+[node name="Teleporter" parent="." instance=ExtResource("2_otaro")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 2.30262, 3)
+
+[node name="Player" parent="." instance=ExtResource("4_we3w1")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 1.74125, 3)
+
+[node name="SunLight" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.783383, 0.199178, -0.588762, 0.231281, 0.785823, 0.573577, 0.576907, -0.585499, 0.569535, -15, 40, 20)
+light_color = Color(0.982607, 0.979315, 0.922829, 1)
+light_energy = 2.0
+shadow_enabled = true
+shadow_normal_bias = 2.5
+directional_shadow_max_distance = 8192.0
+
+[node name="NuclearReactorInterior" parent="." instance=ExtResource("5_n2cev")]
+transform = Transform3D(2.25, 0, 0, 0, 2.25, 0, 0, 0, 2.25, 0, 13.5411, -21.5839)

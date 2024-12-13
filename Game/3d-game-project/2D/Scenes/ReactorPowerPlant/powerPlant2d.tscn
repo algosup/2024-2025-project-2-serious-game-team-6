@@ -1,18 +1,44 @@
-[gd_scene load_steps=4 format=3 uid="uid://6ujtn6cjjxqa"]
+[gd_scene load_steps=7 format=3 uid="uid://6ujtn6cjjxqa"]
 
+[ext_resource type="Script" path="res://2D/Scenes/ReactorPowerPlant/power_plant_2d.gd" id="1_3gcbn"]
 [ext_resource type="PackedScene" uid="uid://djfl34w5v6262" path="res://2D/Scenes/ReactorPowerPlant/reactorBackground.tscn" id="1_fu5oj"]
 [ext_resource type="PackedScene" uid="uid://bci5imo6fj32h" path="res://2D/Scenes/ReactorPowerPlant/reactorCollision.tscn" id="2_1y7yj"]
 [ext_resource type="PackedScene" uid="uid://benrneih6rhle" path="res://2D/Scenes/Player/player.tscn" id="3_8w32j"]
+[ext_resource type="PackedScene" uid="uid://dm1uaq5fv2nh6" path="res://2D/Interaction 2D/Interaction/interactable2d.tscn" id="5_c31nw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_orvr8"]
+size = Vector2(20, 97)
 
 [node name="Powerplant2D" type="Node2D"]
+script = ExtResource("1_3gcbn")
 
 [node name="StaticBody2D" parent="." instance=ExtResource("1_fu5oj")]
+position = Vector2(3, -2)
 
 [node name="Player" parent="." instance=ExtResource("3_8w32j")]
 position = Vector2(-504, 280)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(504, -280)
+zoom = Vector2(5, 5)
+limit_left = 20
+limit_top = -300
+limit_right = 20
+limit_bottom = 300
 
 [node name="StaticBody2D2" parent="." instance=ExtResource("2_1y7yj")]
 collision_mask = 3
+
+[node name="Interactable2D" parent="." instance=ExtResource("5_c31nw")]
+position = Vector2(-544, 231)
+scale = Vector2(2, 5)
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(-377, 219)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(-183, 13.5)
+shape = SubResource("RectangleShape2D_orvr8")
+
+[connection signal="focused" from="Interactable2D" to="." method="_on_interactable_2d_focused"]
+[connection signal="interacted" from="Interactable2D" to="." method="_on_interactable_2d_interacted"]
+[connection signal="unfocused" from="Interactable2D" to="." method="_on_interactable_2d_unfocused"]

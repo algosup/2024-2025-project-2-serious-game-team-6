@@ -1,10 +1,13 @@
-[gd_scene load_steps=33 format=3 uid="uid://benrneih6rhle"]
+[gd_scene load_steps=36 format=3 uid="uid://benrneih6rhle"]
 
 [ext_resource type="Script" path="res://2D/Scenes/Player/player.gd" id="1_0w5p1"]
 [ext_resource type="Texture2D" uid="uid://1b4tv7xuf18v" path="res://Sprite/Player/Idle/Left-jumping-Sheet.png" id="2_3sgu4"]
 [ext_resource type="Texture2D" uid="uid://4hu6qohc83u3" path="res://Sprite/Player/Idle/LeftIdle/leftIdle.png" id="2_kdt31"]
 [ext_resource type="Texture2D" uid="uid://b6ehrhysn75yg" path="res://Sprite/Player/Walking/Left-Walk.png" id="3_8m8ky"]
 [ext_resource type="PackedScene" uid="uid://2kuwvidbomwg" path="res://2D/Interaction 2D/Interaction/playerInteractor2d.tscn" id="3_pu22m"]
+[ext_resource type="AudioStream" uid="uid://dmg2t7qs0h7dq" path="res://Sounds/tp.wav" id="6_mp264"]
+[ext_resource type="AudioStream" uid="uid://b63hfhl3vofpo" path="res://Sounds/WalkingonSolidMetal.wav" id="7_3yewv"]
+[ext_resource type="AudioStream" uid="uid://h7kv6o0i0wh" path="res://Sounds/Jump Audio.mp3" id="8_cu7qr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mcbev"]
 atlas = ExtResource("2_kdt31")
@@ -220,6 +223,19 @@ player = NodePath("..")
 position = Vector2(-1, -30)
 scale = Vector2(2, 3.1)
 shape = SubResource("RectangleShape2D_6mjl4")
+
+[node name="Teleported2D" type="AudioStreamPlayer2D" parent="PlayerInteractor2d"]
+position = Vector2(-358, 0)
+stream = ExtResource("6_mp264")
+max_polyphony = 1000
+
+[node name="FootStep" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_3yewv")
+pitch_scale = 1.5
+
+[node name="Jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_cu7qr")
+volume_db = 5.0
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="input_event" from="PlayerInteractor2d" to="." method="_on_player_interactor_2d_input_event"]

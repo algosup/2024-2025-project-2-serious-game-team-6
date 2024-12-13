@@ -1,16 +1,12 @@
 extends Interactor2D
 
 @export var player: CharacterBody2D # Reference to the player
-
+@onready var teleported : AudioStreamPlayer2D = $Teleported2D
 # Track the closest interactable and currently held object
 var cached_closest: Interactable2D
 
 func _ready() -> void:
-	Dialogic.timeline_started.connect(set_physics_process.bind(false))
-	Dialogic.timeline_started.connect(set_process_input.bind(false))
- 
-	Dialogic.timeline_ended.connect(set_physics_process.bind(true))
-	Dialogic.timeline_ended.connect(set_process_input.bind(true))
+	controller = player
 
 # Update the closest interactable object in each physics frame
 func _physics_process(delta: float) -> void:
@@ -33,14 +29,16 @@ func _input(event: InputEvent) -> void:
 		if cached_closest:
 			
 			if cached_closest.get_parent() is Teleporter2D:
+				teleported.play()
 				interact_with_teleporter(cached_closest.get_parent())
 			if cached_closest.get_parent() is Scientist:
-				interact_with_scientist(cached_closest.get_parent())
+				interact_with_scientist((cached_closest.get_parent()))
 			if cached_closest.get_parent() is Globe:
 				interact_with_globe(cached_closest.get_parent())
 			if cached_closest.get_parent() is Cabin:
 				interact_with_door(cached_closest.get_parent())
-
+			if cached_closest.get_parent() is PowerPlant:
+				interact_with_door_reactor(cached_closest.get_parent())
 
 func interact_with_globe(globe: Globe) -> void:
 	globe._on_interactable_2d_interacted(self)
@@ -55,3 +53,6 @@ func interact_with_teleporter(teleporter: Teleporter2D) -> void:
 
 func interact_with_door(cabin: Cabin):
 	cabin._on_interactable_2d_interacted(self)
+	
+func interact_with_door_reactor(reactor: PowerPlant):
+	reactor._on_interactable_2d_interacted(self)
