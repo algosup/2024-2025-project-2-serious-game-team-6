@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://btsnua661cpjb"]
+[gd_scene load_steps=31 format=3 uid="uid://btsnua661cpjb"]
 
 [ext_resource type="Script" path="res://3D/main3d.gd" id="1_2tsxk"]
 [ext_resource type="PackedScene" uid="uid://bvpj6gim073ls" path="res://3D/Maps/Forest/house.tscn" id="2_7t8po"]
@@ -9,8 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://d03h8xspen8c" path="res://Sprite/Object/waste4.png" id="5_7dntq"]
 [ext_resource type="PackedScene" uid="uid://d1j52qixkvv0l" path="res://3D/Object/sheet.tscn" id="5_8hxas"]
 [ext_resource type="Texture2D" uid="uid://4wtl8o146ona" path="res://Sprite/Object/waste2.png" id="5_i6tb2"]
+[ext_resource type="AudioStream" uid="uid://cqwnwtfx1bysi" path="res://Sounds/forestHealed.mp3" id="5_ka8t0"]
 [ext_resource type="PackedScene" uid="uid://duxis1tq710hb" path="res://3D/Maps/Forest/Teleporter.tscn" id="6_wxe6h"]
 [ext_resource type="Texture2D" uid="uid://bsfaeq5rnwt2q" path="res://Sprite/Object/waste1.png" id="7_q3e2l"]
+[ext_resource type="AudioStream" uid="uid://b6tgvl4kj7tcj" path="res://Sounds/plastic_water_bottle_empty_drop.mp3" id="8_7ygy1"]
 [ext_resource type="Texture2D" uid="uid://bs5gxhngcoubb" path="res://Sprite/Object/waste3.png" id="9_4a83c"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6csft"]
@@ -94,6 +96,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 3, 54)
 
 [node name="Forest" parent="." instance=ExtResource("2_lis2t")]
 
+[node name="ForestHealed" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("5_ka8t0")
+unit_size = 100.0
+max_distance = 4096.0
+
 [node name="SunLight" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.783383, 0.199178, -0.588762, 0.231281, 0.785823, 0.573577, 0.576907, -0.585499, 0.569535, -15, 40, 20)
 light_color = Color(1, 1, 0.666667, 1)
@@ -119,6 +126,10 @@ texture = ExtResource("7_q3e2l")
 [node name="Highlight" parent="PlasticBottleTrash" index="3"]
 transform = Transform3D(0.7, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, -0.01)
 mesh = SubResource("QuadMesh_rmbbe")
+
+[node name="AudioPlaced" type="AudioStreamPlayer3D" parent="PlasticBottleTrash"]
+stream = ExtResource("8_7ygy1")
+volume_db = 5.0
 
 [node name="DirtyRagTrash" parent="." instance=ExtResource("3_77y3i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 3, 20)

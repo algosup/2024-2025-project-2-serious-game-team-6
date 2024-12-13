@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://daqcahpqsjm8u"]
+
+[ext_resource type="Texture2D" uid="uid://rgs40n1qo7x5" path="res://Sprite/Map/nuclearReactor.png" id="1_0x3yh"]
+[ext_resource type="Script" path="res://3D/Maps/ReactorPowerPlant/nuclear_reactor_building.gd" id="1_4db0g"]
+[ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://3D/Object/Interaction/interactable.tscn" id="2_bbfku"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qby6q"]
+size = Vector3(1.00867, 1, 0.989868)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d3qka"]
+size = Vector3(1, 1.00476, 0.931763)
+
+[node name="NuclearReactorInterior" type="Node3D"]
+script = ExtResource("1_4db0g")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+render_priority = -1
+texture = ExtResource("1_0x3yh")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(14.25, 0, 0, 0, 10.5, 0, 0, 0, 20, 0.0434775, -0.364686, -10.0928)
+shape = SubResource("BoxShape3D_qby6q")
+
+[node name="Interactable" parent="." instance=ExtResource("2_bbfku")]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Interactable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.03196, -0.170156)
+shape = SubResource("BoxShape3D_d3qka")
+
+[connection signal="focused" from="Interactable" to="Interactable" method="_on_focused"]
+[connection signal="interacted" from="Interactable" to="Interactable" method="_on_interacted"]
+[connection signal="unfocused" from="Interactable" to="Interactable" method="_on_unfocused"]

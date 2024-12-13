@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 DebugMenu="*res://addons/debug_menu/debug_menu.tscn"
+InteractionManager="*res://2D/Interaction 2D/Interaction area/interactionManager.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]

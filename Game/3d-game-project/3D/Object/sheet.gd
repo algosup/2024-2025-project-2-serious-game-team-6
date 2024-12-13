@@ -3,6 +3,7 @@ class_name Sheet
 
 @onready var highlight: MeshInstance3D = $Highlight
 @onready var sheet_ui: CanvasLayer = $SheetUI  # Reference to the CanvasLayer for the sheet UI
+@onready var unfold: AudioStreamPlayer3D = $Unfold
 
 @export var bin: Node3D
 @export var bin2: Node3D
@@ -34,6 +35,7 @@ func _on_interactable_interacted(interactor: Interactor) -> void:
 
 func _open_sheet_ui(interactor: Interactor) -> void:
 	# Display the sheet UI
+	unfold.play()
 	sheet_ui.visible = true
 	is_sheet_ui_open = true
 
