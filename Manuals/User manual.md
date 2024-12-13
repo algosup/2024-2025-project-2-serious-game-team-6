@@ -30,17 +30,8 @@
 
 **The beginning :**
 
-You start your journey in a spaceship on 
+You start your journey in a spaceship on a planet you don’t know about... Working in a pair with a scientist, he has a task for you! You will have to explore this planet to understand how it has fallen. Thothan, the scientist, believes the key to the planet’s mystery lies in its ancient ruins, and it’s up to you to uncover the truth. Good luck, explorer. Your journey begins now.
 
-a planet you don’t know about... Working 
-
-in a pair with a scientist, he has a 
-
-task for you ! You will have to explore this planet to understand how it has fallen.
-
-Thothan, the scientist, believes the key to the planet’s mystery lies in its ancient ruins, and it’s up to you to uncover the truth.
-
- Good luck, explorer. Your journey begins now.
 
 ### basic-controls
 
@@ -59,35 +50,35 @@ Thothan, the scientist, believes the key to the planet’s mystery lies in its a
 
 **Set out for a journey in a dystopian earth...**
 
-The object of the game is to learn about ecology. To do so you will have to discover how a lack of consideration of ecology has lead to the fall of a civilization.
+The Goal of the game is to learn about ecology. To do so, you will have to discover how a lack of consideration of ecology has led to the fall of a civilization.
 
 **Explore and learn!**
 
-Through the game you will have to face puzzles in multiples zones. Theses puzzles will teach you about recycling, energy, global warming and importance of flora. You will also find more information in the pieces of lore hidden in the different zones.
+Through the game you will have to face puzzles in multiple zones. Theses puzzles will teach you about recycling, energy, global warming and importance of flora. You will also find more information in the pieces of lore hidden in the different zones. 
 
 ### about-puzzles
 
 **Recycling (forest)**
 
-The first puzzle you face will ask you to sort wastes. To do so, you will have to find wastes and put them in the good bins. To help you, you will find an information sheet that tells you how to sort wastes. By doing it right you will be able to see the nature coming back, to access the next zone and even find something new related to the lore.
+The first puzzle you face will ask you to sort wastes. To do so, you will have to find wastes and put them in the appropriate bins. To help you, you will find an information sheet that tells you how to sort wastes. By doing it right, you will be able to see the nature coming back, to access the next zone and even find something new related to the lore.
 
 **Energy (nuclear power plant)**
 
-The second puzzle will ask you to reactivate a nuclear reactor. To do so, you will find wires and panels to put at the right place. To help you, you will find an information sheet that tells you how to do and gives you information about the different sources of energy and how do they pollute. By doing it right you will be able to supplies energy to several elements within the different areas, access new zones and even find something new related to the lore.
+The second puzzle will ask you to reactivate a nuclear reactor. To do so, you will find some mechanisms you will have to interact with. To help you, you will find an information sheet that tells you how to do and gives you information about the different sources of energy and how they pollute. By doing it right, you will be able to supply energy to several elements within the different areas, access new zones and even find something new related to the lore.
 
 **Global warming (desert)**
 
-The third puzzle you face will ask you to reactivate CO2 scrubbers. To do so, you will find CO2 scrubbers' panel to put at the right place. To help you, you will find an information sheet that tells you how to do it and will explain why CO2 has a major role in global warming. By doing it right you will be able to reduces the CO2 rate in the air, reducing the overall temperature so you can explore the zone in depth and even find something new related to the lore.
+The third puzzle you face will ask you to reactivate CO2 scrubbers. To do so, you will find CO2 scrubbers' panel to activate. To help you, you will find an information sheet that tells you how to do it and will explain why CO2 has a major role in global warming. By doing it right, you will be able to reduce the CO2 rate in the air, reducing the overall temperature so you can explore the zone in depth and even find something new related to the lore.
 
 **Restore flora (desert)**
 
-The fourth puzzle you face will ask you to plant the seeds that you found in the forest. To do so, you will have to plant seeds in the desert. To help you, the scientist will give you the related information, you will also find an information sheet that tells you the importance of flora for life. By doing it right you will be able to revitalize the area and even find something new related to the lore.
+The fourth puzzle you face will ask you to plant the seeds that you found in the forest. To do so, you will have to plant seeds in the desert. To help you, the scientist will give you the related information, you will also find an information sheet that tells you the importance of flora for life. By doing it right, you will be able to revitalize the area and even find something new related to the lore.
 
 ### about-zones
 
 **Game zones**
 
-The game is divided in three zones (forest, nuclear power plant, desert). You will have to pass the puzzles of each zones before going to the next one. You will also be able to find pieces of lore within the zones.
+The game is divided in three zones (forest, nuclear power plant, desert). You will have to pass the puzzles of each zone before going to the next one. You will also be able to find pieces of lore within the zones.
 
 ![image](image/Forest.png)
 ### characters
@@ -105,7 +96,7 @@ The player is named Quireo. He’s really curious and wants to preserve knowledg
 ![image](image/Protagonist.png)
 ### hub
 
-**The base camp**
+**The spaceship**
 
 The hub is the first place you will discover when starting a new game. This place is the bridge between every zone due to the teleporter allowing you to travel through the map. You will also find a map of the planet and the scientist waiting to analyze your discoveries.
 
