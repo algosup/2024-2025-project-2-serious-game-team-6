@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4hu6qohc83u3"
-path.s3tc="res://.godot/imported/leftIdle.png-a1ba35b083f0bd5ca273a55408614c6b.s3tc.ctex"
+path="res://.godot/imported/leftIdle.png-a1ba35b083f0bd5ca273a55408614c6b.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://Sprite/Player/Idle/LeftIdle/leftIdle.png"
-dest_files=["res://.godot/imported/leftIdle.png-a1ba35b083f0bd5ca273a55408614c6b.s3tc.ctex"]
+dest_files=["res://.godot/imported/leftIdle.png-a1ba35b083f0bd5ca273a55408614c6b.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

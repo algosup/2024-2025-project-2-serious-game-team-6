@@ -29,7 +29,7 @@ func _on_area_exited(area: Interactable2D) -> void:
 
 # Handle interaction inputs
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("interact"):
+	if event.is_action_pressed("interact") and get_parent().is_on_floor():
 		if cached_closest:
 			
 			if cached_closest.get_parent() is Teleporter2D:
