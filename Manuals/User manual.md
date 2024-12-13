@@ -26,14 +26,14 @@
 
 ![image](image/Game%20manual.png)
 
-### your-adventure-begins	
+### Your-adventure-begins	
 
 **The beginning :**
 
-You start your journey in a spaceship on a planet you don’t know about... Working in a pair with a scientist, he has a task for you! You will have to explore this planet to understand how it has fallen. Thothan, the scientist, believes the key to the planet’s mystery lies in its ancient ruins, and it’s up to you to uncover the truth. Good luck, explorer. Your journey begins now.
+You start your journey in a spaceship on a planet you don’t know about... Working in pair with a scientist, he has a task for you! You will have to explore this planet to understand how it has fallen. Thothan, the scientist, believes the key to the planet’s mystery lies in its ancient ruins, and it’s up to you to uncover the truth. Good luck, explorer. Your journey begins now.
 
 
-### basic-controls
+### Basic-controls
 
 | Controls             |               |               |
 | -------------------- | ------------- | ------------- |
@@ -46,7 +46,7 @@ You start your journey in a spaceship on a planet you don’t know about... Work
 | Call                 | C             | C             |
 | Menu/Settings Access | Esc           | Esc           |
 
-### object-of-the-game
+### Object-of-the-game
 
 **Set out for a journey in a dystopian earth...**
 
@@ -54,9 +54,9 @@ The Goal of the game is to learn about ecology. To do so, you will have to disco
 
 **Explore and learn!**
 
-Through the game you will have to face puzzles in multiple zones. Theses puzzles will teach you about recycling, energy, global warming and importance of flora. You will also find more information in the pieces of lore hidden in the different zones. 
+Throughout the game you will have to face puzzles in multiple zones. These puzzles will teach you about recycling, energy, global warming and importance of flora. You will also find more information in the pieces of lore hidden in the different zones. 
 
-### about-puzzles
+### About-puzzles
 
 **Recycling (forest)**
 
@@ -74,14 +74,14 @@ The third puzzle you face will ask you to reactivate CO2 scrubbers. To do so, yo
 
 The fourth puzzle you face will ask you to plant the seeds that you found in the forest. To do so, you will have to plant seeds in the desert. To help you, the scientist will give you the related information, you will also find an information sheet that tells you the importance of flora for life. By doing it right, you will be able to revitalize the area and even find something new related to the lore.
 
-### about-zones
+### About-zones
 
 **Game zones**
 
 The game is divided in three zones (forest, nuclear power plant, desert). You will have to pass the puzzles of each zone before going to the next one. You will also be able to find pieces of lore within the zones.
 
 ![image](image/Forest.png)
-### characters
+### Characters
 
 **The scientist**
 
@@ -94,14 +94,14 @@ The scientist is named Thothan. He’s really thoughtful, observant, meticulous 
 The player is named Quireo. He’s really curious and wants to preserve knowledge and wisdom as much as he can.
 
 ![image](image/Protagonist.png)
-### hub
+### Hub
 
 **The spaceship**
 
-The hub is the first place you will discover when starting a new game. This place is the bridge between every zone due to the teleporter allowing you to travel through the map. You will also find a map of the planet and the scientist waiting to analyze your discoveries.
+The hub is the first place you will discover when starting a new game. This place is the bridge between every zone due to the teleporter allowing you to travel across the map. You will also find a map of the planet and the scientist waiting to analyze your discoveries.
 
 ![image](image/Hub.png)
-### narrative-lore
+### Narrative-lore
 
 **Narrative**
 
@@ -111,7 +111,7 @@ By the 2040s, climate impacts from unchecked industrial growth were severe, desp
 
 You will find pieces of lore in the different zones. As they are hidden you will have to find them to learn more about the world you explore. The importance of the lore lies in the understanding you will have of the importance of ecology.
 
-### mechanics
+### Mechanics
 
 **Movement**
 
@@ -145,7 +145,7 @@ Call: During certain moments, the player can call the scientist NPC to get hints
 
 
 
-### team-6-credits
+### Team-6-credits
 
 [PM] - Mathias GAGNEPAIN <br>
 [PGM]- Enzo GUILLOUCHE <br>
