@@ -2,6 +2,7 @@ extends Node3D
 class_name Bin 
 
 @onready var highlight: MeshInstance3D = $Highlight
+@onready var placed: AudioStreamPlayer3D = $AudioTrashPlaced
 @export var accepted_categories: Array[String] = [] # categories of trash accepted
 @export var main3d: Node3D
 
@@ -64,6 +65,7 @@ func handle_case_3() -> void:
 
 func handle_case_4(interactor: Interactor) -> void:
 	var held_object = interactor.held_object
+	placed.play()
 	if held_object and held_object.category in accepted_categories:
 		print("Object placed in bin:", held_object.category)
 

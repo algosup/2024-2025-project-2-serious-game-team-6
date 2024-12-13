@@ -1,4 +1,4 @@
-[gd_scene load_steps=84 format=3 uid="uid://cjv0df8txk3mi"]
+[gd_scene load_steps=86 format=3 uid="uid://cjv0df8txk3mi"]
 
 [ext_resource type="Script" path="res://3D/Player/player.gd" id="1_homsk"]
 [ext_resource type="Texture2D" uid="uid://0h00bcoor43l" path="res://Sprite/Player/Idle/BackIdle/playerBackIdle.png" id="2_w0l4m"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://cjbl0c4youbpo" path="res://Sprite/Player/Walking/PlayerFrontMove.png" id="5_g2chr"]
 [ext_resource type="PackedScene" uid="uid://dtjl5d6ip77if" path="res://3D/Object/Interaction/playerInteractor.tscn" id="5_qi7q6"]
 [ext_resource type="Texture2D" uid="uid://b6ehrhysn75yg" path="res://Sprite/Player/Walking/Left-Walk.png" id="7_7sbvg"]
+[ext_resource type="AudioStream" uid="uid://cchoorxiablfo" path="res://Sounds/forestFootsteps.wav" id="9_lx7ya"]
+[ext_resource type="AudioStream" uid="uid://dmg2t7qs0h7dq" path="res://Sounds/tp.wav" id="10_gdy65"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cjslx"]
 atlas = ExtResource("2_w0l4m")
@@ -592,5 +594,14 @@ player = NodePath("..")
 [node name="CollisionShape3D" parent="PlayerInteractor" index="0"]
 transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 1.5, 0, 0, 0)
 shape = SubResource("CylinderShape3D_oamqn")
+
+[node name="Teleported3D" type="AudioStreamPlayer3D" parent="PlayerInteractor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 3, 56.5)
+stream = ExtResource("10_gdy65")
+
+[node name="FootSteps" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("9_lx7ya")
+volume_db = 20.0
+pitch_scale = 1.3
 
 [editable path="PlayerInteractor"]

@@ -1,7 +1,7 @@
 extends Interactor2D
 
 @export var player: CharacterBody2D # Reference to the player
-
+@onready var teleported : AudioStreamPlayer2D = $Teleported2D
 # Track the closest interactable and currently held object
 var cached_closest: Interactable2D
 
@@ -29,6 +29,7 @@ func _input(event: InputEvent) -> void:
 		if cached_closest:
 			
 			if cached_closest.get_parent() is Teleporter2D:
+				teleported.play()
 				interact_with_teleporter(cached_closest.get_parent())
 			if cached_closest.get_parent() is Scientist:
 				interact_with_scientist((cached_closest.get_parent()))

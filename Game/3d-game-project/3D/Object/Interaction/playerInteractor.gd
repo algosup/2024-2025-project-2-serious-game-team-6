@@ -5,6 +5,7 @@ extends Interactor
 # Track the closest interactable and currently held object
 var cached_closest: Interactable
 var held_object: RigidBody3D = null
+@onready var teleported : AudioStreamPlayer3D = $Teleported3D
 
 func _ready() -> void:
 	controller = player
@@ -45,6 +46,7 @@ func _input(event: InputEvent) -> void:
 				elif cached_closest.get_parent() is RigidBody3D:
 					grab_object(cached_closest.get_parent() as RigidBody3D)
 				elif cached_closest.get_parent() is Teleporter:
+					teleported.play()
 					interact_with_teleporter(cached_closest.get_parent())
 				elif cached_closest.get_parent() is TeleporterNuclear:
 					interact_with_teleporter_nuclear(cached_closest.get_parent())
@@ -80,7 +82,7 @@ func interact_with_sheet(sheet: Sheet) -> void:
 # Interact with the teleporter
 func interact_with_teleporter(teleporter: Teleporter):
 	teleporter._on_interactable_interacted(self)
-	
+
 func interact_with_teleporter_nuclear(teleporter_nuclear: TeleporterNuclear):
 	teleporter_nuclear._on_interactable_interacted(self)
 

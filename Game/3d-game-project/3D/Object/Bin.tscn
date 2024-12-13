@@ -1,9 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://dquahbivmmc6p"]
-
+[gd_scene load_steps=12 format=3 uid="uid://dquahbivmmc6p"]
 
 [ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://3D/Object/Interaction/interactable.tscn" id="1_heqxe"]
-
 [ext_resource type="Script" path="res://3D/Object/bin.gd" id="1_qve5h"]
+[ext_resource type="AudioStream" uid="uid://dcohbiyo34uh0" path="res://Sounds/dustbin_trash_plastic.mp3" id="3_4f6eu"]
 
 [sub_resource type="Gradient" id="Gradient_cof37"]
 
@@ -61,6 +60,9 @@ shape = SubResource("BoxShape3D_joqm1")
 transform = Transform3D(0.7, 0, 0, 0, 1.3, 0, 0, 0, 1, 0, 0, 0)
 visible = false
 mesh = SubResource("QuadMesh_tn5nv")
+
+[node name="AudioTrashPlaced" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_4f6eu")
 
 [connection signal="focused" from="Interactable" to="." method="_on_interactable_focused"]
 [connection signal="interacted" from="Interactable" to="." method="_on_interactable_interacted"]

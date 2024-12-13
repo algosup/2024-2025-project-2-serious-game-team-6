@@ -8,16 +8,20 @@ var movement_disabled: bool = false  # Flag to disable movement
 # Sprite import and settup
 var sprite: AnimatedSprite3D
 var last_direction: String = "FrontIdle"
+@onready var footstep = $FootSteps
 
 func _ready(): 
 	# Sprite settup
 	sprite = $Sprite
 	sprite.animation = last_direction
 	sprite.play()
+	footstep.play()
+	footstep.stream_paused = true  # Ensure sound is paused at the start
 	DebugMenu.style = DebugMenu.Style.VISIBLE_DETAILED
 
 func _physics_process(delta): # control
 	if movement_disabled:
+		footstep.stream_paused = true
 		return  # Skip processing if movement is disabled
 
 	var input_dir = Vector3.ZERO
@@ -44,10 +48,13 @@ func _physics_process(delta): # control
 	# Playing directional sprite depending on the last direction input
 	if input_dir != Vector3.ZERO:
 		handle_animation(input_dir)
+		if footstep.stream_paused:
+			footstep.stream_paused = false
 	else:
 		sprite.animation = last_direction
 		if !sprite.is_playing():
 			sprite.play()
+		footstep.stream_paused = true
 
 # Sprite depending on direction
 func handle_animation(input_dir: Vector3):

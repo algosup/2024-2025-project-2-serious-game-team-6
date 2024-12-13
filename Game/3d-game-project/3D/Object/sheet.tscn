@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://d1j52qixkvv0l"]
+[gd_scene load_steps=8 format=3 uid="uid://d1j52qixkvv0l"]
 
 [ext_resource type="Script" path="res://3D/Object/sheet.gd" id="1_b4ltr"]
 [ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://3D/Object/Interaction/interactable.tscn" id="1_rxx05"]
 [ext_resource type="Texture2D" uid="uid://bm06o2dil55m1" path="res://Sprite/Object/paperSorting.png" id="2_2ovcj"]
+[ext_resource type="AudioStream" uid="uid://cul6vlkuk3r35" path="res://Sounds/paper_unfold.mp3" id="4_qr6gk"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_u17kt"]
 
@@ -48,6 +49,10 @@ offset_bottom = 1028.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_2ovcj")
+
+[node name="Unfold" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_qr6gk")
+volume_db = 1.0
 
 [connection signal="focused" from="Interactable" to="." method="_on_interactable_focused"]
 [connection signal="interacted" from="Interactable" to="." method="_on_interactable_interacted"]

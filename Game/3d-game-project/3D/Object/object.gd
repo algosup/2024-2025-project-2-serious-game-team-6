@@ -1,6 +1,7 @@
 extends RigidBody3D
 
 @onready var highlight: MeshInstance3D = $Highlight # Reference to the highlight mesh
+@onready var placed: AudioStreamPlayer3D = $AudioPlaced
 @export var offset: Vector3 = Vector3(0, 1, 0) # Offset to hold the object above the player
 @export var category: String = ""  # Category will be determined automatically
 
@@ -80,6 +81,8 @@ func release() -> void:
 # Releasing the object
 func place_on_ground() -> void:
 	if is_instance_valid(player):
+		if placed:
+			placed.play()
 		# Place object directly beneath the player
 		var ground_pos = player.global_transform.origin
 		ground_pos.y -= 1.0  # Adjust to position on the floor

@@ -10,7 +10,7 @@ class_name GameController
 # Variables to store the instances of the scenes
 var zone1_instance: Node = null
 var zone2_instance: Node = null
-var hub_instance: Node = null
+@onready var hub_instance: Node = $HUB
 var house_instance: Node = null
 var power_plant_instance: Node = null
 

@@ -3,6 +3,7 @@ class_name Main3D
 
 @export var forest_path: NodePath
 @export var gridmap: GridMap
+@onready var healed: AudioStreamPlayer3D = $ForestHealed
 
 var cleaned: bool = false
 
@@ -58,6 +59,7 @@ func change_environment() -> void:
 			node.visible = true
 			activate_collision(node)
 			change_gridmap_textures_by_id(gridmap)
+			healed.play()
 
 func activate_collision(node: Node) -> void:
 	# Look for StaticBody and its CollisionShape child
