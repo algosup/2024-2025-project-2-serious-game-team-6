@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://croakqfxg8aef"
-path.s3tc="res://.godot/imported/PlayerBackMove.png-4b197969ff9b8f93da8e26895a30975a.s3tc.ctex"
+path="res://.godot/imported/PlayerBackMove.png-4b197969ff9b8f93da8e26895a30975a.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://Sprite/Player/Walking/PlayerBackMove.png"
-dest_files=["res://.godot/imported/PlayerBackMove.png-4b197969ff9b8f93da8e26895a30975a.s3tc.ctex"]
+dest_files=["res://.godot/imported/PlayerBackMove.png-4b197969ff9b8f93da8e26895a30975a.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

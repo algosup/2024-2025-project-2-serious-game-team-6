@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0h00bcoor43l"
-path.s3tc="res://.godot/imported/playerBackIdle.png-76a7efb258a271e6542806ab6e30ac6c.s3tc.ctex"
+path="res://.godot/imported/playerBackIdle.png-76a7efb258a271e6542806ab6e30ac6c.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://Sprite/Player/Idle/BackIdle/playerBackIdle.png"
-dest_files=["res://.godot/imported/playerBackIdle.png-76a7efb258a271e6542806ab6e30ac6c.s3tc.ctex"]
+dest_files=["res://.godot/imported/playerBackIdle.png-76a7efb258a271e6542806ab6e30ac6c.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

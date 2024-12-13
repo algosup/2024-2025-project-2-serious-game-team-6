@@ -559,7 +559,7 @@ script = ExtResource("1_homsk")
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_ca6t5")
-animation = &"LeftWalk"
+animation = &"LeftIdle"
 metadata/_aseprite_wizard_interface_config_ = {
 "layer_section": false,
 "pending_changes": {
