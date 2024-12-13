@@ -5,7 +5,7 @@ class_name Bin
 @export var accepted_categories: Array[String] = [] # categories of trash accepted
 @export var main3d: Node3D
 
-var sheet_interacted: bool = false  # Tracks if the "sheet" was interacted with
+var sheet_interacted: bool = true  # Tracks if the "sheet" was interacted with
 var objects_in_bin: Array[Node] = [] # List of objects in the bin
 var cleaned: bool = false # Becomes true when this bin has received all its objects
 

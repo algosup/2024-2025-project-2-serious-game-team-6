@@ -1,8 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://dquahbivmmc6p"]
 
-
 [ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://3D/Object/Interaction/interactable.tscn" id="1_heqxe"]
-
 [ext_resource type="Script" path="res://3D/Object/bin.gd" id="1_qve5h"]
 
 [sub_resource type="Gradient" id="Gradient_cof37"]
