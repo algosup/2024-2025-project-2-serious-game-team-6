@@ -13,12 +13,17 @@ size = Vector2(20, 97)
 script = ExtResource("1_3gcbn")
 
 [node name="StaticBody2D" parent="." instance=ExtResource("1_fu5oj")]
+position = Vector2(3, -2)
 
 [node name="Player" parent="." instance=ExtResource("3_8w32j")]
 position = Vector2(-504, 280)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(504, -280)
+zoom = Vector2(5, 5)
+limit_left = 20
+limit_top = -300
+limit_right = 20
+limit_bottom = 300
 
 [node name="StaticBody2D2" parent="." instance=ExtResource("2_1y7yj")]
 collision_mask = 3
