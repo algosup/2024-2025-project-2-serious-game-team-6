@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://d2prtexbmmc0s" path="res://2D/Scenes/Hub/globe.tscn" id="2_43xhm"]
 [ext_resource type="PackedScene" uid="uid://c0hval3pok0d1" path="res://2D/Scenes/Hub/wall.tscn" id="3_7pign"]
 [ext_resource type="PackedScene" uid="uid://copa84ipa0wqt" path="res://2D/Scenes/Hub/teleporter2d.tscn" id="5_blg1p"]
-[ext_resource type="PackedScene" uid="uid://c650gdjpww7p6" path="res://2D/Scenes/Hub/scientist.tscn" id="5_ulglk"]
+[ext_resource type="PackedScene" uid="uid://c650gdjpww7p6" path="res://2D/Scenes/Hub/Scientist.tscn" id="5_ulglk"]
 [ext_resource type="AudioStream" uid="uid://dehsxvtl7e4h6" path="res://Sounds/lab_ambience_machine_whirr_test_tubes_bubble.mp3" id="9_l4rt8"]
 [ext_resource type="AudioStream" uid="uid://bqpeuwrgdxnlo" path="res://Sounds/hologram-map.mp3" id="10_l0kwi"]
 [ext_resource type="AudioStream" uid="uid://boqkuuvxe2jsn" path="res://Sounds/inHubNoises.wav" id="11_rhe05"]
