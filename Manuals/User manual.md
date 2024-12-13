@@ -30,7 +30,7 @@
 
 **The beginning :**
 
-You start your journey in a spaceship on a planet you don’t know about... Working in pair with a scientist, he has a task for you! You will have to explore this planet to understand how it has fallen. Thothan, the scientist, believes the key to the planet’s mystery lies in its ancient ruins, and it’s up to you to uncover the truth. Good luck, explorer. Your journey begins now.
+You start your journey in a spaceship on a planet you don’t know about... Working in pair with a scientist, and it seems he has a task for you! You will have to explore this planet to understand how it has fallen. Thothan, the scientist, believes the key to the planet’s mystery lies in its ancient ruins, and it’s up to you to uncover the truth. Good luck, explorer. Your journey begins now.
 
 
 ### Basic-controls
@@ -42,15 +42,15 @@ You start your journey in a spaceship on a planet you don’t know about... Work
 | Move Down            | S             | S             |
 | Move Left            | A             | Q             |
 | Move Right           | D             | D             |
-| Intercat             | F             | F             |
+| Interact             | F             | F             |
 | Call                 | C             | C             |
-| Menu/Settings Access | Esc           | Esc           |
+| Menu/Settings        | Esc           | Esc           |
 
 ### Object-of-the-game
 
-**Set out for a journey in a dystopian earth...**
+**Set out for a journey on a dystopian planet...**
 
-The Goal of the game is to learn about ecology. To do so, you will have to discover how a lack of consideration of ecology has led to the fall of a civilization.
+The Goal of the game is to learn about global warming. To do so, you will have to discover how a lack of consideration of ecology has led to the fall of a civilization.
 
 **Explore and learn!**
 
