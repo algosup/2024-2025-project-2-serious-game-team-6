@@ -117,31 +117,31 @@ You will find pieces of lore in the different zones. As they are hidden you will
 
 Top-Down View:
 
-	Gravity is disabled in this view to create a grounded exploration experience, allowing the player to focus on navigation and interaction with the environment.
+Gravity is disabled in this view to create a grounded exploration experience, allowing the player to focus on navigation and interaction with the environment.
 
-	The player can move freely in all four directions—north, south, east, and west—offering a broad field for outdoor exploration and precise control.
+The player can move freely in all four directions—north, south, east, and west—offering a broad field for outdoor exploration and precise control.
 
 ![image](image/Top%20view.png)
 
 Side-Scroller View:
 
-	Gravity is enabled, introducing jumping mechanics for indoor exploration. This vertical movement adds depth to indoor navigation and allows for platforming challenges.
+Gravity is enabled, introducing jumping mechanics for indoor exploration. This vertical movement adds depth to indoor navigation and allows for platforming challenges.
 
-	Limited to horizontal movement (left and right) to align with the side-scrolling perspective. Obstacles and gaps may require jumping to overcome.
+Limited to horizontal movement (left and right) to align with the side-scrolling perspective. Obstacles and gaps may require jumping to overcome.
 
 ![image](image/Side%20view.png)
 
 Objects and Item Interaction
 
-	Objects within both perspectives are non-physics-based and remain static until interacted with. This design ensures that items are easy to locate and interact with without requiring complex manipulation.
+Objects within both perspectives are non-physics-based and remain static until interacted with. This design ensures that items are easy to locate and interact with without requiring complex manipulation.
 
-	Items can be collected when players approach and interact with them. This includes key items, collectibles, and objects necessary for puzzle-solving.
+Items can be collected when players approach and interact with them. This includes key items, collectibles, and objects necessary for puzzle-solving.
 
 Actions and Interactions
 
-	Interact: The player can interact with various elements within the game, including inscriptions, levers, collectible items, and locked doors. These interactions will either provide information, unlock new areas, or progress objectives.
+Interact: The player can interact with various elements within the game, including inscriptions, levers, collectible items, and locked doors. These interactions will either provide information, unlock new areas, or progress objectives.
 
-	Call: During certain moments, the player can call the scientist NPC to get hints or directives from him, obtaining guidance for navigating the game world or solving puzzles. This mechanic adds a sense of companionship and progression without disrupting gameplay.
+Call: During certain moments, the player can call the scientist NPC to get hints or directives from him, obtaining guidance for navigating the game world or solving puzzles. This mechanic adds a sense of companionship and progression without disrupting gameplay.
 
 
 
