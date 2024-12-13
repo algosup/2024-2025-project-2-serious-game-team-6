@@ -7,8 +7,9 @@ class_name GameController
 @onready var house = preload("res://2D/Scenes/House/cabin.tscn") #2D house scene
 @onready var power_plant = preload("res://2D/Scenes/ReactorPowerPlant/powerPlant2d.tscn") #2D house scene
 
-
 var firstEnteredForest: bool = true
+var forestCleaned = false
+var zoneChosen: int = 1 # 1 for forest, 2 for powerplant
 
 # Variables to store the instances of the scenes
 
@@ -62,8 +63,11 @@ func teleporte_to_hub() -> void:
 func change_env(main3d: Node) -> void:
 	# Cast the Node to the appropriate script type
 	var main3d_script = main3d as Main3D  # Replace Zone1 with the actual class name of your Zone1 script
+	if main3d_script.cleaned:
+		forestCleaned = true
+	else:
+		forestCleaned = false
 	main3d_script.is_cleaned()
-	print("test")
 
 func enter_house() -> void:
 	# Remove the current child (if any)

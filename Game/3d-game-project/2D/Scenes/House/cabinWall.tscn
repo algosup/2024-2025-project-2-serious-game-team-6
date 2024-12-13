@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://c7wu32nfhncw6"]
 
-[ext_resource type="Texture2D" uid="uid://d1qlny6m8g415" path="res://Sprite/Cabin/forestcabincollision.png" id="1_4uuw8"]
+[ext_resource type="Texture2D" uid="uid://d1qlny6m8g415" path="res://Sprite/Cabin/forestCabinCollision.png" id="1_4uuw8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_06g5q"]
 size = Vector2(33, 130)

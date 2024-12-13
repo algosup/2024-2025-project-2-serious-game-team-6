@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cbt0riqiohi4w"]
 
-[ext_resource type="Texture2D" uid="uid://cenokne0646xn" path="res://Sprite/Cabin/forestcabinbackground.png" id="1_u1n7t"]
+[ext_resource type="Texture2D" uid="uid://cenokne0646xn" path="res://Sprite/Cabin/forestCabinBackground.png" id="1_u1n7t"]
 
 [node name="StaticBody2D" type="StaticBody2D"]
 

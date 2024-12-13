@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6ehrhysn75yg"
-path="res://.godot/imported/Left-Walk.png-11b5d9ed175c1a34ae5d0210ef188bb0.ctex"
+uid="uid://1b4tv7xuf18v"
+path="res://.godot/imported/leftJumpingSheet.png-e0835769066ef5af2ab061b69071cb70.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprite/Player/Walking/Left-Walk.png"
-dest_files=["res://.godot/imported/Left-Walk.png-11b5d9ed175c1a34ae5d0210ef188bb0.ctex"]
+source_file="res://Sprite/Player/Idle/leftJumpingSheet.png"
+dest_files=["res://.godot/imported/leftJumpingSheet.png-e0835769066ef5af2ab061b69071cb70.ctex"]
 
 [params]
 
@@ -21,7 +21,7 @@ compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

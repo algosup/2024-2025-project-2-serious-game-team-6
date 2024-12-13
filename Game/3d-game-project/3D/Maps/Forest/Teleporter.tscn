@@ -1,9 +1,9 @@
 [gd_scene load_steps=13 format=3 uid="uid://duxis1tq710hb"]
 
 [ext_resource type="Script" path="res://3D/Maps/Forest/teleporter.gd" id="1_4iltm"]
-[ext_resource type="Texture2D" uid="uid://btxjxgpkv08ck" path="res://Sprite/HUB/teleporter.png" id="1_08tey"]
+[ext_resource type="Texture2D" uid="uid://btxjxgpkv08ck" path="res://Sprite/Hub/teleporter.png" id="1_08tey"]
 [ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://3D/Object/Interaction/interactable.tscn" id="2_3iv5x"]
-[ext_resource type="Texture2D" uid="uid://cjljqidqcvewt" path="res://Sprite/HUB/teleportOutside.png" id="2_653w7"]
+[ext_resource type="Texture2D" uid="uid://cjljqidqcvewt" path="res://Sprite/Hub/teleportOutside.png" id="2_653w7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xh3ww"]
 atlas = ExtResource("1_08tey")

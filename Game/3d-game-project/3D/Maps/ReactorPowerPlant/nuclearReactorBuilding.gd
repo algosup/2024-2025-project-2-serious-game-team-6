@@ -4,7 +4,7 @@ class_name NuclearReactorBuilding
 @onready var main = NodePath("/root/GameController")
 
 func _on_interactable_focused(interactor: Interactor) -> void:
-	pass # Replace with function body.
+	pass 
 
 
 func _on_interactable_interacted(interactor: Interactor) -> void:
@@ -12,7 +12,7 @@ func _on_interactable_interacted(interactor: Interactor) -> void:
 
 
 func _on_interactable_unfocused(interactor: Interactor) -> void:
-	pass # Replace with function body.
+	pass 
 
 func enter() -> void:
 	var game_controller = get_tree().root.get_node_or_null("GameController")

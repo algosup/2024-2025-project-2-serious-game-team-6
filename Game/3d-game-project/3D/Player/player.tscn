@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://4hu6qohc83u3" path="res://Sprite/Player/Idle/LeftIdle/leftIdle.png" id="4_h566r"]
 [ext_resource type="Texture2D" uid="uid://cjbl0c4youbpo" path="res://Sprite/Player/Walking/PlayerFrontMove.png" id="5_g2chr"]
 [ext_resource type="PackedScene" uid="uid://dtjl5d6ip77if" path="res://3D/Object/Interaction/playerInteractor.tscn" id="5_qi7q6"]
-[ext_resource type="Texture2D" uid="uid://b6ehrhysn75yg" path="res://Sprite/Player/Walking/Left-Walk.png" id="7_7sbvg"]
+[ext_resource type="Texture2D" uid="uid://b6ehrhysn75yg" path="res://Sprite/Player/Walking/leftWalk.png" id="7_7sbvg"]
 [ext_resource type="AudioStream" uid="uid://cchoorxiablfo" path="res://Sounds/forestFootsteps.wav" id="9_lx7ya"]
 [ext_resource type="AudioStream" uid="uid://dmg2t7qs0h7dq" path="res://Sounds/tp.wav" id="10_gdy65"]
 

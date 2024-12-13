@@ -10,6 +10,5 @@ func _on_interactable_2d_interacted(interactor: Interactor2D) -> void:
 	Dialogic.start("Scientist_Hub")
 	accepted.play()
 
-
 func _on_interactable_2d_unfocused(interactor: Interactor2D) -> void:
 	pass

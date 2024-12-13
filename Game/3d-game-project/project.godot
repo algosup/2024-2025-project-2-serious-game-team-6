@@ -29,6 +29,8 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "BinAlone": "res://Dialogue/BinAlone.dtl",
+"ChooseZoneForest": "res://Dialogue/ChooseZoneForest.dtl",
+"ChooseZonePowerPlant": "res://Dialogue/ChooseZonePowerPlant.dtl",
 "CleanedAllBins": "res://Dialogue/CleanedAllBins.dtl",
 "Enter_forest": "res://Dialogue/Enter_forest.dtl",
 "Globe": "res://Dialogue/Globe.dtl",
@@ -37,7 +39,7 @@ directories/dtl_directory={
 "WrongBin": "res://Dialogue/WrongBin.dtl",
 "firstHoldWaste": "res://Dialogue/firstHoldWaste.dtl"
 }
-layout/style_list=["res://Dialogue/TEST.tres"]
+layout/style_list=["res://Dialogue/Style.tres"]
 layout/default_style="res://Dialogue/TEST.tres"
 glossary/default_case_sensitive=true
 extensions_folder="res://addons/dialogic_additions"
