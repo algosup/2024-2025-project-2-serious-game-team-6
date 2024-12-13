@@ -18,6 +18,9 @@ func save_and_teleport() -> void:
 	var game_controller = get_tree().root.get_node_or_null("GameController")
 	if game_controller:
 		if game_controller.forestCleaned:
-			game_controller.teleporte_to_zone2()
+			match game_controller.zoneChosen:
+				1: game_controller.teleporte_to_zone1()
+				2: game_controller.teleporte_to_zone2()
+				_: game_controller.teleporte_to_zone1()
 		else:
 			game_controller.teleporte_to_zone1()

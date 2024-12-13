@@ -9,6 +9,7 @@ class_name GameController
 
 var firstEnteredForest: bool = true
 var forestCleaned = false
+var zoneChosen: int = 1 # 1 for forest, 2 for powerplant
 
 # Variables to store the instances of the scenes
 

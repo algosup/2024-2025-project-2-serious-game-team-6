@@ -29,6 +29,8 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "BinAlone": "res://Dialogue/BinAlone.dtl",
+"ChooseZoneForest": "res://Dialogue/ChooseZoneForest.dtl",
+"ChooseZonePowerPlant": "res://Dialogue/ChooseZonePowerPlant.dtl",
 "CleanedAllBins": "res://Dialogue/CleanedAllBins.dtl",
 "Enter_forest": "res://Dialogue/Enter_forest.dtl",
 "Globe": "res://Dialogue/Globe.dtl",
