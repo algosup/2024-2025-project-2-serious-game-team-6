@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=3 uid="uid://d1j52qixkvv0l"]
+
+[ext_resource type="Script" path="res://3D/Object/sheet.gd" id="1_b4ltr"]
+[ext_resource type="PackedScene" uid="uid://bym22d7ka3jlh" path="res://3D/Object/Interaction/interactable.tscn" id="1_rxx05"]
+[ext_resource type="Texture2D" uid="uid://bm06o2dil55m1" path="res://Sprite/Object/paperSorting.png" id="2_2ovcj"]
+[ext_resource type="AudioStream" uid="uid://cul6vlkuk3r35" path="res://Sounds/paper_unfold.mp3" id="4_qr6gk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u17kt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_klkvk"]
+shading_mode = 0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_va63v"]
+material = SubResource("StandardMaterial3D_klkvk")
+
+[node name="Sheet" type="Node3D"]
+script = ExtResource("1_b4ltr")
+
+[node name="Form" type="Sprite3D" parent="."]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+texture_filter = 0
+texture = ExtResource("2_2ovcj")
+
+[node name="Interactable" parent="." instance=ExtResource("1_rxx05")]
+
+[node name="CollisionShape3D" parent="Interactable" index="0"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 1, 0)
+shape = SubResource("BoxShape3D_u17kt")
+
+[node name="Highlight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.05, 0, 0, 0, 1, 0, 0, 0, 0.8, 0, 0, 0)
+visible = false
+mesh = SubResource("PlaneMesh_va63v")
+
+[node name="SheetUI" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="SheetUI"]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1028.0
+offset_top = -1028.0
+offset_right = 1028.0
+offset_bottom = 1028.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_2ovcj")
+
+[node name="Unfold" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_qr6gk")
+volume_db = 1.0
+
+[connection signal="focused" from="Interactable" to="." method="_on_interactable_focused"]
+[connection signal="interacted" from="Interactable" to="." method="_on_interactable_interacted"]
+[connection signal="unfocused" from="Interactable" to="." method="_on_interactable_unfocused"]
+
+[editable path="Interactable"]

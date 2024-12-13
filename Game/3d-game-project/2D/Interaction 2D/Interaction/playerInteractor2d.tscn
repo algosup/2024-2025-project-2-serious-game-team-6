@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://2kuwvidbomwg"]
+
+[ext_resource type="Script" path="res://2D/Interaction 2D/Interaction/playerInteractor2d.gd" id="1_7kdx2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ohgmy"]
+
+[node name="PlayerInteractor2d" type="Area2D"]
+script = ExtResource("1_7kdx2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ohgmy")

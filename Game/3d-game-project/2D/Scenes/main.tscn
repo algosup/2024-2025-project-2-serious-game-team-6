@@ -1,0 +1,71 @@
+[gd_scene load_steps=11 format=3 uid="uid://dtq6mxwmbsnu3"]
+
+[ext_resource type="PackedScene" uid="uid://benrneih6rhle" path="res://2D/Scenes/Player/player.tscn" id="1_clqmd"]
+[ext_resource type="PackedScene" uid="uid://cjgid6kycyiub" path="res://2D/Scenes/Hub/background.tscn" id="1_yq4tx"]
+[ext_resource type="PackedScene" uid="uid://d2prtexbmmc0s" path="res://2D/Scenes/Hub/globe.tscn" id="2_43xhm"]
+[ext_resource type="PackedScene" uid="uid://c0hval3pok0d1" path="res://2D/Scenes/Hub/wall.tscn" id="3_7pign"]
+[ext_resource type="PackedScene" uid="uid://copa84ipa0wqt" path="res://2D/Scenes/Hub/teleporter2d.tscn" id="5_blg1p"]
+[ext_resource type="PackedScene" uid="uid://c650gdjpww7p6" path="res://2D/Scenes/Hub/Scientist.tscn" id="5_ulglk"]
+[ext_resource type="AudioStream" uid="uid://dehsxvtl7e4h6" path="res://Sounds/lab_ambience_machine_whirr_test_tubes_bubble.mp3" id="9_l4rt8"]
+[ext_resource type="AudioStream" uid="uid://bqpeuwrgdxnlo" path="res://Sounds/hologram-map.mp3" id="10_l0kwi"]
+[ext_resource type="AudioStream" uid="uid://boqkuuvxe2jsn" path="res://Sounds/inHubNoises.wav" id="11_rhe05"]
+[ext_resource type="AudioStream" uid="uid://dj2j5wy2obnc8" path="res://Sounds/nearTp.mp3" id="12_jug3s"]
+
+[node name="Main" type="Node2D"]
+
+[node name="HUB" parent="." instance=ExtResource("1_yq4tx")]
+position = Vector2(-514, -405)
+collision_priority = 3.0
+
+[node name="Scientist" parent="." instance=ExtResource("5_ulglk")]
+visibility_layer = 4
+position = Vector2(361, -26)
+
+[node name="Globe" parent="." instance=ExtResource("2_43xhm")]
+position = Vector2(13, -85)
+
+[node name="Player" parent="." instance=ExtResource("1_clqmd")]
+position = Vector2(3, 1)
+collision_layer = 1
+collision_mask = 3
+collision_priority = 2.0
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(0, -36)
+offset = Vector2(0, 50)
+zoom = Vector2(5, 5)
+limit_bottom = 25
+
+[node name="Wall" parent="." instance=ExtResource("3_7pign")]
+position = Vector2(-458, -408)
+
+[node name="Teleporter" parent="." instance=ExtResource("5_blg1p")]
+position = Vector2(-357, -60)
+collision_mask = 1
+
+[node name="AudioLab" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(350, 0)
+stream = ExtResource("9_l4rt8")
+volume_db = -10.0
+autoplay = true
+max_distance = 400.0
+
+[node name="AudioGlobe" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_l0kwi")
+volume_db = -5.0
+pitch_scale = 2.0
+autoplay = true
+max_distance = 200.0
+
+[node name="HUBnoise" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_rhe05")
+volume_db = -25.0
+autoplay = true
+max_distance = 500.0
+
+[node name="TeleporterNoise" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-350, 0)
+stream = ExtResource("12_jug3s")
+volume_db = -10.0
+autoplay = true
+max_distance = 250.0

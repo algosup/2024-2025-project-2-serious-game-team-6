@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://c7wu32nfhncw6"]
+
+[ext_resource type="Texture2D" uid="uid://d1qlny6m8g415" path="res://Sprite/Cabin/forestCabinCollision.png" id="1_4uuw8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_06g5q"]
+size = Vector2(33, 130)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_ks2qy"]
+a = Vector2(347, 93)
+b = Vector2(348, 119)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_vgtgc"]
+a = Vector2(348, 122)
+b = Vector2(332, 122)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_ij5cl"]
+a = Vector2(111, 65)
+b = Vector2(-160, 64)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_bpu2g"]
+a = Vector2(583, 92)
+b = Vector2(347, 91)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+collision_mask = 3
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(599.5, 156)
+shape = SubResource("RectangleShape2D_06g5q")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_ks2qy")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_vgtgc")
+
+[node name="Forestcabincollision" type="Sprite2D" parent="."]
+position = Vector2(491, 154)
+texture = ExtResource("1_4uuw8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(491, 154)
+shape = SubResource("SegmentShape2D_ij5cl")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_bpu2g")
