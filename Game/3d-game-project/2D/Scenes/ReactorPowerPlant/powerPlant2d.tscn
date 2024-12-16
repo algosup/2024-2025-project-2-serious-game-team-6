@@ -12,8 +12,12 @@ size = Vector2(20, 97)
 [node name="Powerplant2D" type="Node2D"]
 script = ExtResource("1_3gcbn")
 
-[node name="StaticBody2D" parent="." instance=ExtResource("1_fu5oj")]
+[node name="Bg" parent="." instance=ExtResource("1_fu5oj")]
+z_index = -2
 position = Vector2(3, -2)
+
+[node name="Panel" parent="Bg" index="1"]
+animation = &"state3"
 
 [node name="Player" parent="." instance=ExtResource("3_8w32j")]
 position = Vector2(-504, 280)
@@ -25,11 +29,11 @@ limit_top = -300
 limit_right = 20
 limit_bottom = 300
 
-[node name="StaticBody2D2" parent="." instance=ExtResource("2_1y7yj")]
+[node name="Collisions" parent="." instance=ExtResource("2_1y7yj")]
 collision_mask = 3
 
-[node name="Interactable2D" parent="." instance=ExtResource("5_c31nw")]
-position = Vector2(-544, 231)
+[node name="Interactable2D2" parent="." instance=ExtResource("5_c31nw")]
+position = Vector2(-722, 230)
 scale = Vector2(2, 5)
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
@@ -39,6 +43,8 @@ position = Vector2(-377, 219)
 position = Vector2(-183, 13.5)
 shape = SubResource("RectangleShape2D_orvr8")
 
-[connection signal="focused" from="Interactable2D" to="." method="_on_interactable_2d_focused"]
-[connection signal="interacted" from="Interactable2D" to="." method="_on_interactable_2d_interacted"]
-[connection signal="unfocused" from="Interactable2D" to="." method="_on_interactable_2d_unfocused"]
+[connection signal="focused" from="Interactable2D2" to="." method="_on_interactable_2d_focused"]
+[connection signal="interacted" from="Interactable2D2" to="." method="_on_interactable_2d_interacted"]
+[connection signal="unfocused" from="Interactable2D2" to="." method="_on_interactable_2d_unfocused"]
+
+[editable path="Bg"]
