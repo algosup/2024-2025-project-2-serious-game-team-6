@@ -47,7 +47,6 @@ shape = SubResource("RectangleShape2D_orvr8")
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_jjkh5")
 autoplay = true
-stream_paused = true
 
 [connection signal="focused" from="Interactable2D2" to="." method="_on_interactable_2d_focused"]
 [connection signal="interacted" from="Interactable2D2" to="." method="_on_interactable_2d_interacted"]
