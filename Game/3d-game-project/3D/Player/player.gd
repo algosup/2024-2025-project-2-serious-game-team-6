@@ -17,7 +17,7 @@ func _ready():
 	sprite.play()
 	footstep.play()
 	footstep.stream_paused = true  # Ensure sound is paused at the start
-	DebugMenu.style = DebugMenu.Style.VISIBLE_DETAILED
+	# DebugMenu.style = DebugMenu.Style.VISIBLE_DETAILED
 
 func _physics_process(delta): # control
 	if movement_disabled:
