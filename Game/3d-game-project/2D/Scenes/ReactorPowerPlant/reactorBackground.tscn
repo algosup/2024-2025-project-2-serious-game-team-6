@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://djfl34w5v6262"]
 
-[ext_resource type="Texture2D" uid="uid://j016n2m243c6" path="res://Sprite/Powerplant/reactorBackground.png" id="1_d4xmt"]
+[ext_resource type="Texture2D" uid="uid://j016n2m243c6" path="res://Sprite/Powerplant/reactorbackground.png" id="1_d4xmt"]
 
 [node name="StaticBody2D" type="StaticBody2D"]
 

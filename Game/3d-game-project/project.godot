@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="3D-game-project"
-run/main_scene="res://gameController.tscn"
+config/name="Forsaken Planet"
+run/main_scene="res://2D/Scenes/ReactorPowerPlant/powerPlant2d.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
