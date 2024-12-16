@@ -56,6 +56,7 @@ func teleporte_to_hub() -> void:
 	# If the hub_instance already exists, use it, otherwise instantiate it
 	if hub_instance:
 		add_child(hub_instance)
+		change_env(zone1_instance)
 	else:
 		hub_instance = hub.instantiate()
 		add_child(hub_instance)

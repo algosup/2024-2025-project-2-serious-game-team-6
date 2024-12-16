@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1qlny6m8g415"
-path="res://.godot/imported/forestcabincollision.png-0d9f3f9ed82c0270830ebb42a416bb04.ctex"
+path="res://.godot/imported/forestCabinCollision.png-5d7405ec48115327c334cc8168253dac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprite/Cabin/forestcabincollision.png"
-dest_files=["res://.godot/imported/forestcabincollision.png-0d9f3f9ed82c0270830ebb42a416bb04.ctex"]
+source_file="res://Sprite/Cabin/forestCabinCollision.png"
+dest_files=["res://.godot/imported/forestCabinCollision.png-5d7405ec48115327c334cc8168253dac.ctex"]
 
 [params]
 

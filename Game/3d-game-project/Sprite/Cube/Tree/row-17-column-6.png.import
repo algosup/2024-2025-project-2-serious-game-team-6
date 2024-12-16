@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bms5fbtrafvft"
 path.s3tc="res://.godot/imported/row-17-column-6.png-07777aa6fe491e00b75eaa4cbe3e0bee.s3tc.ctex"
+path.etc2="res://.godot/imported/row-17-column-6.png-07777aa6fe491e00b75eaa4cbe3e0bee.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Sprite/Cube/Tree/row-17-column-6.png"
-dest_files=["res://.godot/imported/row-17-column-6.png-07777aa6fe491e00b75eaa4cbe3e0bee.s3tc.ctex"]
+dest_files=["res://.godot/imported/row-17-column-6.png-07777aa6fe491e00b75eaa4cbe3e0bee.s3tc.ctex", "res://.godot/imported/row-17-column-6.png-07777aa6fe491e00b75eaa4cbe3e0bee.etc2.ctex"]
 
 [params]
 

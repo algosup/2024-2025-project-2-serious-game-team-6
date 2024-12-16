@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btxjxgpkv08ck"
-path.s3tc="res://.godot/imported/teleporter.png-6ea5a90d0609ba9fce7d78efe5f5b256.s3tc.ctex"
+path.s3tc="res://.godot/imported/teleporter.png-18579b03c0ea1ebd701af32ecafc29b0.s3tc.ctex"
+path.etc2="res://.godot/imported/teleporter.png-18579b03c0ea1ebd701af32ecafc29b0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Sprite/HUB/teleporter.png"
-dest_files=["res://.godot/imported/teleporter.png-6ea5a90d0609ba9fce7d78efe5f5b256.s3tc.ctex"]
+source_file="res://Sprite/Hub/teleporter.png"
+dest_files=["res://.godot/imported/teleporter.png-18579b03c0ea1ebd701af32ecafc29b0.s3tc.ctex", "res://.godot/imported/teleporter.png-18579b03c0ea1ebd701af32ecafc29b0.etc2.ctex"]
 
 [params]
 

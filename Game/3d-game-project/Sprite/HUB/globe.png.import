@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6tmtyqnmt650"
-path.bptc="res://.godot/imported/globe.png-c00bfa9431db74ff3771bcb9a03e98a9.bptc.ctex"
+path.bptc="res://.godot/imported/globe.png-73258c14eec73ed8425a74c4f3ad42cb.bptc.ctex"
+path.astc="res://.godot/imported/globe.png-73258c14eec73ed8425a74c4f3ad42cb.astc.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Sprite/HUB/globe.png"
-dest_files=["res://.godot/imported/globe.png-c00bfa9431db74ff3771bcb9a03e98a9.bptc.ctex"]
+source_file="res://Sprite/Hub/globe.png"
+dest_files=["res://.godot/imported/globe.png-73258c14eec73ed8425a74c4f3ad42cb.bptc.ctex", "res://.godot/imported/globe.png-73258c14eec73ed8425a74c4f3ad42cb.astc.ctex"]
 
 [params]
 

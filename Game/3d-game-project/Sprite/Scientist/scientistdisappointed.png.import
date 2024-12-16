@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2gupjmsymer3"
-path="res://.godot/imported/scientistdisappointed.png-bae525c8af7d6d4129e3adc54a6deee2.ctex"
+path="res://.godot/imported/scientistDisappointed.png-2f78c43b475aafe8d7e718eebff4e639.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprite/Scientist/scientistdisappointed.png"
-dest_files=["res://.godot/imported/scientistdisappointed.png-bae525c8af7d6d4129e3adc54a6deee2.ctex"]
+source_file="res://Sprite/Scientist/scientistDisappointed.png"
+dest_files=["res://.godot/imported/scientistDisappointed.png-2f78c43b475aafe8d7e718eebff4e639.ctex"]
 
 [params]
 

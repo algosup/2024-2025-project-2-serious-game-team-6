@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://on2iqjp62avo"
-path="res://.godot/imported/hubBackground.png-8183090a08890f3d1e63e0b9367a65e4.ctex"
+path="res://.godot/imported/hubBackground.png-c4747355f955ad98ae4aa3b08f6dc805.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprite/HUB/hubBackground.png"
-dest_files=["res://.godot/imported/hubBackground.png-8183090a08890f3d1e63e0b9367a65e4.ctex"]
+source_file="res://Sprite/Hub/hubBackground.png"
+dest_files=["res://.godot/imported/hubBackground.png-c4747355f955ad98ae4aa3b08f6dc805.ctex"]
 
 [params]
 

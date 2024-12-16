@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://q4vkthk5d7r7"
 path.s3tc="res://.godot/imported/sand2.png-48681e743ca6b886c5064e2e0acf9198.s3tc.ctex"
+path.etc2="res://.godot/imported/sand2.png-48681e743ca6b886c5064e2e0acf9198.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Sprite/Cube/Sand/sand2.png"
-dest_files=["res://.godot/imported/sand2.png-48681e743ca6b886c5064e2e0acf9198.s3tc.ctex"]
+dest_files=["res://.godot/imported/sand2.png-48681e743ca6b886c5064e2e0acf9198.s3tc.ctex", "res://.godot/imported/sand2.png-48681e743ca6b886c5064e2e0acf9198.etc2.ctex"]
 
 [params]
 

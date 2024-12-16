@@ -23,14 +23,15 @@ position = Vector2(-14, -21)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(338, 71)
+offset = Vector2(-25, -22)
 anchor_mode = 0
-zoom = Vector2(4.75, 4.75)
+zoom = Vector2(3.5, 3.5)
 limit_left = 320
 limit_right = 700
 limit_bottom = 250
 
 [node name="Interactable2D" parent="." instance=ExtResource("4_cher8")]
-position = Vector2(325, 150)
+position = Vector2(155, 142)
 scale = Vector2(2, 5)
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]

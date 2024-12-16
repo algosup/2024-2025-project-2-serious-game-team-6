@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1cooohflxcpa"
-path="res://.godot/imported/reactorpipes.png-c47143997a5791650d82db21781f6259.ctex"
+path="res://.godot/imported/reactorPipes.png-961c802de2ea6b5a429a858e5416aaf2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprite/Powerplant/reactorpipes.png"
-dest_files=["res://.godot/imported/reactorpipes.png-c47143997a5791650d82db21781f6259.ctex"]
+source_file="res://Sprite/Powerplant/reactorPipes.png"
+dest_files=["res://.godot/imported/reactorPipes.png-961c802de2ea6b5a429a858e5416aaf2.ctex"]
 
 [params]
 

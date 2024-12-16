@@ -23,10 +23,10 @@ animation = &"state3"
 position = Vector2(-504, 280)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-zoom = Vector2(5, 5)
-limit_left = 20
+zoom = Vector2(1.9, 1.9)
+limit_left = -570
 limit_top = -300
-limit_right = 20
+limit_right = 30
 limit_bottom = 300
 
 [node name="Collisions" parent="." instance=ExtResource("2_1y7yj")]

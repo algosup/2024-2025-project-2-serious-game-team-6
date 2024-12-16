@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://want4yv84p88"
 path.s3tc="res://.godot/imported/littleGrass.png-b977aad36f5bc5bba056f072ce2f0f8d.s3tc.ctex"
+path.etc2="res://.godot/imported/littleGrass.png-b977aad36f5bc5bba056f072ce2f0f8d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Sprite/Cube/Decor/TallGrass/littleGrass.png"
-dest_files=["res://.godot/imported/littleGrass.png-b977aad36f5bc5bba056f072ce2f0f8d.s3tc.ctex"]
+dest_files=["res://.godot/imported/littleGrass.png-b977aad36f5bc5bba056f072ce2f0f8d.s3tc.ctex", "res://.godot/imported/littleGrass.png-b977aad36f5bc5bba056f072ce2f0f8d.etc2.ctex"]
 
 [params]
 

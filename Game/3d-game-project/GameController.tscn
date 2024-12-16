@@ -8,4 +8,11 @@ script = ExtResource("1_fwimh")
 
 [node name="HUB" parent="." instance=ExtResource("2_r2vhn")]
 
+[node name="Camera2D" parent="HUB/Player" index="5"]
+offset = Vector2(0, 0)
+zoom = Vector2(2.4, 2.4)
+limit_left = -425
+limit_top = -1000
+limit_right = 450
+
 [editable path="HUB"]
