@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://c650gdjpww7p6"]
 
 [ext_resource type="Texture2D" uid="uid://bjyvla44axxyk" path="res://Sprite/Scientist/ScientistFrontIdle.png" id="1_f00qo"]
-[ext_resource type="Script" path="res://2D/Scenes/Hub/scientist.gd" id="1_p4fdd"]
+[ext_resource type="Script" path="res://2D/Scenes/HubScene/scientist.gd" id="1_p4fdd"]
 [ext_resource type="PackedScene" uid="uid://dm1uaq5fv2nh6" path="res://2D/Interaction 2D/Interaction/interactable2d.tscn" id="2_wuigl"]
 [ext_resource type="AudioStream" uid="uid://po6qlgco6sll" path="res://Sounds/dialogAccept.wav" id="4_h51vh"]
 
