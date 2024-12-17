@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://copa84ipa0wqt"]
+[gd_scene load_steps=8 format=3 uid="uid://copa84ipa0wqt"]
 
 [ext_resource type="Script" path="res://2D/Scenes/HubScene/teleporter2d.gd" id="1_0s8g1"]
 [ext_resource type="Texture2D" uid="uid://btxjxgpkv08ck" path="res://Sprite/Map/teleporter.png" id="1_kexpu"]
@@ -26,6 +26,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r7rsa"]
+size = Vector2(44, 93)
+
 [node name="Teleporter" type="StaticBody2D"]
 collision_layer = 2
 collision_mask = 0
@@ -38,9 +41,9 @@ frame_progress = 0.708212
 
 [node name="Interactable2D" parent="." instance=ExtResource("3_berss")]
 
-[node name="CollisionShape2D" parent="Interactable2D" index="0"]
-position = Vector2(0, 11)
-scale = Vector2(1.5, 5)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable2D"]
+position = Vector2(0, 17.5)
+shape = SubResource("RectangleShape2D_r7rsa")
 
 [connection signal="focused" from="Interactable2D" to="." method="_on_interactable_2d_focused"]
 [connection signal="interacted" from="Interactable2D" to="." method="_on_interactable_2d_interacted"]

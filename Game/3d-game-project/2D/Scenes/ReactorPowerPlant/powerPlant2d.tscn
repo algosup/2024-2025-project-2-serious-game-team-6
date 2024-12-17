@@ -1,11 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://6ujtn6cjjxqa"]
+[gd_scene load_steps=12 format=3 uid="uid://6ujtn6cjjxqa"]
 
 [ext_resource type="Script" path="res://2D/Scenes/ReactorPowerPlant/powerPlant2d.gd" id="1_3gcbn"]
 [ext_resource type="PackedScene" uid="uid://djfl34w5v6262" path="res://2D/Scenes/ReactorPowerPlant/reactorBackground.tscn" id="1_fu5oj"]
 [ext_resource type="PackedScene" uid="uid://bci5imo6fj32h" path="res://2D/Scenes/ReactorPowerPlant/reactorCollision.tscn" id="2_1y7yj"]
+[ext_resource type="PackedScene" uid="uid://jm44sd2jspif" path="res://2D/Scenes/ReactorPowerPlant/electricalPanel.tscn" id="2_14pdf"]
 [ext_resource type="PackedScene" uid="uid://benrneih6rhle" path="res://2D/Scenes/Player/player.tscn" id="3_8w32j"]
+[ext_resource type="PackedScene" uid="uid://cgpy52uk5l5oq" path="res://2D/Scenes/ReactorPowerPlant/reactorPanel.tscn" id="3_swl5q"]
+[ext_resource type="PackedScene" uid="uid://6w1jkbcfxr1r" path="res://2D/Scenes/ReactorPowerPlant/reactorPipe.tscn" id="4_qsjta"]
 [ext_resource type="PackedScene" uid="uid://dm1uaq5fv2nh6" path="res://2D/Interaction 2D/Interaction/interactable2d.tscn" id="5_c31nw"]
 [ext_resource type="AudioStream" uid="uid://cnv3k08qlf2lb" path="res://Sounds/musicref.mp3" id="6_jjkh5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k1sou"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_orvr8"]
 size = Vector2(20, 97)
@@ -13,12 +18,18 @@ size = Vector2(20, 97)
 [node name="Powerplant2D" type="Node2D"]
 script = ExtResource("1_3gcbn")
 
+[node name="ReactorPanel" parent="." instance=ExtResource("3_swl5q")]
+position = Vector2(-111, -203)
+
+[node name="ElectricalPanel" parent="." instance=ExtResource("2_14pdf")]
+position = Vector2(-528, -218)
+
+[node name="Reactor Pipe" parent="." instance=ExtResource("4_qsjta")]
+position = Vector2(-48, 217)
+
 [node name="Bg" parent="." instance=ExtResource("1_fu5oj")]
 z_index = -2
 position = Vector2(3, -2)
-
-[node name="Panel" parent="Bg" index="1"]
-animation = &"state3"
 
 [node name="Player" parent="." instance=ExtResource("3_8w32j")]
 position = Vector2(-504, 280)
@@ -36,6 +47,10 @@ collision_mask = 3
 [node name="Interactable2D2" parent="." instance=ExtResource("5_c31nw")]
 position = Vector2(-722, 230)
 scale = Vector2(2, 5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable2D2"]
+position = Vector2(84, 0)
+shape = SubResource("RectangleShape2D_k1sou")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
 position = Vector2(-377, 219)

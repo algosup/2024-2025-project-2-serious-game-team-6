@@ -26,8 +26,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_n24ek"]
-size = Vector2(208, 175)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_111co"]
+size = Vector2(127, 90)
 
 [node name="Globe" type="StaticBody2D"]
 collision_layer = 0
@@ -41,9 +41,9 @@ frame_progress = 0.170942
 
 [node name="Interactable2D" parent="." instance=ExtResource("3_6necw")]
 
-[node name="CollisionShape2D" parent="Interactable2D" index="0"]
-position = Vector2(-4, -0.5)
-shape = SubResource("RectangleShape2D_n24ek")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable2D"]
+position = Vector2(-7.5, 43)
+shape = SubResource("RectangleShape2D_111co")
 
 [connection signal="focused" from="Interactable2D" to="." method="_on_interactable_2d_focused"]
 [connection signal="interacted" from="Interactable2D" to="." method="_on_interactable_2d_interacted"]

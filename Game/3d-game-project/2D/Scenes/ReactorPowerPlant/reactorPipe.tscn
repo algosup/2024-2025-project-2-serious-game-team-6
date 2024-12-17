@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://6w1jkbcfxr1r"]
+
+[ext_resource type="Script" path="res://2D/Scenes/ReactorPowerPlant/reactor_pipe.gd" id="1_nm1fv"]
+[ext_resource type="Texture2D" uid="uid://b1cooohflxcpa" path="res://Sprite/Powerplant/reactorpipes.png" id="2_c2yex"]
+[ext_resource type="PackedScene" uid="uid://dm1uaq5fv2nh6" path="res://2D/Interaction 2D/Interaction/interactable2d.tscn" id="3_ut2g2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4renw"]
+atlas = ExtResource("2_c2yex")
+region = Rect2(0, 0, 84, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w1pcu"]
+atlas = ExtResource("2_c2yex")
+region = Rect2(84, 0, 84, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_og1o3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4renw")
+}],
+"loop": true,
+"name": &"empty",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w1pcu")
+}],
+"loop": true,
+"name": &"full",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1qx06"]
+size = Vector2(84, 75)
+
+[node name="Reactor Pipe" type="Node2D"]
+script = ExtResource("1_nm1fv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_og1o3")
+animation = &"empty"
+autoplay = "empty"
+
+[node name="Interactable2D" parent="." instance=ExtResource("3_ut2g2")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable2D"]
+position = Vector2(0, 26.5)
+shape = SubResource("RectangleShape2D_1qx06")
+
+[connection signal="focused" from="Interactable2D" to="Interactable2D" method="_on_focused"]
+[connection signal="interacted" from="Interactable2D" to="Interactable2D" method="_on_interacted"]
+[connection signal="unfocused" from="Interactable2D" to="Interactable2D" method="_on_unfocused"]

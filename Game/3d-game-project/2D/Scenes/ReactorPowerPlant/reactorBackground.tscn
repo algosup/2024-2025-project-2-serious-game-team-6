@@ -1,11 +1,7 @@
-[gd_scene load_steps=20 format=3 uid="uid://djfl34w5v6262"]
+[gd_scene load_steps=5 format=3 uid="uid://djfl34w5v6262"]
 
 [ext_resource type="Texture2D" uid="uid://ngjkbl8wmf26" path="res://Sprite/Powerplant/shelf.png" id="1_2bgqx"]
 [ext_resource type="Texture2D" uid="uid://j016n2m243c6" path="res://Sprite/Powerplant/reactorbackground.png" id="1_d4xmt"]
-[ext_resource type="Texture2D" uid="uid://bk1vo3xns6kd0" path="res://Sprite/Powerplant/controlpanelreactor.png" id="2_sss2p"]
-[ext_resource type="Script" path="res://2D/Scenes/ReactorPowerPlant/panel.gd" id="3_pnhht"]
-[ext_resource type="Texture2D" uid="uid://b1cooohflxcpa" path="res://Sprite/Powerplant/reactorpipes.png" id="4_jvrik"]
-[ext_resource type="Texture2D" uid="uid://do3fmoymox4kf" path="res://Sprite/Powerplant/electricpanel.png" id="6_ast0d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_13v42"]
 atlas = ExtResource("1_2bgqx")
@@ -22,111 +18,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8740s"]
-atlas = ExtResource("2_sss2p")
-region = Rect2(0, 0, 209, 103)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lw4iv"]
-atlas = ExtResource("2_sss2p")
-region = Rect2(209, 0, 209, 103)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l2lo8"]
-atlas = ExtResource("2_sss2p")
-region = Rect2(418, 0, 209, 103)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_u2cra"]
-atlas = ExtResource("2_sss2p")
-region = Rect2(627, 0, 209, 103)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ex7a7"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8740s")
-}],
-"loop": true,
-"name": &"state0",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lw4iv")
-}],
-"loop": true,
-"name": &"state1",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l2lo8")
-}],
-"loop": true,
-"name": &"state2",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_u2cra")
-}],
-"loop": true,
-"name": &"state3",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_52b7s"]
-atlas = ExtResource("4_jvrik")
-region = Rect2(0, 0, 84, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xtchs"]
-atlas = ExtResource("4_jvrik")
-region = Rect2(84, 0, 84, 128)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_wnbcu"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_52b7s")
-}],
-"loop": true,
-"name": &"empty",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xtchs")
-}],
-"loop": true,
-"name": &"full",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cyafc"]
-atlas = ExtResource("6_ast0d")
-region = Rect2(12, 0, 12, 36)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6dcs8"]
-atlas = ExtResource("6_ast0d")
-region = Rect2(0, 0, 12, 36)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ybvei"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cyafc")
-}],
-"loop": true,
-"name": &"green",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6dcs8")
-}],
-"loop": true,
-"name": &"red",
-"speed": 5.0
-}]
-
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="Shelf" type="AnimatedSprite2D" parent="."]
@@ -136,27 +27,7 @@ scale = Vector2(2, 1.1)
 sprite_frames = SubResource("SpriteFrames_ubn4b")
 autoplay = "default"
 
-[node name="Panel" type="AnimatedSprite2D" parent="."]
-position = Vector2(-113, -197)
-sprite_frames = SubResource("SpriteFrames_ex7a7")
-animation = &"state1"
-autoplay = "state0"
-script = ExtResource("3_pnhht")
-
-[node name="Pipe" type="AnimatedSprite2D" parent="."]
-position = Vector2(-53.5, 221.19)
-scale = Vector2(1.05952, 1.05952)
-sprite_frames = SubResource("SpriteFrames_wnbcu")
-animation = &"full"
-autoplay = "empty"
-
 [node name="Reactorbackground" type="Sprite2D" parent="."]
 z_index = -2
 position = Vector2(-1, 2)
 texture = ExtResource("1_d4xmt")
-
-[node name="Electrical" type="AnimatedSprite2D" parent="."]
-position = Vector2(-531, -198)
-sprite_frames = SubResource("SpriteFrames_ybvei")
-animation = &"green"
-autoplay = "red"

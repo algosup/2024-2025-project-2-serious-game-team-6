@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Forsaken Planet"
-run/main_scene="res://GameController.tscn"
+run/main_scene="res://2D/Scenes/ReactorPowerPlant/powerPlant2d.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 run/name="3D-game-project"
@@ -29,12 +29,19 @@ directories/dch_directory={
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
+"ActivatedPanel": "res://Dialogue/ActivatedPanel.dtl",
 "BinAlone": "res://Dialogue/BinAlone.dtl",
 "ChooseZoneForest": "res://Dialogue/ChooseZoneForest.dtl",
 "ChooseZonePowerPlant": "res://Dialogue/ChooseZonePowerPlant.dtl",
 "CleanedAllBins": "res://Dialogue/CleanedAllBins.dtl",
+"DisabledElec": "res://Dialogue/DisabledElec.dtl",
+"DisabledWater": "res://Dialogue/DisabledWater.dtl",
+"EnabledElec": "res://Dialogue/EnabledElec.dtl",
+"EnabledWater": "res://Dialogue/EnabledWater.dtl",
 "Enter_forest": "res://Dialogue/Enter_forest.dtl",
+"GivenCard": "res://Dialogue/GivenCard.dtl",
 "Globe": "res://Dialogue/Globe.dtl",
+"NotGivenCard": "res://Dialogue/NotGivenCard.dtl",
 "Scenes/Globe": "res://2D/Scenes/Globe.dtl",
 "Scientist_Hub": "res://Dialogue/Scientist_Hub.dtl",
 "WrongBin": "res://Dialogue/WrongBin.dtl",

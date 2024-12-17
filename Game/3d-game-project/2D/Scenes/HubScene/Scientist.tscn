@@ -104,8 +104,8 @@ animations = [{
 "speed": 3.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_m437d"]
-size = Vector2(65, 59)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2hjcl"]
+size = Vector2(36, 58)
 
 [node name="Scientist" type="StaticBody2D"]
 collision_layer = 0
@@ -119,9 +119,9 @@ frame_progress = 0.635534
 
 [node name="Interactable2D" parent="." instance=ExtResource("2_wuigl")]
 
-[node name="CollisionShape2D" parent="Interactable2D" index="0"]
-position = Vector2(0.5, 1.5)
-shape = SubResource("RectangleShape2D_m437d")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable2D"]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_2hjcl")
 
 [node name="DialogAccepted" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_h51vh")

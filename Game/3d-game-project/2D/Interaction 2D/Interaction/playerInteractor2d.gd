@@ -39,6 +39,12 @@ func _input(event: InputEvent) -> void:
 				interact_with_door(cached_closest.get_parent())
 			if cached_closest.get_parent() is PowerPlant:
 				interact_with_door_reactor(cached_closest.get_parent())
+			if cached_closest.get_parent() is ReactorPanel:
+				interact_with_reactor_panel(cached_closest.get_parent())
+			if cached_closest.get_parent() is ElectricalPanel:
+				interact_with_electrical_panel(cached_closest.get_parent())
+			if cached_closest.get_parent() is ReactorPipe:
+				interact_with_reactor_pipe(cached_closest.get_parent())
 
 func interact_with_globe(globe: Globe) -> void:
 	globe._on_interactable_2d_interacted(self)
@@ -56,3 +62,12 @@ func interact_with_door(cabin: Cabin):
 	
 func interact_with_door_reactor(reactor: PowerPlant):
 	reactor._on_interactable_2d_interacted(self)
+
+func interact_with_reactor_panel(panel: ReactorPanel):
+	panel._on_interactable_2d_interacted(self)
+	
+func interact_with_electrical_panel(panel: ElectricalPanel):
+	panel._on_interactable_2d_interacted(self)
+	
+func interact_with_reactor_pipe(pipe: ReactorPipe):
+	pipe._on_interactable_2d_interacted(self)
