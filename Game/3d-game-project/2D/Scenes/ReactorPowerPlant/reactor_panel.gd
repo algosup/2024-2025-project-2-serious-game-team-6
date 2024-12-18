@@ -14,6 +14,7 @@ var enableElec: bool = false
 var enableWater: bool = false
 
 func _process(delta: float) -> void:
+	get_parent().get_node("Player/Sprite2D").visible = holdingCard
 	objectives.clear()
 	objectives.append(givenCard)
 	objectives.append(enableElec)

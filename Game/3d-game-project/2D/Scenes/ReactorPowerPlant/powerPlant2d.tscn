@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://6ujtn6cjjxqa"]
+[gd_scene load_steps=13 format=3 uid="uid://6ujtn6cjjxqa"]
 
 [ext_resource type="Script" path="res://2D/Scenes/ReactorPowerPlant/powerPlant2d.gd" id="1_3gcbn"]
 [ext_resource type="PackedScene" uid="uid://djfl34w5v6262" path="res://2D/Scenes/ReactorPowerPlant/reactorBackground.tscn" id="1_fu5oj"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://6w1jkbcfxr1r" path="res://2D/Scenes/ReactorPowerPlant/reactorPipe.tscn" id="4_qsjta"]
 [ext_resource type="PackedScene" uid="uid://dm1uaq5fv2nh6" path="res://2D/Interaction 2D/Interaction/interactable2d.tscn" id="5_c31nw"]
 [ext_resource type="AudioStream" uid="uid://cnv3k08qlf2lb" path="res://Sounds/musicref.mp3" id="6_jjkh5"]
+[ext_resource type="Texture2D" uid="uid://de4e21xayksvy" path="res://Sprite/Powerplant/accessCard.png" id="7_8lw1w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k1sou"]
 
@@ -40,6 +41,11 @@ limit_left = -570
 limit_top = -300
 limit_right = 30
 limit_bottom = 300
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(2, -67)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_8lw1w")
 
 [node name="Collisions" parent="." instance=ExtResource("2_1y7yj")]
 collision_mask = 3
