@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bm06o2dil55m1"
 path.s3tc="res://.godot/imported/paperSorting.png-204edc9c593dec4b263a3ab80b1d47d3.s3tc.ctex"
+path.etc2="res://.godot/imported/paperSorting.png-204edc9c593dec4b263a3ab80b1d47d3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Sprite/Object/paperSorting.png"
-dest_files=["res://.godot/imported/paperSorting.png-204edc9c593dec4b263a3ab80b1d47d3.s3tc.ctex"]
+dest_files=["res://.godot/imported/paperSorting.png-204edc9c593dec4b263a3ab80b1d47d3.s3tc.ctex", "res://.godot/imported/paperSorting.png-204edc9c593dec4b263a3ab80b1d47d3.etc2.ctex"]
 
 [params]
 

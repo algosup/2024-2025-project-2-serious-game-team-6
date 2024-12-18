@@ -36,6 +36,8 @@ func _input(event: InputEvent) -> void:
 				# If holding an object, interact with the bin
 				if cached_closest.get_parent() is Bin:
 					interact_with_bin(cached_closest.get_parent())
+				elif cached_closest.get_parent() is NuclearReactorBuilding:
+					interact_with_nuclear_reactor_building(cached_closest.get_parent())
 				else:
 					# Release the held object
 					release_held_object()
@@ -90,4 +92,6 @@ func interact_with_house(house: House):
 	house._on_interactable_interacted(self)
 
 func interact_with_nuclear_reactor_building(building: NuclearReactorBuilding):
+	if held_object:
+		building.holding = true
 	building._on_interactable_interacted(self)

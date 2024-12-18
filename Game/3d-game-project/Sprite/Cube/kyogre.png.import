@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbgdqxp6g6n35"
 path.s3tc="res://.godot/imported/kyogre.png-2c6902a3ba10feecb1312320ee62bf43.s3tc.ctex"
+path.etc2="res://.godot/imported/kyogre.png-2c6902a3ba10feecb1312320ee62bf43.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Sprite/Cube/kyogre.png"
-dest_files=["res://.godot/imported/kyogre.png-2c6902a3ba10feecb1312320ee62bf43.s3tc.ctex"]
+dest_files=["res://.godot/imported/kyogre.png-2c6902a3ba10feecb1312320ee62bf43.s3tc.ctex", "res://.godot/imported/kyogre.png-2c6902a3ba10feecb1312320ee62bf43.etc2.ctex"]
 
 [params]
 

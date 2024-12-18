@@ -13,9 +13,7 @@
 [sub_resource type="Resource" id="Resource_b46kd"]
 script = ExtResource("2_ljeux")
 scene = ExtResource("1_vwbbb")
-overrides = {
-"global_font_size": "40.0"
-}
+overrides = {}
 
 [sub_resource type="Resource" id="Resource_yx0r7"]
 script = ExtResource("2_ljeux")
@@ -29,11 +27,10 @@ overrides = {
 "box_distance": "30.0",
 "box_modulate_custom_color": "Color(0.12085, 0.435877, 0.644531, 1)",
 "box_modulate_global_color": "false",
-"box_size": "Vector2(1200, 320)",
+"box_size": "Vector2(500, 150)",
 "custom_normal_font": "\"res://Sprite/TexteFont/superstar.ttf\"",
 "name_label_customfont": "\"res://Sprite/TexteFont/superstar.ttf\"",
 "portrait_bg_modulate": "Color(0.0333252, 0.146765, 0.152344, 0.513726)",
-"text_custom_size": "32.0",
 "use_global_fonts": "false"
 }
 

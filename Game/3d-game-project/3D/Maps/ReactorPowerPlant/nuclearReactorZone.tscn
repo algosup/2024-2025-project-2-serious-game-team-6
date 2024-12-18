@@ -1,15 +1,21 @@
-[gd_scene load_steps=6 format=3 uid="uid://dgtdiqk4a0xkt"]
+[gd_scene load_steps=8 format=3 uid="uid://dgtdiqk4a0xkt"]
 
 [ext_resource type="PackedScene" uid="uid://im6qesuucsc3" path="res://3D/Maps/ReactorPowerPlant/nuclearReactor.tscn" id="1_25mhv"]
 [ext_resource type="Script" path="res://3D/Maps/ReactorPowerPlant/nuclearReactorZone.gd" id="1_gdpp6"]
 [ext_resource type="PackedScene" uid="uid://cfptiwe8b3u07" path="res://3D/Maps/ReactorPowerPlant/teleporter.tscn" id="2_otaro"]
+[ext_resource type="PackedScene" uid="uid://bnq3q8p6pq2l1" path="res://3D/Object/accessCard.tscn" id="3_3w1yc"]
 [ext_resource type="PackedScene" uid="uid://cjv0df8txk3mi" path="res://3D/Player/player.tscn" id="4_we3w1"]
 [ext_resource type="PackedScene" uid="uid://daqcahpqsjm8u" path="res://3D/Maps/ReactorPowerPlant/nuclearReactorBuilding.tscn" id="5_n2cev"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8bkh3"]
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_gdpp6")
 
 [node name="NuclearReactor" parent="." instance=ExtResource("1_25mhv")]
+
+[node name="Card" parent="." instance=ExtResource("3_3w1yc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.4601, 1.81719, -29.2939)
 
 [node name="Teleporter" parent="." instance=ExtResource("2_otaro")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 2.30262, 3)
@@ -27,3 +33,12 @@ directional_shadow_max_distance = 8192.0
 
 [node name="NuclearReactorInterior" parent="." instance=ExtResource("5_n2cev")]
 transform = Transform3D(2.25, 0, 0, 0, 2.25, 0, 0, 0, 2.25, 0, 13.5411, -21.5839)
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(5000, 0, 0, 0, 1, 0, 0, 0, 5500, 0, -0.220811, -18.3743)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.577366, 0)
+shape = SubResource("BoxShape3D_8bkh3")
+
+[connection signal="body_entered" from="Area3D" to="Card" method="_on_area_3d_body_entered"]

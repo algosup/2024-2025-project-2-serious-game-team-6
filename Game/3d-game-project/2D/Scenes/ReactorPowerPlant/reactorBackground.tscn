@@ -1,9 +1,33 @@
-[gd_scene load_steps=2 format=3 uid="uid://djfl34w5v6262"]
+[gd_scene load_steps=5 format=3 uid="uid://djfl34w5v6262"]
 
-[ext_resource type="Texture2D" uid="uid://j016n2m243c6" path="res://Sprite/Powerplant/reactorBackground.png" id="1_d4xmt"]
+[ext_resource type="Texture2D" uid="uid://ngjkbl8wmf26" path="res://Sprite/Powerplant/shelf.png" id="1_2bgqx"]
+[ext_resource type="Texture2D" uid="uid://j016n2m243c6" path="res://Sprite/Powerplant/reactorbackground.png" id="1_d4xmt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_13v42"]
+atlas = ExtResource("1_2bgqx")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ubn4b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_13v42")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
+[node name="Shelf" type="AnimatedSprite2D" parent="."]
+z_index = -1
+position = Vector2(-333, -41)
+scale = Vector2(2, 1.1)
+sprite_frames = SubResource("SpriteFrames_ubn4b")
+autoplay = "default"
+
 [node name="Reactorbackground" type="Sprite2D" parent="."]
+z_index = -2
 position = Vector2(-1, 2)
 texture = ExtResource("1_d4xmt")

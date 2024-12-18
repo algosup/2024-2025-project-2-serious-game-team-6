@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://calw67gh3ifq3"
 path.s3tc="res://.godot/imported/water.png-de9ca8d3d696ffc39b4156e09cd6f93c.s3tc.ctex"
+path.etc2="res://.godot/imported/water.png-de9ca8d3d696ffc39b4156e09cd6f93c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Sprite/Cube/water.png"
-dest_files=["res://.godot/imported/water.png-de9ca8d3d696ffc39b4156e09cd6f93c.s3tc.ctex"]
+dest_files=["res://.godot/imported/water.png-de9ca8d3d696ffc39b4156e09cd6f93c.s3tc.ctex", "res://.godot/imported/water.png-de9ca8d3d696ffc39b4156e09cd6f93c.etc2.ctex"]
 
 [params]
 

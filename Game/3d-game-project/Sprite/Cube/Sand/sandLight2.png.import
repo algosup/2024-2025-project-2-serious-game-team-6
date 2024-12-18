@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi5p2kcljmo1j"
 path.s3tc="res://.godot/imported/sandLight2.png-8022027ea8c2e56247779142f5ef834e.s3tc.ctex"
+path.etc2="res://.godot/imported/sandLight2.png-8022027ea8c2e56247779142f5ef834e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Sprite/Cube/Sand/sandLight2.png"
-dest_files=["res://.godot/imported/sandLight2.png-8022027ea8c2e56247779142f5ef834e.s3tc.ctex"]
+dest_files=["res://.godot/imported/sandLight2.png-8022027ea8c2e56247779142f5ef834e.s3tc.ctex", "res://.godot/imported/sandLight2.png-8022027ea8c2e56247779142f5ef834e.etc2.ctex"]
 
 [params]
 

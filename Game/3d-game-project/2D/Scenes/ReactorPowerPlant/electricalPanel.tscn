@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://jm44sd2jspif"]
+
+[ext_resource type="Script" path="res://2D/Scenes/ReactorPowerPlant/electrical_panel.gd" id="1_1uux2"]
+[ext_resource type="Texture2D" uid="uid://do3fmoymox4kf" path="res://Sprite/Powerplant/electricpanel.png" id="1_5vsjx"]
+[ext_resource type="PackedScene" uid="uid://dm1uaq5fv2nh6" path="res://2D/Interaction 2D/Interaction/interactable2d.tscn" id="1_k5xgl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_05wuf"]
+atlas = ExtResource("1_5vsjx")
+region = Rect2(12, 0, 12, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yevao"]
+atlas = ExtResource("1_5vsjx")
+region = Rect2(0, 0, 12, 36)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5cupq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_05wuf")
+}],
+"loop": true,
+"name": &"green",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yevao")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3i1vo"]
+size = Vector2(22, 58)
+
+[node name="ElectricalPanel" type="Node2D"]
+script = ExtResource("1_1uux2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5cupq")
+animation = &"red"
+autoplay = "red"
+
+[node name="Interactable2D" parent="." instance=ExtResource("1_k5xgl")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable2D"]
+position = Vector2(5, 10)
+shape = SubResource("RectangleShape2D_3i1vo")
+
+[connection signal="focused" from="Interactable2D" to="Interactable2D" method="_on_focused"]
+[connection signal="interacted" from="Interactable2D" to="Interactable2D" method="_on_interacted"]
+[connection signal="unfocused" from="Interactable2D" to="Interactable2D" method="_on_unfocused"]

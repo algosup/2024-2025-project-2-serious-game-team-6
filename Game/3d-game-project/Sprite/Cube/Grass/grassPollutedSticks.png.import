@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsm71oqfo5lu2"
 path.s3tc="res://.godot/imported/grassPollutedSticks.png-6a838dfff50751323582529cdd16071b.s3tc.ctex"
+path.etc2="res://.godot/imported/grassPollutedSticks.png-6a838dfff50751323582529cdd16071b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Sprite/Cube/Grass/grassPollutedSticks.png"
-dest_files=["res://.godot/imported/grassPollutedSticks.png-6a838dfff50751323582529cdd16071b.s3tc.ctex"]
+dest_files=["res://.godot/imported/grassPollutedSticks.png-6a838dfff50751323582529cdd16071b.s3tc.ctex", "res://.godot/imported/grassPollutedSticks.png-6a838dfff50751323582529cdd16071b.etc2.ctex"]
 
 [params]
 

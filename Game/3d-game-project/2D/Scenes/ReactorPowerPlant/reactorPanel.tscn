@@ -1,0 +1,78 @@
+[gd_scene load_steps=10 format=3 uid="uid://cgpy52uk5l5oq"]
+
+[ext_resource type="Texture2D" uid="uid://bk1vo3xns6kd0" path="res://Sprite/Powerplant/controlpanelreactor.png" id="1_4dgal"]
+[ext_resource type="Script" path="res://2D/Scenes/ReactorPowerPlant/reactor_panel.gd" id="1_malll"]
+[ext_resource type="PackedScene" uid="uid://dm1uaq5fv2nh6" path="res://2D/Interaction 2D/Interaction/interactable2d.tscn" id="2_tme7n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_waciy"]
+atlas = ExtResource("1_4dgal")
+region = Rect2(0, 0, 209, 103)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_37tak"]
+atlas = ExtResource("1_4dgal")
+region = Rect2(209, 0, 209, 103)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mfjsf"]
+atlas = ExtResource("1_4dgal")
+region = Rect2(418, 0, 209, 103)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q8q2c"]
+atlas = ExtResource("1_4dgal")
+region = Rect2(627, 0, 209, 103)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oioqd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_waciy")
+}],
+"loop": true,
+"name": &"state0",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_37tak")
+}],
+"loop": true,
+"name": &"state1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mfjsf")
+}],
+"loop": true,
+"name": &"state2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q8q2c")
+}],
+"loop": true,
+"name": &"state3",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k6uxw"]
+size = Vector2(210, 104)
+
+[node name="ReactorPanel" type="Node2D"]
+script = ExtResource("1_malll")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_oioqd")
+animation = &"state0"
+autoplay = "state0"
+
+[node name="Interactable2D" parent="." instance=ExtResource("2_tme7n")]
+position = Vector2(-82, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable2D"]
+position = Vector2(82, 1)
+shape = SubResource("RectangleShape2D_k6uxw")
+
+[connection signal="focused" from="Interactable2D" to="Interactable2D" method="_on_focused"]
+[connection signal="interacted" from="Interactable2D" to="Interactable2D" method="_on_interacted"]
+[connection signal="unfocused" from="Interactable2D" to="Interactable2D" method="_on_unfocused"]

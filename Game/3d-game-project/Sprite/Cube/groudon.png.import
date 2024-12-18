@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg0br3dhvacdb"
 path.s3tc="res://.godot/imported/groudon.png-bf57fe310d4edb97f22303b6f0ed912d.s3tc.ctex"
+path.etc2="res://.godot/imported/groudon.png-bf57fe310d4edb97f22303b6f0ed912d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Sprite/Cube/groudon.png"
-dest_files=["res://.godot/imported/groudon.png-bf57fe310d4edb97f22303b6f0ed912d.s3tc.ctex"]
+dest_files=["res://.godot/imported/groudon.png-bf57fe310d4edb97f22303b6f0ed912d.s3tc.ctex", "res://.godot/imported/groudon.png-bf57fe310d4edb97f22303b6f0ed912d.etc2.ctex"]
 
 [params]
 

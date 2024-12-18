@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://beojon8wujm3l"
 path.s3tc="res://.godot/imported/tallFlower2.png-2be459a74d5442bb12c7c00f441b3c8f.s3tc.ctex"
+path.etc2="res://.godot/imported/tallFlower2.png-2be459a74d5442bb12c7c00f441b3c8f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Sprite/Cube/Decor/Flower/tallFlower2.png"
-dest_files=["res://.godot/imported/tallFlower2.png-2be459a74d5442bb12c7c00f441b3c8f.s3tc.ctex"]
+dest_files=["res://.godot/imported/tallFlower2.png-2be459a74d5442bb12c7c00f441b3c8f.s3tc.ctex", "res://.godot/imported/tallFlower2.png-2be459a74d5442bb12c7c00f441b3c8f.etc2.ctex"]
 
 [params]
 

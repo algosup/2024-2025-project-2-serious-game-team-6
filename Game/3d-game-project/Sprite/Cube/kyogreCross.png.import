@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsl4l15bt8hvc"
 path.s3tc="res://.godot/imported/kyogreCross.png-7d21a10f87962b316895fed4e3337b2c.s3tc.ctex"
+path.etc2="res://.godot/imported/kyogreCross.png-7d21a10f87962b316895fed4e3337b2c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Sprite/Cube/kyogreCross.png"
-dest_files=["res://.godot/imported/kyogreCross.png-7d21a10f87962b316895fed4e3337b2c.s3tc.ctex"]
+dest_files=["res://.godot/imported/kyogreCross.png-7d21a10f87962b316895fed4e3337b2c.s3tc.ctex", "res://.godot/imported/kyogreCross.png-7d21a10f87962b316895fed4e3337b2c.etc2.ctex"]
 
 [params]
 
