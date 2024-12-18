@@ -84,8 +84,8 @@ We value community input! Share your thoughts, report issues, and suggest featur
 If you want to contribute, please take a look to [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## 🗃️ Versions
-- **Latest :** 0.1.0
-- **Current :** 0.2.1
+- **Latest :** 0.2.2
+- **Current :** 0.2.2
 - Versions List : [Click to view](https://github.com/algosup/2024-2025-project-2-serious-game-team-6/tags)
 
 ## ⚖️ License
