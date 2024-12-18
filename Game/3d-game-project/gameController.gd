@@ -46,7 +46,6 @@ func teleporte_to_zone2() -> void:
 	else:
 		zone2_instance = zone2.instantiate()
 		add_child(zone2_instance)
-	
 
 func teleporte_to_hub() -> void:
 	# Remove the current child (if any)
@@ -94,7 +93,7 @@ func exit_house() -> void:
 		zone1_instance = zone1.instantiate()
 		add_child(zone1_instance)
 		
-func enter_power_plant() -> void:
+func enter_power_plant(holdingCard) -> void:
 	# Remove the current child (if any)
 	for child in get_children():
 		remove_child(child)
@@ -105,8 +104,14 @@ func enter_power_plant() -> void:
 	else:
 		power_plant_instance = power_plant.instantiate()
 		add_child(power_plant_instance)
+	
+	if power_plant_instance.get_child(0):
+		power_plant_instance.get_child(0).holdingCard = holdingCard
 		
 func exit_power_plant() -> void:
+	var removeCard = false
+	if power_plant_instance.get_child(0) and power_plant_instance.get_child(0).objectives.count(true) == 3:
+		removeCard = true
 	# Remove the current child (if any)
 	for child in get_children():
 		remove_child(child)
@@ -117,3 +122,5 @@ func exit_power_plant() -> void:
 	else:
 		zone2_instance = zone2.instantiate()
 		add_child(zone2_instance)
+	if zone2_instance.get_child(1) and removeCard:
+		zone2_instance.get_child(1).queue_free()
