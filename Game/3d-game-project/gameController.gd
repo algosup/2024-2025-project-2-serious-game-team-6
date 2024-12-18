@@ -123,4 +123,4 @@ func exit_power_plant() -> void:
 		zone2_instance = zone2.instantiate()
 		add_child(zone2_instance)
 	if zone2_instance.get_child(1) and removeCard:
-		zone2_instance.get_child(1).queue_free()
+		zone2_instance.get_node("Card").queue_free()
