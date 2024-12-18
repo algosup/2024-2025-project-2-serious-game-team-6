@@ -110,7 +110,7 @@ func enter_power_plant(holdingCard) -> void:
 		
 func exit_power_plant() -> void:
 	var removeCard = false
-	if power_plant_instance.get_child(0) and power_plant_instance.get_child(0).objectives.count(true) == 3:
+	if power_plant_instance.get_child(0) and power_plant_instance.get_child(0).givenCard:
 		removeCard = true
 	# Remove the current child (if any)
 	for child in get_children():
@@ -122,5 +122,5 @@ func exit_power_plant() -> void:
 	else:
 		zone2_instance = zone2.instantiate()
 		add_child(zone2_instance)
-	if zone2_instance.get_child(1) and removeCard:
+	if zone2_instance.get_node("Card") and removeCard:
 		zone2_instance.get_node("Card").queue_free()
