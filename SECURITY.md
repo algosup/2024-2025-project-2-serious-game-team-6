@@ -6,9 +6,10 @@ These versions are currently updated and can include security patches:
 
 | Version     | Supported          |
 | ----------- | ------------------ |
-| > 0.2.1 | :white_check_mark: |
-| &emsp;0.2.0 | :white_check_mark: |
-| &emsp;0.1.0 | :white_check_mark: |
+| > 0.2.2 | :white_check_mark: |
+| &emsp;0.2.1 | :x: |
+| &emsp;0.2.0 | :x: |
+| &emsp;0.1.0 | :x: |
 
 ## Reporting a Vulnerability
 
