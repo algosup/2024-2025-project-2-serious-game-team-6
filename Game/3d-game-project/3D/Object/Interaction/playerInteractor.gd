@@ -95,4 +95,6 @@ func interact_with_nuclear_reactor_building(building: NuclearReactorBuilding):
 	if held_object:
 		building.holding = true
 		held_object = null
+	else:
+		building.holding = false
 	building._on_interactable_interacted(self)
