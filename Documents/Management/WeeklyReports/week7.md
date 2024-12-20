@@ -30,10 +30,12 @@ This week, our team focused on rehearsing the oral presentation while finalizing
 
 ## Team Mood  
 
-**Rating:** X/10  
+**Rating:** 7/10  
 
-<!-- todo: AFTER FORM ANSWERS -->
+The team experienced a noticeable reduction in stress levels, allowing for smoother collaboration and improved focus. However, instances of immature behavior were observed, which were not well-received and caused minor disruptions to the team dynamic. This highlights the importance of maintaining professionalism to foster a positive and productive environment.
 
 ## Conclusion  
 
-<!-- todo: AFTER FORM ANSWERS -->
+This week marked a significant milestone with the completion of our presentation materials and the successful implementation of the second level. The team's dedication and ability to adapt under challenging circumstances, such as absences, showcased their commitment to the project. The post-mortem analysis and peer evaluations provided valuable insights and constructive feedback, setting a solid foundation for continuous improvement.
+
+Moving forward, the planned vacation will give the team a much-needed opportunity to recharge and return refreshed for the next phase of the project. Overall, the week was a success, with key accomplishments driving progress and areas of improvement identified for future collaboration.
