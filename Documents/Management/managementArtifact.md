@@ -20,6 +20,7 @@ You can also find a detailed verison [HERE](projectCharter.md)
 # Tasks & schedules
 
 The breakdown of the tasks, their assignment, and schedule of those tasks can be found [HERE](https://sharing.clickup.com/9012521102/l/h/5-90123516211-1/1384ef34e36b04d).
+You can Also find the gantt chart [HERE](https://sharing.clickup.com/9012521102/g/h/8ck0a4e-412/37cdcab5cca6985)
 
 # RACI matrix
 
