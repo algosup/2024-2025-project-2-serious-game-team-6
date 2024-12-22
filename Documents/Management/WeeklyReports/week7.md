@@ -16,7 +16,7 @@ This week, our team focused on rehearsing the oral presentation while finalizing
    - Completed peer evaluations to provide feedback on individual contributions and foster better team collaboration.  
 
 4. **Implementing Level 2**  
-   - Integrated all sprites, sounds, and game mechanics to enhance the user experience for the oral presentation.  
+   - Integrated all sprites, sounds, and game mechanics to enhance the user experience for the final presentation.  
 
 ## Challenges  
 
@@ -38,4 +38,4 @@ The team experienced a noticeable reduction in stress levels, allowing for smoot
 
 This week marked a significant milestone with the completion of our presentation materials and the successful implementation of the second level. The team's dedication and ability to adapt under challenging circumstances, such as absences, showcased their commitment to the project. The post-mortem analysis and peer evaluations provided valuable insights and constructive feedback, setting a solid foundation for continuous improvement.
 
-Moving forward, the planned vacation will give the team a much-needed opportunity to recharge and return refreshed for the next phase of the project. Overall, the week was a success, with key accomplishments driving progress and areas of improvement identified for future collaboration.
+Moving forward, the planned vacation will give the team a much-needed opportunity to recharge their battery and return refreshed for the next phase of the project. Overall, the week was a success, with key accomplishments driving progress and areas of improvement identified for future collaboration.
